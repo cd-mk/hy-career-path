@@ -40,31 +40,35 @@
         <div class="g_code_page">
             <div class="g_header">
                 <h3 class="g_tit2">본문 하단 버튼</h3>
-                <span>Update. 2014.07.17</span>
+                <span>Update. 2019.04.04 </span>
             </div>
             <div class="g_codebox">
                 <!-- source code -->
                 <div class="g_code_temp">
-                    <!-- S: button area/ col 2 -->
-                    <div class="btn_wrap col2">
-                        <button type="submit" class="btn point_green"><span>회원가입</span></button>
-                        <button type="button" class="btn point_white"><span>취소</span></button>
+                    <!-- S: button area/ col 1 -->
+                    <div class="btn_wrap center">
+                        <button type="button" class="btn point_type1">다음</button>
                     </div>
+                    <!-- E: button area/ col 1 -->
+
+                    <!-- S: button area/ col 2 -->
+                    <div>
+                        <div class="btn_wrap center col2">
+                            <button type="button" class="btn point_type1">저장하기</button>
+                            <button type="button" class="btn point_type2">통합인증하기</button>
+                        </div>
+                    </div> 
                     <!-- E: button area/ col 2 -->
 
-
-                    <!-- S: button area/ col 1 -->
-                    <div class="btn_wrap">
-                        <button type="submit" class="btn point_green"><span>회원가입</span></button>
+                    <!-- S: button area/ col 3 -->
+                    <div>
+                        <div class="btn_wrap center col3">
+                            <button type="button" class="btn point_type1">기본 정보 저장</button>
+                            <button type="button" class="btn point_type2">비밀번호 변경</button>
+                            <button type="button" class="btn point_type2">커리어패스 가기</button>
+                        </div>
                     </div>
-                    <!-- E: button area/ col 1 -->
-
-
-                    <!-- S: button area/ col 1 -->
-                    <div class="btn_wrap">
-                        <button type="submit" class="btn btn_more"><span>더보기</span></button>
-                    </div>
-                    <!-- E: button area/ col 1 -->
+                    <!-- E: button area/ col 3 -->
                     
 
                 </div>
@@ -74,16 +78,9 @@
             <div class="g_code_description">
                 <div>
                     <h4>Description</h4>
-                    *col 1 버튼 하나 위치할때는 아래처럼 본문 네이밍으로 구분해서 width값 지정<br>
-                    .join_fin_wrap .btn_wrap {
-                    width: 360px;
-                    margin: 50px auto 0;
-                    }
-                    <br><br>
-                    *margin값도 본문 네이밍으로 구분해서 margin-top값 지정<br>
-                    .join_form .btn_wrap {
-                    margin-top: 40px;
-                    }
+                    * 버튼 width 값 확인
+                    <br>
+                    * inline-block 으로 설정 하여 div 를 추가로 제공함 사용시 제거                     
                 </div>
             </div>
         </div >
@@ -92,41 +89,43 @@
         <!-- 코드 추가-->
         <div class="g_code_page">
             <div class="g_header">
-                <h3 class="g_tit2">상태표시 버튼 및 글자</h3>
-                <span>Update. 2014.07.17</span>
+                <h3 class="g_tit2">페이지 네비게이션</h3>
+                <span>Update. 2019.04.04</span>
             </div>
             <div class="g_codebox">
                 <!-- source code -->
                 <div class="g_code_temp">
+                <!-- page navi 1 -->
+                <div class="page_navi">
+                    <a href="#url" class="btn_navi first"><span class="blind">처음 리스트로 이동</span></a>
+                    <a href="#url" class="btn_navi prev"><span class="blind">이전 리스트로 이동</span></a>
+                    <ul class="navi_list">
+                      <li class="active"><a href="#url">1</a></li>
+                      <li><a href="#url">2</a></li>
+                      <li><a href="#url">3</a></li>
+                      <li><a href="#url">4</a></li>
+                      <li><a href="#url">5</a></li>
+                      <li><a href="#url">6</a></li>
+                      <li><a href="#url">7</a></li>
+                      <li><a href="#url">8</a></li>
+                      <li><a href="#url">9</a></li>
+                      <li><a href="#url">10</a></li>
+                    </ul>
+                    <a href="#url" class="btn_navi next"><span class="blind">다음 리스트로 이동</span></a>
+                    <a href="#url" class="btn_navi last"><span class="blind">마지막 리스트로 이동</span></a>
+                </div>
+                <!-- page navi 1 -->
 
-
-                    <span class="status wait_appro">승인대기</span>
-                    <span class="status end_appro">승인완료</span>
-                    <span class="status reject_appro"><a href="#url">승인거절</a></span>
-                    <span class="status approval">승인</span>
-
-                    <span class="status es_wait_dep"><a href="#url">에스크로 입금대기</a></span>
-                    <span class="status es_comp_dep">에스크로 입금완료</span>
-                    <span class="status es_wait_wd"><a href="#url">에스크로 출금대기</a></span>
-
-                    <span class="status comp_wd">출금완료</span>
-                    <span class="status extend"><a href="#url">기간연장</a></span>
-
-                    <span class="status stop_tran"><a href="#url">거래정지</a></span>
-                    <span class="status wait_tran">거래정지 대기</span>
-
-                    <span class="status ing_contract">계약진행 중</span>
-                    <span class="status end_contract">계약종료</span>
-
-                    <span class="status wait_dep">입금대기</span>
-                    <span class="status end_audit">심사종료</span>
-                    
-                    <span class="status use_end">사용종료</span>
-                    <span class="status use_imposs">사용불가</span>
-                    <span class="status use_poss">사용가능</span>
-                    
-                    
-
+                <!-- page navi 2 -->
+                <div>
+                    <div class="page_navi">
+                        <ul class="navi_list">
+                            <li class="active"><a href="#url">1</a></li>
+                            <li><a href="#url">2</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- page navi 2 -->
                 </div>
                 <!-- //source code -->
             </div>
@@ -135,7 +134,7 @@
                     <h4>Description</h4>
 
 
-                
+                </div>
             </div>
         </div>
         <!-- //코드 추가 -->
