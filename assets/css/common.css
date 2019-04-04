@@ -128,16 +128,13 @@ h1,h2,h3,h4,h5,h6,strong {
 }
 
 /* text color */
-.txt_orange {
+.txt_point1 {
   color: #ff7a00;
 }
-.txt_black {
-  color: #000;
-}
-.txt_gray {
+.txt_point2 {
   color: #666;
 }
-.txt_lgray {
+.txt_point3 {
   color: #999;
 }
 /* text common */
@@ -146,16 +143,16 @@ h1,h2,h3,h4,h5,h6,strong {
 }
 
 /* button color */
-.point_orange {
+.point_type1 {
   background-color: #ff7a00;
   color: #fff;
 }
-.point_white {
+.point_type2 {
   background-color: #fff;
   color: #ff7a00;
   border: 1px solid #ff7a00;
 }
-.point_gray {
+.point_type3 {
   background-color: #989b9d;
   color: #fff;
 }

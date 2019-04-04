@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>입사지원서</title>
+  <title>마이페이지</title>
   <link rel="stylesheet" href="../../assets/css/app.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
     <div class="header">
       <ul class="header_top">
         <li><a href="#url">공지사항</a></li>
-        <li><a href="#url"><strong class="txt_orange">희망나눔</strong>님</a></li>
+        <li><a href="#url"><strong class="txt_point1">희망나눔</strong>님</a></li>
         <li><a href="#url">로그아웃</a></li>
       </ul>
       <div class="header_middle">
@@ -22,7 +22,7 @@
           <li>
             <a href="#url">커리어패스</a>
           </li>
-          <li class="on">
+          <li>
             <a href="#url">입사지원서</a>
           </li>
           <li>
@@ -40,7 +40,7 @@
 
     <!-- Content Area -->
     <div class="container">
-      <h2 class="page_title">입사지원서</h2>
+      <h2 class="page_title">마이페이지 개인 정보가 입력된 예시 화면</h2>
       <div class="mypage_wrap">
         <div class="section_item">
           <h3 class="sub_title">기본정보</h3>
@@ -59,16 +59,16 @@
                       <div class="popup_con">
                         <div class="file_inp_box type_btn">
                           <input type="text" class="file_inp_name js-file-name" readonly>
-                          <label for="file1" class="file_label btn point_gray">파일 선택</label>
+                          <label for="file1" class="file_label btn point_type3">파일 선택</label>
                           <input type="file" id="file1" class="file_inp">
                         </div>
                         <ul class="file_notice_list">
-                          <li class="txt_gray">- 권장 사진 사이즈는 100 * 130 픽셀</li>
-                          <li class="txt_gray">- gif, jpg, jpge 파일만 등록 가능</li>
+                          <li class="txt_point2">- 권장 사진 사이즈는 100 * 130 픽셀</li>
+                          <li class="txt_point2">- gif, jpg, jpge 파일만 등록 가능</li>
                         </ul>
                         <div class="btn_wrap col2 algin_center">
-                          <button type="button" class="btn point_orange">등록</button>
-                          <button type="button" class="btn point_white js-popup-close">취소</button>
+                          <button type="button" class="btn point_type1">등록</button>
+                          <button type="button" class="btn point_type2 js-popup-close">취소</button>
                         </div>
                       </div>
                       <button type="button" class="btn_pop_close js-popup-close"><span class="blind">팝업 닫기</span></button>
@@ -83,11 +83,11 @@
                       <strong class="popup_title">사진 삭제</strong>
                       <div class="popup_con">
                         <p class="txt_desc">
-                          <span class="txt_orange">사진을 삭제하면 입사 지원서에서도 삭제됩니다.</span><br>등록된 사진을 삭제하시겠습니까?
+                          <span class="txt_point1">사진을 삭제하면 입사 지원서에서도 삭제됩니다.</span><br>등록된 사진을 삭제하시겠습니까?
                         </p>
                         <div class="btn_wrap col2 algin_center">
-                          <button type="button" class="btn point_orange">확인</button>
-                          <button type="button" class="btn point_white js-popup-close">취소</button>
+                          <button type="button" class="btn point_type1">확인</button>
+                          <button type="button" class="btn point_type2 js-popup-close">취소</button>
                         </div>
                       </div>
                       <button type="button" class="btn_pop_close js-popup-close"><span class="blind">팝업 닫기</span></button>
@@ -114,7 +114,7 @@
                       <span class="profile_name">전화번호(HP)</span>
                       <span class="profile_inp">
                         <input type="tel" title="전화번호 입력" class="inp_tel" value="010-1234-5678">
-                        <button type="button" class="btn point_gray">재인증</button>
+                        <button type="button" class="btn point_type3">재인증</button>
                       </span>
                     </li>
                     <li>
@@ -137,52 +137,104 @@
                   </ul>
                 </div>
               </div>
+              <div class="btn_wrap algin_center col3">
+                <button type="button" class="btn point_type1">기본 정보 저장</button>
+                <button type="button" class="btn point_type2">비밀번호 변경</button>
+                <button type="button" class="btn point_type2">커리어패스 가기</button>
+              </div>
             </fieldset>
           </form>
         </div>
 
         <div class="section_item">
-          <h3 class="sub_title">학력사항</h3>
+          <h3 class="sub_title">입사지원 현황 <span class="sub_title_desc txt_point1">총 10건</span></h3>
           <div class="tbl_wrap">
             <table>
-              <caption>학력 정보 리스트</caption>
+              <caption>입사지원 현황 리스트</caption>
               <thead>
                 <tr>
-                  <th scope="row" class="size_medium">학교명</th>                  
-                  <th scope="row">학과명</th>
-                  <th scope="row">재학기간</th>
-                  <th scope="row">본교/분교</th>
-                  <th scope="row">학위</th>
-                  <th scope="row">학점</th>
+                  <th scope="row">지원일</th>                  
+                  <th scope="row">회사명</th>
+                  <th scope="row" class="size_large">공고명</th>
+                  <th scope="row">접수마감일</th>
+                  <th scope="row">공고상태</th>
+                  <th scope="row">전형결과</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td class="align_left">신림고등학교 <span class="ico_pass">PASS</span></td>
-                  <td>-</td>
-                  <td>1997.03 - 1997.02</td>
-                  <td>-</td>
-                  <td>졸업</td>
-                  <td>-</td>
+                  <td>2018.12.10</td>
+                  <td>SK 하이닉스</td>
+                  <td class="align_left"><a href="#url">[경력] 상반기 경력 및 병특 공채</a></td>
+                  <td>
+                    <ul class="date_list">
+                      <li><span>2018.12.31</span></li>
+                      <li><span class="txt_point1">D-day</span></li>
+                    </ul>
+                  </td>                  
+                  <td>서류접수중</td>
+                  <td><span class="txt_point1">서류합격</span></td>
                 </tr>
                 <tr>
-                  <td class="align_left">동국대학교</td>
-                  <td>멀티미디어공학</td>
-                  <td>1997.03 - 1997.02</td>
-                  <td>본교</td>
-                  <td>학사</td>
-                  <td>4.0/4.5</td>
+                  <td>2018.12.10</td>
+                  <td>협력사 A</td>
+                  <td class="align_left"><a href="#url">[신입] 2019년 하이닉스 그룹 신입 공채</a></td>
+                  <td>
+                    <ul class="date_list">
+                      <li><span>2018.12.31</span></li>
+                      <li><span>D-11</span></li>
+                    </ul>
+                  </td>                  
+                  <td>서류접수중</td>
+                  <td>서류불합격</td>
                 </tr>
                 <tr>
-                  <td class="align_left">동국대학교 대학원 <span class="ico_pass">PASS</span></td>
-                  <td>멀티미디어공학</td>
-                  <td>1997.03 - 1997.02</td>
-                  <td>본교</td>
-                  <td>석사졸업</td>
-                  <td>3.9/4.5</td>
+                  <td>2018.12.10</td>
+                  <td>협력사 A</td>
+                  <td class="align_left"><a href="#url">[신입] 2019년 하이닉스 그룹 신입 공채</a></td>
+                  <td>
+                    <ul class="date_list">
+                      <li><span>2018.12.31</span></li>
+                      <li><span class="txt_point1">D-day</span></li>
+                    </ul>
+                  </td>                  
+                  <td>서류접수중</td>
+                  <td>서류불합격</td>
+                </tr>
+                <tr>
+                  <td>2018.12.10</td>
+                  <td>협력사 A</td>
+                  <td class="align_left"><a href="#url">[신입] 2019년 하이닉스 그룹 신입 공채</a></td>
+                  <td>
+                    <ul class="date_list">
+                      <li><span>2018.12.31</span></li>
+                      <li><span>D-11</span></li>
+                    </ul>
+                  </td>                  
+                  <td>서류접수중</td>
+                  <td>서류불합격</td>
+                </tr>
+                <tr>
+                  <td>2018.12.10</td>
+                  <td>협력사 A</td>
+                  <td class="align_left"><a href="#url">[신입] 2019년 하이닉스 그룹 신입 공채</a></td>
+                  <td>
+                    <ul class="date_list">
+                      <li><span>2018.12.31</span></li>
+                      <li><span>D-11</span></li>
+                    </ul>
+                  </td>                  
+                  <td>서류접수중</td>
+                  <td>서류불합격</td>
                 </tr>
               </tbody>
             </table>
+          </div>
+          <div class="page_navi">
+            <ul class="navi_list">
+              <li class="active"><a href="#url">1</a></li>
+              <li><a href="#url">2</a></li>
+            </ul>
           </div>
         </div>
 
@@ -204,7 +256,7 @@
                   <td>SK 하이닉스</td>
                   <td class="align_left"><a href="#url">[경력] 상반기 경력 및 병특 공채</a></td>
                   <td>서류접수중</td>
-                  <td><span class="txt_orange">D-day</span></td>
+                  <td><span class="txt_point1">D-day</span></td>
                 </tr>
                 <tr>
                   <td>협력사 A</td>
@@ -223,17 +275,17 @@
             <li>
               <span class="notice_cat">공지</span>
               <a href="#url" class="notice_title">서비스 개선을 위한 시스템 점검 안내 (01. 10, 22:00 - 23:00)</a>
-              <span class="notice_date txt_lgray">2019.01.01</span>
+              <span class="notice_date txt_point3">2019.01.01</span>
             </li>
             <li>
               <span class="notice_cat">오픈</span>
               <a href="#url" class="notice_title">자격증 인증 항목 추가 안내</a>
-              <span class="notice_date txt_lgray">2019.01.01</span>
+              <span class="notice_date txt_point3">2019.01.01</span>
             </li>
             <li>
               <span class="notice_cat">오픈</span>
               <a href="#url" class="notice_title">자격증 인증 항목 추가 안내</a>
-              <span class="notice_date txt_lgray">2019.01.01</span>
+              <span class="notice_date txt_point3">2019.01.01</span>
             </li>
           </ul>
         </div>
@@ -244,10 +296,10 @@
     <div class="footer">
       <div class="footer_inner">
         <ul class="privacy_list">
-          <li><a href="#url" class="txt_gray">이용약관</a></li>
-          <li><a href="#url" class="txt_gray"><strong>개인정보 처리방침</strong></a></li>
+          <li><a href="#url" class="txt_point2">이용약관</a></li>
+          <li><a href="#url" class="txt_point2"><strong>개인정보 처리방침</strong></a></li>
         </ul>
-        <p class="cpr txt_lgray">Copyright&copy; 2019 All Right Reserved</p>
+        <p class="cpr txt_point3">Copyright&copy; 2019 All Right Reserved</p>
       </div>
     </div>
 
