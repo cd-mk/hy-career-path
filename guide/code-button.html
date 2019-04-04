@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="http://vricks.com/favicon3.ico">
+    <title>퍼블리싱가이드 > 코딩가이드 > Text</title>
+    <script type="text/javascript" src="../web/assets/js/plugins/jquery-3.2.1.min.js"></script>
+    <link href="./common.css" rel="stylesheet" type="text/css">
+    <link href="./basic.css" rel="stylesheet" type="text/css">
+    <link href="../web/assets/css/common.css" rel="stylesheet" type="text/css">
+    <link href="../web/assets/css/contents.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <div id="g_header">
+        <h1 id="g_logo"><a href="../index.html"><img src="./images/logo.png" alt="CIDOW" width="100" /></a></h1>
+        <div id="g_navi">
+            <ul class="g_gnb">
+                <li><a href="status-list.html">Status Board</a></li>
+                <li><a href="guide-info.html">Info Guide</a></li>
+                <li class="g_on"><a href="code-txt.html">Code Guide</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="g_content">
+        <div id="gTabBox">
+        </div>
+        <div class="g_title_box">
+            <h2 class="g_m_tit">Button</h2>
+            <a href="#none" class="g_main_description_btn"><img src="./images/help.png" alt="도움말"></a>
+        </div>
+        <div class="g_main_description">
+            <ul>
+                <li>설정상 탭키 들여쓰기를 하지 않습니다.</li>
+                <li>최신 날짜 순으로 정리 합니다.</li>
+            </ul>
+        </div>
+        <!-- 코드 추가-->
+        <div class="g_code_page">
+            <div class="g_header">
+                <h3 class="g_tit2">본문 하단 버튼</h3>
+                <span>Update. 2014.07.17</span>
+            </div>
+            <div class="g_codebox">
+                <!-- source code -->
+                <div class="g_code_temp">
+                    <!-- S: button area/ col 2 -->
+                    <div class="btn_wrap col2">
+                        <button type="submit" class="btn point_green"><span>회원가입</span></button>
+                        <button type="button" class="btn point_white"><span>취소</span></button>
+                    </div>
+                    <!-- E: button area/ col 2 -->
+
+
+                    <!-- S: button area/ col 1 -->
+                    <div class="btn_wrap">
+                        <button type="submit" class="btn point_green"><span>회원가입</span></button>
+                    </div>
+                    <!-- E: button area/ col 1 -->
+
+
+                    <!-- S: button area/ col 1 -->
+                    <div class="btn_wrap">
+                        <button type="submit" class="btn btn_more"><span>더보기</span></button>
+                    </div>
+                    <!-- E: button area/ col 1 -->
+                    
+
+                </div>
+                <!-- //source code -->
+            </div>
+
+            <div class="g_code_description">
+                <div>
+                    <h4>Description</h4>
+                    *col 1 버튼 하나 위치할때는 아래처럼 본문 네이밍으로 구분해서 width값 지정<br>
+                    .join_fin_wrap .btn_wrap {
+                    width: 360px;
+                    margin: 50px auto 0;
+                    }
+                    <br><br>
+                    *margin값도 본문 네이밍으로 구분해서 margin-top값 지정<br>
+                    .join_form .btn_wrap {
+                    margin-top: 40px;
+                    }
+                </div>
+            </div>
+        </div >
+        <!-- //코드 추가 -->
+
+        <!-- 코드 추가-->
+        <div class="g_code_page">
+            <div class="g_header">
+                <h3 class="g_tit2">상태표시 버튼 및 글자</h3>
+                <span>Update. 2014.07.17</span>
+            </div>
+            <div class="g_codebox">
+                <!-- source code -->
+                <div class="g_code_temp">
+
+
+                    <span class="status wait_appro">승인대기</span>
+                    <span class="status end_appro">승인완료</span>
+                    <span class="status reject_appro"><a href="#url">승인거절</a></span>
+                    <span class="status approval">승인</span>
+
+                    <span class="status es_wait_dep"><a href="#url">에스크로 입금대기</a></span>
+                    <span class="status es_comp_dep">에스크로 입금완료</span>
+                    <span class="status es_wait_wd"><a href="#url">에스크로 출금대기</a></span>
+
+                    <span class="status comp_wd">출금완료</span>
+                    <span class="status extend"><a href="#url">기간연장</a></span>
+
+                    <span class="status stop_tran"><a href="#url">거래정지</a></span>
+                    <span class="status wait_tran">거래정지 대기</span>
+
+                    <span class="status ing_contract">계약진행 중</span>
+                    <span class="status end_contract">계약종료</span>
+
+                    <span class="status wait_dep">입금대기</span>
+                    <span class="status end_audit">심사종료</span>
+                    
+                    <span class="status use_end">사용종료</span>
+                    <span class="status use_imposs">사용불가</span>
+                    <span class="status use_poss">사용가능</span>
+                    
+                    
+
+                </div>
+                <!-- //source code -->
+            </div>
+            <div class="g_code_description">
+                <div>
+                    <h4>Description</h4>
+
+
+                
+            </div>
+        </div>
+        <!-- //코드 추가 -->
+
+
+ 
+
+
+    </div>
+    <script type="text/javascript" src="../web/assets/js/common.js"></script>
+    <script type="text/javascript" src="./common.js"></script>
+    <script>
+        gTabCode();
+    </script>
+</body>
+
+</html>

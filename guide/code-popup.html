@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="http://vricks.com/favicon3.ico">
+    <title>퍼블리싱가이드 > 코딩가이드 > Text</title>
+    <script type="text/javascript" src="../web/assets/js/plugins/jquery-3.2.1.min.js"></script>
+    <link href="./common.css" rel="stylesheet" type="text/css">
+    <link href="./basic.css" rel="stylesheet" type="text/css">
+    <link href="../web/assets/css/common/reset.css" rel="stylesheet" type="text/css">
+    <link href="../web/assets/css/common/common.css" rel="stylesheet" type="text/css">
+    <link href="../web/assets/css/content/join.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="g_header">
+        <h1 id="g_logo"><a href="../index.html"><img src="./images/logo.png" alt="CIDOW" width="100" /></a></h1>
+        <div id="g_navi">
+            <ul class="g_gnb">
+                <li><a href="status-list.html">Status Board</a></li>
+                <li><a href="guide-info.html">Info Guide</a></li>
+                <li class="g_on"><a href="code-txt.html">Code Guide</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="g_content">
+        <div id="gTabBox">
+        </div>
+        <div class="g_title_box">
+            <h2 class="g_m_tit">Layer Popup</h2>
+            <a href="#none" class="g_main_description_btn"><img src="./images/help.png" alt="도움말"></a>
+        </div>
+        <div class="g_main_description">
+            <ul>
+                <li>설정상 탭키 들여쓰기를 하지 않습니다.</li>
+                <li>최신 날짜 순으로 정리 합니다.</li>
+            </ul>
+        </div>
+    <!-- 코드 추가-->
+    <div class="g_code_page">
+        <div class="g_header">
+            <h3 class="g_tit2">레이어 팝업</h3>
+            <span>Update. 2019.03.07</span>
+        </div>
+        <div class="g_codebox">
+            <!-- source code -->
+            <div class="g_code_temp">
+                <!-- S: 레이어 팝업 -->
+                <!-- 팝업 호출 버튼에 js-open-popup 클래스 추가 -->
+                <a href="#a" class="js-open-popup">팝업 호출 버튼</a>
+                <!-- 팝업 1 -->
+                <div class="layer_popup wait_withdraw">
+                    <div class="popup_box">
+                        <h4 class="title_popup">에스크로 출금</h4>
+                        <div class="content_popup">
+                            <div class="btn_wrap">
+                            <button type="button" class="btn point_white"><span>기간 연장</span></button>
+                            <button type="button" class="btn point_white"><span>거래정지</span></button>
+                            <!-- 팝업2를 여는 버튼에 js-next-popup 클래스 추가 -->
+                            <button type="button" class="btn point_green js-next-popup"><span>거래완료</span></button>
+                            </div>
+                        </div>
+                        <button type="button" class="close_popup js-close-popup"><span class="blind">팝업 닫기</span></button>
+                    </div>
+                    <div class="dim"></div>
+                </div>
+                <!-- 팝업1 에서 이어지는 팝업2 -->
+                <div class="layer_popup stop_deal">
+                    <div class="popup_box">
+                        <h4 class="title_popup">거래정지</h4>
+                        <div class="content_popup">
+                            <div class="text_box">
+                            <strong>거래를 정지하시겠습니까?</strong>
+                            <p class="txt_gray">
+                                사유를 입력해주시면<br>
+                                관리자 확인 후 거래 정지처리 됩니다.
+                            </p>
+                            </div>
+                            <textarea name="" id="" placeholder="전자상거래에서의 매매 보호 서비스. 비대면 거래의 피해를 방지를 위해 거래대금의 입출금제3의 회사에 맡기는 제도이다."></textarea>
+                            <div class="btn_wrap">
+                            <button type="button" class="btn point_green"><span>확인</span></button>
+                            </div>
+                        </div>
+                        <button type="button" class="close_popup js-close-popup"><span class="blind">팝업 닫기</span></button>
+                    </div>
+                    <div class="dim"></div>
+                </div>
+                <!-- E: 레이어 팝업 -->
+    
+            </div>
+            <!-- //source code -->
+        </div>
+        <div class="g_code_description">
+            <div>
+                <h4>Description</h4>
+
+                팝업 호출 버튼과 .layer_popup을 형제 요소로 마크업함<br>
+                팝업 호출 버튼엔 "js-open-popup" 클래스 추가<br>
+                팝업 닫기 버튼엔 "js-close-popup" 클래스 추가<br>
+                팝업1 내의 버튼으로 팝업2가 연결되어 열리는 경우 팝업2를 여는 버튼에 "js-next-popup" 클래스 추가<br>
+                연결되는 팝업은 이전 팝업과 형제 요소로 마크업
+
+            </div>
+        </div>
+    </div>
+    <!-- //코드 추가 -->
+
+    </div>
+    <script type="text/javascript" src="./common.js"></script>
+    <script src="../web/assets/js/common.js"></script>
+        <script>
+            gTabCode();
+        </script>
+
+</body>
+
+</html>
