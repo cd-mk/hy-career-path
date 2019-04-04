@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>커리어패스</title>
+  <link rel="stylesheet" href="../../assets/css/app.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <div class="header">
+      <ul class="header_top">
+        <li><a href="#url">공지사항</a></li>
+        <li><a href="#url"><strong class="txt_orange">희망나눔</strong>님</a></li>
+        <li><a href="#url">로그아웃</a></li>
+      </ul>
+      <div class="header_middle">
+        <a href="main.html" class="logo"><img src="../../assets/images/common/img-logo.png" alt="SK Hynix 청년희망나눔"></a>
+        <ul class="gnb">
+          <li class="on">
+            <a href="#url">커리어패스</a>
+          </li>
+          <li>
+            <a href="#url">입사지원서</a>
+          </li>
+          <li>
+            <a href="#url">기업소개</a>
+          </li>
+          <li>
+            <a href="#url">채용정보</a>
+          </li>
+          <li>
+            <a href="#url">커리어패스란?</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Content Area -->
+    <div class="container">
+      <h2 class="page_title">커리어패스</h2>
+      <div class="career_wrap">
+        <div class="section_item">
+          <h3 class="sub_title">기본정보</h3>
+          <form action="" method="post">
+            <fieldset>
+              <legend>기본 정보 입력 양식</legend>
+              <div class="profile_box">
+                <div class="left_profile">
+                  <!-- case : 등록된 사진이 있을 경우 -->
+                  <img class="img_profile" src="../../assets/images/contents/@sample-profile.jpg" alt="">
+                  <a href="#url" class="btn_photo_edit js-popup-open">사진변경</a>
+                  <!-- 사진 변경 팝업 -->
+                  <div class="layer_popup profile_layer">
+                    <div class="popup_box">
+                      <strong class="popup_title">사진 등록</strong>
+                      <div class="popup_con">
+                        <div class="file_inp_box type_btn">
+                          <input type="text" class="file_inp_name js-file-name" readonly>
+                          <label for="file1" class="file_label btn point_gray">파일 선택</label>
+                          <input type="file" id="file1" class="file_inp">
+                        </div>
+                        <ul class="file_notice_list">
+                          <li class="txt_gray">- 권장 사진 사이즈는 100 * 130 픽셀</li>
+                          <li class="txt_gray">- gif, jpg, jpge 파일만 등록 가능</li>
+                        </ul>
+                        <div class="btn_wrap col2 algin_center">
+                          <button type="button" class="btn point_orange">등록</button>
+                          <button type="button" class="btn point_white js-popup-close">취소</button>
+                        </div>
+                      </div>
+                      <button type="button" class="btn_pop_close js-popup-close"><span class="blind">팝업 닫기</span></button>
+                    </div>
+                    <div class="dim"></div>
+                  </div>
+
+                  <a href="#url" class="btn_photo_del js-popup-open"><span class="blind">사진 삭제</span></a>
+                  <!-- 사진 삭제 팝업 -->
+                  <div class="layer_popup">
+                    <div class="popup_box">
+                      <strong class="popup_title">사진 삭제</strong>
+                      <div class="popup_con">
+                        <p class="txt_desc">
+                          <span class="txt_orange">사진을 삭제하면 입사 지원서에서도 삭제됩니다.</span><br>등록된 사진을 삭제하시겠습니까?
+                        </p>
+                        <div class="btn_wrap col2 algin_center">
+                          <button type="button" class="btn point_orange">확인</button>
+                          <button type="button" class="btn point_white js-popup-close">취소</button>
+                        </div>
+                      </div>
+                      <button type="button" class="btn_pop_close js-popup-close"><span class="blind">팝업 닫기</span></button>
+                    </div>
+                    <div class="dim"></div>
+                  </div>
+                  <!-- //case : 등록된 사진이 있을 경우 -->
+                </div>
+                <div class="right_profile">
+                  <ul class="profile_list">
+                    <li>
+                      <span class="profile_name">이름</span>
+                      <span class="profile_inp">
+                        <input type="text" title="이름 입력" value="강유미" disabled>
+                      </span>
+                    </li>
+                    <li>
+                      <span class="profile_name">아이디(이메일)</span>
+                      <span class="profile_inp">
+                        <input type="mail" title="이메일 입력" value="youme@skhynix.co.kr" disabled>
+                      </span>
+                    </li>
+                    <li>
+                      <span class="profile_name">전화번호(HP)</span>
+                      <span class="profile_inp">
+                        <input type="tel" title="전화번호 입력" class="inp_tel" value="010-1234-5678">
+                        <button type="button" class="btn point_gray">재인증</button>
+                      </span>
+                    </li>
+                    <li>
+                      <span class="profile_name">생년월일</span>
+                      <span class="profile_inp">
+                        <input type="text" title="생년월일 입력" value="990909-2******" disabled>
+                      </span>
+                    </li>
+                    <li>
+                      <span class="profile_name">주소</span>
+                      <span class="profile_inp">
+                        <span class="search_addr">
+                          <input type="text" title="우편번호 입력" class="inp_addr1">
+                          <button type="button" class="btn_address"><span class="blind">주소 검색</span></button>
+                        </span>
+                        <input type="text" title="도로명 주소 입력" class="inp_addr2">
+                        <input type="text" title="상세 주소 입력" class="inp_addr3">
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+
+        <div class="section_item js-list-item">
+          <h3 class="sub_title">학력</h3>
+          <ul class="item_head">
+            <li class="degree">학위구분</li>
+            <li class="school">학교명/학과명</li>
+            <li class="attend_date">재학기간</li>
+            <li class="branch">본교/분교</li>
+            <li class="graduated">졸업 구분</li>
+            <li class="grade">학점</li>
+            <li class="attach">파일 첨부</li>
+            <li class="status">진행 상황</li>
+            <li class="certifi">인증</li>
+          </ul>
+          <ul class="item_list">
+            <li class="btn_box">
+              <button type="button" class="btn_list_custom plus js-list-add"><span class="blind">리스트 추가</span></button>
+            </li>
+            <li class="degree">
+              <select>
+                <option value="">선택</option>
+                <option value="">고졸</option>
+                <option value="">학사</option>
+                <option value="">박사</option>
+              </select>
+            </li>
+            <li class="school">
+              <div class="inp_box">
+                <input type="text" title="학교명 입력" placeholder="학교명">
+              </div>
+              <div class="inp_box">
+                <input type="text" title="학과명 입력" placeholder="학과명">
+              </div>
+            </li>
+            <li class="attend_date">
+              <div class="inp_box">
+                <input type="text" class="input_date" title="입학 연월일 입력" placeholder="입학 연월일">
+              </div>
+              <div class="inp_box">
+                <input type="text" class="input_date" title="졸업 연월일 입력" placeholder="졸업 연월일">
+              </div>
+            </li>
+            <li class="branch">
+              <select>
+                <option value="">선택</option>
+                <option value="">본교</option>
+                <option value="">분교</option>
+              </select>
+            </li>
+            <li class="graduated">
+              <select>
+                <option value="">선택</option>
+                <option value="">졸업</option>
+                <option value="">재학</option>
+                <option value="">중퇴</option>
+              </select>
+            </li>
+            <li class="grade">
+              <input type="text" title="학점 입력" placeholder="학점">
+              <span class="slush">/</span>
+              <input type="text" title="총점 입력" placeholder="총점">
+            </li>
+            <li class="attach">
+              <div class="file_inp_box type_btn">
+                <input type="text" class="file_inp_name js-file-name" readonly>
+                <button type="button" class="btn_label js-file-label"><span class="blind">첨부 파일 추가</span></button>
+                <button type="button" class="btn_file_del js-file-del"><span class="blind">첨부 파일 삭제</span></button>
+                <input type="file" class="file_inp">
+              </div>
+            </li>
+            <li class="status"></li>
+            <li class="certifi"><button type="button" class="btn btn_small point_gray">인증요청</button></li>
+          </ul>
+        </div>
+
+        <div class="section_item js-list-item">
+          <h3 class="sub_title">경력</h3>
+          <ul class="item_head">
+            <li class="company">회사명/부서</li>
+            <li class="part">직위/담당업무</li>
+            <li class="attend_date">재직기간</li>
+            <li class="location">소재지</li>
+            <li class="reason">퇴직(이직)사유</li>
+            <li class="attach">파일 첨부</li>
+            <li class="status">진행 상황</li>
+            <li class="certifi">인증</li>
+          </ul>
+          <ul class="item_list">
+            <li class="btn_box">
+              <button type="button" class="btn_list_custom plus js-list-add"><span class="blind">리스트 추가</span></button>
+            </li>
+            <li class="company">
+              <div class="inp_box">
+                <input type="text" title="회사명 입력" placeholder="회사명">
+              </div>
+              <div class="inp_box">
+                <input type="text" title="부서명 입력" placeholder="부서">
+              </div>
+            </li>
+            <li class="part">
+              <div class="inp_box">
+                <input type="text" title="직위 입력" placeholder="직위">
+              </div>
+              <div class="inp_box">
+                <input type="text" title="담당업무 입력" placeholder="담당업무">
+              </div>
+            </li>
+            <li class="attend_date">
+              <div class="inp_box">
+                <input type="text" class="input_date" title="입사일 입력" placeholder="입사일">
+              </div>
+              <div class="inp_box">
+                <input type="text" class="input_date" title="퇴사일 입력" placeholder="퇴사일">
+              </div>
+            </li>
+            <li class="location">
+              <input type="text" title="소재지 입력">
+            </li>
+            <li class="reason">
+              <input type="text" title="퇴직(이직)사유 입력">
+            </li>
+            <li class="attach">
+              <div class="file_inp_box type_btn">
+                <input type="text" class="file_inp_name js-file-name" readonly>
+                <button type="button" class="btn_label js-file-label"><span class="blind">첨부 파일 추가</span></button>
+                <button type="button" class="btn_file_del js-file-del"><span class="blind">첨부 파일 삭제</span></button>
+                <input type="file" class="file_inp">
+              </div>
+            </li>
+            <li class="status"></li>
+            <li class="certifi"><button type="button" class="btn btn_small point_gray">인증요청</button></li>
+          </ul>
+        </div>
+
+        <div class="section_item js-list-item">
+          <h3 class="sub_title">어학능력</h3>
+          <ul class="item_head">
+            <li class="lang">언어</li>
+            <li class="test">시험종류</li>
+            <li class="score">점수</li>
+            <li class="test_grade">급수</li>
+            <li class="agency">인증기관</li>
+            <li class="get_date">취득일</li>
+            <li class="attach">파일 첨부</li>
+            <li class="status">진행 상황</li>
+            <li class="certifi">인증</li>
+          </ul>
+          <ul class="item_list">
+            <li class="btn_box">
+              <button type="button" class="btn_list_custom plus js-list-add"><span class="blind">리스트 추가</span></button>
+            </li>
+            <li class="lang">
+              <input type="text" title="언어 입력">
+            </li>
+            <li class="test">
+              <input type="text" title="시험종류 입력">
+            </li>
+            <li class="score">
+              <input type="text" title="점수 입력">
+            </li>
+            <li class="test_grade">
+              <input type="text" title="급수 입력">
+            </li>
+            <li class="agency">
+              <input type="text" title="인증기관 입력">
+            </li>
+            <li class="get_date">
+              <input type="text" class="input_date" title="취득일 입력">
+            </li>
+            <li class="attach">
+              <div class="file_inp_box type_btn">
+                <input type="text" class="file_inp_name js-file-name" readonly>
+                <button type="button" class="btn_label js-file-label"><span class="blind">첨부 파일 추가</span></button>
+                <button type="button" class="btn_file_del js-file-del"><span class="blind">첨부 파일 삭제</span></button>
+                <input type="file" class="file_inp">
+              </div>
+            </li>
+            <li class="status"></li>
+            <li class="certifi"><button type="button" class="btn btn_small point_gray">인증요청</button></li>
+          </ul>
+        </div>
+
+        <div class="section_item js-list-item">
+          <h3 class="sub_title">자격증/면허/수상내역</h3>
+          <ul class="item_head">
+            <li class="license_kind">항목선택</li>
+            <li class="license_name">자격증명/등급</li>
+            <li class="license_agency">발행처/기관</li>
+            <li class="get_date">취득일</li>
+            <li class="attach">파일 첨부</li>
+            <li class="status">진행 상황</li>
+            <li class="certifi">인증</li>
+          </ul>
+          <ul class="item_list">
+            <li class="btn_box">
+              <button type="button" class="btn_list_custom plus js-list-add"><span class="blind">리스트 추가</span></button>
+            </li>
+            <li class="license_kind">
+              <select>
+                <option value="">선택</option>
+                <option value="">자격증/면허증</option>
+              </select>
+            </li>
+            <li class="license_name">
+              <input type="text" title="자격증명/등급 입력">
+            </li>
+            <li class="license_agency">
+              <input type="text" title="발행처/기관 입력">
+            </li>
+            <li class="get_date">
+              <input type="text" class="input_date" title="취득일 입력">
+            </li>
+            <li class="attach">
+              <div class="file_inp_box type_btn">
+                <input type="text" class="file_inp_name js-file-name" readonly>
+                <button type="button" class="btn_label js-file-label"><span class="blind">첨부 파일 추가</span></button>
+                <button type="button" class="btn_file_del js-file-del"><span class="blind">첨부 파일 삭제</span></button>
+                <input type="file" class="file_inp">
+              </div>
+            </li>
+            <li class="status"></li>
+            <li class="certifi"><button type="button" class="btn btn_small point_gray">인증요청</button></li>
+          </ul>
+        </div>
+
+        <div class="btn_wrap algin_center col2">
+          <button type="button" class="btn point_orange">저장하기</button>
+          <button type="button" class="btn point_white">통합인증하기</button>
+        </div>
+      </div>
+    </div>
+    <!-- //Content Area -->
+
+    <div class="footer">
+      <div class="footer_inner">
+        <ul class="privacy_list">
+          <li><a href="#url" class="txt_gray">이용약관</a></li>
+          <li><a href="#url" class="txt_gray"><strong>개인정보 처리방침</strong></a></li>
+        </ul>
+        <p class="cpr txt_lgray">Copyright&copy; 2019 All Right Reserved</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- import js -->
+  <script src="../../assets/js/plugins/jquery-3.2.1.min.js"></script>
+  <script src="../../assets/js/plugins/jquery-ui.min.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+</html>
