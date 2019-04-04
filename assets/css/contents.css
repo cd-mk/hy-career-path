@@ -212,9 +212,34 @@
   width: calc(50% - 50px);
   margin-left: 50px;
 }
-.profile_box .right_profile .profile_list > li:last-child {
+.profile_box .right_profile .profile_list .address {
   width: 100%;
   margin-bottom: 0;
+}
+.profile_box .right_profile .profile_list .nation {
+  overflow: hidden;
+  width: 100% !important;
+  margin: 20px 0 0 0 !important; padding: 20px 0;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+}
+.profile_box .right_profile .profile_list .nation .chk_inp_box {
+  float: left;
+  line-height: 44px;
+}
+.profile_box .right_profile .profile_list .nation .profile_name + .chk_inp_box {
+  margin-right: 40px;
+}
+.profile_box .right_profile .profile_list .nation .is_foreigner {
+  float: left;
+  margin-left: 20px;
+}
+.profile_box .right_profile .profile_list .nation .is_foreigner input {
+  float: left;
+  width: 200px;
+}
+.profile_box .right_profile .profile_list .nation .is_foreigner input:last-child {
+  margin-left: 10px;
 }
 .profile_box .right_profile .profile_list .profile_name {
   display: table-cell;
@@ -418,5 +443,70 @@
   text-align: center;
 }
 .career_wrap .item_list .status {
+  text-align: center;
+}
+
+/* 입사지원서 */
+.resume_wrap .inp_item_wrap {
+  overflow: hidden;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-bottom: 1px solid #e8e8e8;
+}
+.resume_wrap .inp_item_wrap .inp_item {
+  display: table-cell;
+  padding: 20px 0;
+  vertical-align: middle;
+}
+.resume_wrap .inp_item_wrap .inp_item .inp_item_title {
+  float: left;
+  margin-right: 30px;
+  line-height: 44px;
+  color: #666;
+}
+.resume_wrap .inp_item_wrap .inp_item:first-child .inp_item_title {
+  width: 82px;
+  margin-right: 0;
+  margin-left: 60px;
+}
+.resume_wrap .inp_item_wrap .inp_item .chk_inp_box {
+  float: left;
+  margin-left: 40px;
+  line-height: 44px;
+}
+.resume_wrap .inp_item_wrap .inp_item .inp_item_title + .chk_inp_box {
+  margin-left: 0;
+}
+.resume_wrap .inp_item_wrap .inp_item .select_medium {
+  width: 220px;
+}
+.resume_wrap .inp_item_wrap .inp_item .inp_set {
+  overflow: hidden;
+  float: left;
+  margin-left: 20px;
+}
+.resume_wrap .inp_item_wrap .inp_item .inp_set input {
+  float: left;
+  width: 310px;
+}
+.resume_wrap .inp_item_wrap .inp_item .inp_set input:last-child {
+  margin-left: 10px;
+}
+.resume_wrap .textarea_box {
+  margin-top: 30px;
+}
+.resume_wrap .textarea_box textarea {
+  height: 200px;
+}
+.resume_wrap .textarea_box .txt_byte {
+  float: right;
+  margin-top: 10px;
+}
+.resume_wrap .section_item_bottom {
+  margin-top: 50px; padding-top: 20px;
+  border-top: 1px solid #e8e8e8;
+}
+.resume_wrap .section_item_bottom .text_center {
   text-align: center;
 }

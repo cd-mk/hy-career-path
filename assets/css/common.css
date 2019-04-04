@@ -141,6 +141,11 @@ h1,h2,h3,h4,h5,h6,strong {
 .txt_under {
   text-decoration: underline;
 }
+.txt_alert {
+  padding-left: 26px;
+  background: url(../images/common/ico-alert.png) no-repeat 0 0;
+  color: #666;
+}
 
 /* button color */
 .point_type1 {
@@ -479,10 +484,12 @@ h1,h2,h3,h4,h5,h6,strong {
 .chk_inp {
   float: left;
 }
-.chk_inp input[type="checkbox"] {
+.chk_inp input[type="checkbox"],
+.chk_inp input[type="radio"] {
   display: none;
 }
-.chk_inp input[type="checkbox"] + label {
+.chk_inp input[type="checkbox"] + label,
+.chk_inp input[type="radio"] + label {
   position: relative;
   display: inline-block;
   -webkit-user-select: none;
@@ -490,7 +497,8 @@ h1,h2,h3,h4,h5,h6,strong {
   -ms-user-select: none;
   vertical-align: middle;
 }
-.chk_inp input[type="checkbox"] + label:before {
+.chk_inp input[type="checkbox"] + label:before,
+.chk_inp input[type="radio"] + label:before {
   content: '';
   display: inline-block;
   width: 16px; height: 16px;
@@ -499,7 +507,8 @@ h1,h2,h3,h4,h5,h6,strong {
   background: #f6f6f6;
   vertical-align: middle;
 }
-.chk_inp input[type="checkbox"]:checked + label:before {
+.chk_inp input[type="checkbox"]:checked + label:before,
+.chk_inp input[type="radio"]:checked + label:before {
   content: '';
   background: #ff7a00 url(../images/common/ico-check.png) no-repeat center;
   background-size: 11.4px 7.5px;
@@ -605,6 +614,10 @@ input::placeholder {
   background: #fff url(../images/common/ico-calender.png) no-repeat;
   background-position: right 12px center;
 }
+.input_date:disabled {
+  background: #f9f9f9 url(../images/common/ico-calender.png) no-repeat;
+  background-position: right 12px center;
+}
 
 /* input file */
 .file_inp_box .file_inp {
@@ -616,11 +629,11 @@ input::placeholder {
   clip: rect(0,0,0,0);
   border: 0;
 }
-.file_inp_box.type_btn input[type="text"] {
+.file_inp_box.type_btn2 .file_inp_name {
   float: left;
   width: calc(100% - 120px);
 }
-.file_inp_box.type_btn .file_label {
+.file_inp_box.type_btn2 .file_label {
   display: inline-block;
   width: 120px; height: 44px;
   line-height: 44px;
@@ -635,7 +648,7 @@ input::placeholder {
   position: relative;
 }
 .file_inp_box.type_btn .file_inp_name {
-  width: 100% !important;
+  width: 100%;
   padding-right: 25px;
 }
 .file_inp_box.type_btn .file_inp_name:disabled {
@@ -687,7 +700,7 @@ button {
   overflow: hidden;
   margin-top: 40px;
 }
-.btn_wrap.algin_center {
+.btn_wrap.center {
   display: inline-block;
   position: relative;
   left: 50%;
@@ -707,7 +720,7 @@ button {
   width: 170px;
   margin-left: 10px;
 }
-.btn_wrap.col2 .btn:first-of-type {
+.btn_wrap .btn:first-of-type {
   margin-left: 0;
 }
 

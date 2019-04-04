@@ -45,8 +45,8 @@ var setTab = function() {
       $(this).closest('.js-tab-list').find('li').removeClass('active');
       $(this).addClass('active');
 
-      $(this).closest('.js-tab-list').next('.js-tab-con').find('li').removeClass('active');
-      $(this).closest('.js-tab-list').next('.js-tab-con').find('li').eq(idx).addClass('active');
+      $(this).closest('.js-tab-list').siblings('.js-tab-con').children('li').removeClass('active');
+      $(this).closest('.js-tab-list').siblings('.js-tab-con').children('li').eq(idx).addClass('active');
     });
   });
 };
@@ -99,6 +99,16 @@ var setCustomList = function() {
   }
 };
 
+var selectRadio = function() {
+  $('.js-inp-show').on('click', function() {
+    $(this).closest('.chk_inp_box').siblings('.js-inp-target').find('input').attr('disabled', false);
+  });
+  $('.js-inp-hide').on('click', function() {
+    $(this).closest('.chk_inp_box').siblings('.js-inp-target').find('input').val('');
+    $(this).closest('.chk_inp_box').siblings('.js-inp-target').find('input').attr('disabled', true);
+  });
+};
+
 $(document).ready(function() {
   setGnb();
   if ($('.input_date').length) {
@@ -111,4 +121,5 @@ $(document).ready(function() {
   setTooltip();
   setInputFile();
   setCustomList();
+  selectRadio();
 });
