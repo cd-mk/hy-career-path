@@ -66,6 +66,12 @@
 .key_visual .login_box .login_tab > li.active a {
   color: #ff7a00;
 }
+.key_visual .login_box .tab_list > li {
+  display: none;
+}
+.key_visual .login_box .tab_list > li.active {
+  display: block;
+}
 .key_visual .login_box .login_con {
   padding: 37px 60px;
 }

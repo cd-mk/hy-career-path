@@ -23,15 +23,14 @@
         <p>새로운 사업을 시작한 창업자, 이직을 준비하고 있는 직장인,<br>색다른 경험을 꿈꾸는 대학생</p>
       </div>
       <div class="login_box">
-        <ul class="login_tab">
+        <ul class="login_tab js-tab-list">
           <li class="active"><a href="#url">개인</a></li>
           <li><a href="#url">기업</a></li>
           <li><a href="#url">관리자</a></li>
         </ul>
-        <div class="login_con">
-          <form action="" method="POST">
-            <fieldset>
-              <legend>로그인 입력 양식</legend>
+        <ul class="tab_list js-tab-con">
+          <li class="active">
+            <div class="login_con">
               <div class="login_con_top">
                 <div class="left_con">
                   <div class="inp_box">
@@ -65,9 +64,84 @@
                   <li><a href="#url" class="txt_point2">ID/PW 찾기</a></li>
                 </ul>
               </div>
-            </fieldset>
-          </form>
-        </div>
+            </div>
+          </li>
+          <li>
+            <div class="login_con">
+              <div class="login_con_top">
+                <div class="left_con">
+                  <div class="inp_box">
+                    <input type="text" name="" title="아이디 입력" placeholder="아이디">
+                  </div>
+                  <div class="inp_box">
+                    <input type="password" name="" title="비밀번호 입력" placeholder="비밀번호">
+                  </div>
+                </div>
+                <div class="right_con">
+                  <button type="button" class="btn_login point_type1">로그인</button>
+                </div>
+              </div>
+              <div class="login_con_btm">
+                <span class="chk_inp_box">
+                  <span class="chk_inp">
+                    <input type="checkbox" id="chk1" class="chk_inp">
+                    <label for="chk1"><span class="blind">로그인 유지 설정</span></label>
+                  </span>
+                  <span class="txt_label">로그인 유지</span>
+                </span>
+                <span class="chk_inp_box">
+                  <span class="chk_inp">
+                    <input type="checkbox" id="chk2" class="chk_inp">
+                    <label for="chk2"><span class="blind">아이디 저장 설정</span></label>
+                  </span>
+                  <span class="txt_label">아이디 저장</span>
+                </span>
+                <ul class="forgot_list">
+                  <li><a href="#url" class="txt_point2">회원가입</a></li>
+                  <li><a href="#url" class="txt_point2">ID/PW 찾기</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="login_con">
+              <div class="login_con_top">
+                <div class="left_con">
+                  <div class="inp_box">
+                    <input type="text" name="" title="아이디 입력" placeholder="아이디">
+                  </div>
+                  <div class="inp_box">
+                    <input type="password" name="" title="비밀번호 입력" placeholder="비밀번호">
+                  </div>
+                </div>
+                <div class="right_con">
+                  <button type="button" class="btn_login point_type1">로그인</button>
+                </div>
+              </div>
+              <div class="login_con_btm">
+                <span class="chk_inp_box">
+                  <span class="chk_inp">
+                    <input type="checkbox" id="chk1" class="chk_inp">
+                    <label for="chk1"><span class="blind">로그인 유지 설정</span></label>
+                  </span>
+                  <span class="txt_label">로그인 유지</span>
+                </span>
+                <span class="chk_inp_box">
+                  <span class="chk_inp">
+                    <input type="checkbox" id="chk2" class="chk_inp">
+                    <label for="chk2"><span class="blind">아이디 저장 설정</span></label>
+                  </span>
+                  <span class="txt_label">아이디 저장</span>
+                </span>
+                <ul class="forgot_list">
+                  <li><a href="#url" class="txt_point2">회원가입</a></li>
+                  <li><a href="#url" class="txt_point2">ID/PW 찾기</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+        
       </div>
     </div>
     <!-- Content Area -->
@@ -132,7 +206,7 @@
             </a>
           </li>
         </ul>
-        <div class="btn_wrap algin_center">
+        <div class="btn_wrap center">
           <a href="#url" class="btn point_type1">더보기</a>
         </div>
       </div>

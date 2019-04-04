@@ -41,7 +41,7 @@
     <!-- Content Area -->
     <div class="container">
       <h2 class="page_title">입사지원서</h2>
-      <div class="mypage_wrap">
+      <div class="resume_wrap">
         <div class="section_item">
           <h3 class="sub_title">기본정보</h3>
           <form action="" method="post">
@@ -57,7 +57,7 @@
                     <div class="popup_box">
                       <strong class="popup_title">사진 등록</strong>
                       <div class="popup_con">
-                        <div class="file_inp_box type_btn">
+                        <div class="file_inp_box type_btn2">
                           <input type="text" class="file_inp_name js-file-name" readonly>
                           <label for="file1" class="file_label btn point_type3">파일 선택</label>
                           <input type="file" id="file1" class="file_inp">
@@ -66,7 +66,7 @@
                           <li class="txt_point2">- 권장 사진 사이즈는 100 * 130 픽셀</li>
                           <li class="txt_point2">- gif, jpg, jpge 파일만 등록 가능</li>
                         </ul>
-                        <div class="btn_wrap col2 algin_center">
+                        <div class="btn_wrap col2 center">
                           <button type="button" class="btn point_type1">등록</button>
                           <button type="button" class="btn point_type2 js-popup-close">취소</button>
                         </div>
@@ -85,7 +85,7 @@
                         <p class="txt_desc">
                           <span class="txt_point1">사진을 삭제하면 입사 지원서에서도 삭제됩니다.</span><br>등록된 사진을 삭제하시겠습니까?
                         </p>
-                        <div class="btn_wrap col2 algin_center">
+                        <div class="btn_wrap col2 center">
                           <button type="button" class="btn point_type1">확인</button>
                           <button type="button" class="btn point_type2 js-popup-close">취소</button>
                         </div>
@@ -123,7 +123,7 @@
                         <input type="text" title="생년월일 입력" value="990909-2******" disabled>
                       </span>
                     </li>
-                    <li>
+                    <li class="address">
                       <span class="profile_name">주소</span>
                       <span class="profile_inp">
                         <span class="search_addr">
@@ -132,6 +132,27 @@
                         </span>
                         <input type="text" title="도로명 주소 입력" class="inp_addr2">
                         <input type="text" title="상세 주소 입력" class="inp_addr3">
+                      </span>
+                    </li>
+                    <li class="nation">
+                      <span class="profile_name">국적 (영주권)</span>
+                      <span class="chk_inp_box">
+                        <span class="chk_inp js-inp-hide">
+                          <input type="radio" name="nation1" id="chk1" class="chk_inp">
+                          <label for="chk1"><span class="blind">한국 국적 선택</span></label>
+                        </span>
+                        <span class="txt_label">한국</span>
+                      </span>
+                      <span class="chk_inp_box">
+                        <span class="chk_inp js-inp-show">
+                          <input type="radio" name="nation1" id="chk2" class="chk_inp">
+                          <label for="chk2"><span class="blind">외국 국적 선택</span></label>
+                        </span>
+                        <span class="txt_label">외국</span>
+                      </span>
+                      <span class="is_foreigner js-inp-target">
+                        <input type="text" placeholder="국적명" disabled>
+                        <input type="text" class="input_date" placeholder="해외국적 취득일" disabled>
                       </span>
                     </li>
                   </ul>
@@ -187,30 +208,48 @@
         </div>
 
         <div class="section_item">
-          <h3 class="sub_title">추천 기업 채용공고 <a href="#url" class="sub_title_more">더보기</a></h3>
+          <h3 class="sub_title">경력사항</h3>
           <div class="tbl_wrap">
             <table>
-              <caption>추천 기업 채용 공고 리스트</caption>
+              <caption>경력 사항 리스트</caption>
               <thead>
                 <tr>
-                  <th scope="row">회사명</th>
-                  <th scope="row" class="size_xlarge">공고명</th>
-                  <th scope="row">공고상태</th>
-                  <th scope="row">접수마감일</th>
+                  <th scope="row" class="size_medium">직장명</th>                  
+                  <th scope="row">부서</th>
+                  <th scope="row">직위</th>
+                  <th scope="row">담당업무</th>
+                  <th scope="row">재직기간</th>
+                  <th scope="row">소재지</th>
+                  <th scope="row">퇴직(이직)사유</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>SK 하이닉스</td>
-                  <td class="align_left"><a href="#url">[경력] 상반기 경력 및 병특 공채</a></td>
-                  <td>서류접수중</td>
-                  <td><span class="txt_point1">D-day</span></td>
+                  <td class="align_left">WONBANG TECH <span class="ico_pass">PASS</span></td>
+                  <td>기획팀</td>
+                  <td>사원</td>
+                  <td>웹기획</td>
+                  <td>1997.03 - 1997.02</td>
+                  <td>서울</td>
+                  <td>계약만료</td>
                 </tr>
                 <tr>
-                  <td>협력사 A</td>
-                  <td class="align_left"><a href="#url">[신입] 2019년 하이닉스 그룹 신입 공채</a></td>
-                  <td>서류접수중</td>
-                  <td>D-11</td>
+                  <td class="align_left">동방테크주식회사</td>
+                  <td>전략기획팀</td>
+                  <td>대리</td>
+                  <td>웹기획</td>
+                  <td>1997.03 - 1997.02</td>
+                  <td>서울</td>
+                  <td>업무변경</td>
+                </tr>
+                <tr>
+                  <td class="align_left">(주)나눔 이노베이션 <span class="ico_pass">PASS</span></td>
+                  <td>전략기획팀</td>
+                  <td>과장</td>
+                  <td>웹기획</td>
+                  <td>1997.03 - 1997.02</td>
+                  <td>서울</td>
+                  <td>업무변경</td>
                 </tr>
               </tbody>
             </table>
@@ -218,24 +257,206 @@
         </div>
 
         <div class="section_item">
-          <h3 class="sub_title">공지사항 <a href="#url" class="sub_title_more">더보기</a></h3>
-          <ul class="notice_list">
-            <li>
-              <span class="notice_cat">공지</span>
-              <a href="#url" class="notice_title">서비스 개선을 위한 시스템 점검 안내 (01. 10, 22:00 - 23:00)</a>
-              <span class="notice_date txt_point3">2019.01.01</span>
-            </li>
-            <li>
-              <span class="notice_cat">오픈</span>
-              <a href="#url" class="notice_title">자격증 인증 항목 추가 안내</a>
-              <span class="notice_date txt_point3">2019.01.01</span>
-            </li>
-            <li>
-              <span class="notice_cat">오픈</span>
-              <a href="#url" class="notice_title">자격증 인증 항목 추가 안내</a>
-              <span class="notice_date txt_point3">2019.01.01</span>
-            </li>
-          </ul>
+          <h3 class="sub_title">어학능력</h3>
+          <div class="tbl_wrap">
+            <table>
+              <caption>어학능력 리스트</caption>
+              <thead>
+                <tr>
+                  <th scope="row">언어</th>
+                  <th scope="row">시험종류</th>
+                  <th scope="row">점수/급수</th>
+                  <th scope="row">인증기관</th>
+                  <th scope="row">취득일</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="align_left">영어</td>
+                  <td>TOEFL</td>
+                  <td>900</td>
+                  <td>ETS</td>
+                  <td>1997.03</td>
+                </tr>
+                <tr>
+                  <td class="align_left">일본어 <span class="ico_pass">PASS</span></td>
+                  <td>JLPT</td>
+                  <td>2</td>
+                  <td>ETS</td>
+                  <td>1997.03</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="section_item">
+          <h3 class="sub_title">자격증/면허/수상내역</h3>
+          <div class="tbl_wrap">
+            <table>
+              <caption>자격증/면허/수상내역 리스트</caption>
+              <thead>
+                <tr>
+                  <th scope="row">구분</th>
+                  <th scope="row" class="size_large">자격증명/등급</th>
+                  <th scope="row">발행처/기관</th>
+                  <th scope="row">취득일/수상일</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>자격증/면허증</td>
+                  <td class="align_left">전자기사 1급</td>
+                  <td>한국전자학회</td>
+                  <td>1997.02</td>
+                </tr>
+                <tr>
+                  <td>자격증/면허증</td>
+                  <td class="align_left">1종 보통 운전면허</td>
+                  <td>경찰청 (운전면허시험관리단)</td>
+                  <td>1997.02</td>
+                </tr>
+                <tr>
+                  <td>수상내역/공모전</td>
+                  <td class="align_left">2015년 고용패널 조사 학술대회 논문 공고 <span class="ico_pass">PASS</span></td>
+                  <td>한국고용정보원</td>
+                  <td>1997.02</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="section_item">
+          <h3 class="sub_title">병역사항</h3>
+          <div class="inp_item_wrap">
+            <div class="inp_item">
+              <span class="inp_item_title">군필여부</span>
+              <span class="chk_inp_box">
+                <span class="chk_inp">
+                  <input type="radio" name="army" id="army1" class="chk_inp">
+                  <label for="army1"><span class="blind">군필 선택</span></label>
+                </span>
+                <span class="txt_label">군필</span>
+              </span>
+              <span class="chk_inp_box">
+                <span class="chk_inp">
+                  <input type="radio" name="army" id="army2" class="chk_inp">
+                  <label for="army2"><span class="blind">미필 선택</span></label>
+                </span>
+                <span class="txt_label">미필</span>
+              </span>
+              <span class="chk_inp_box">
+                <span class="chk_inp">
+                  <input type="radio" name="army" id="army3" class="chk_inp">
+                  <label for="army3"><span class="blind">면제 선택</span></label>
+                </span>
+                <span class="txt_label">면제</span>
+              </span>
+              <span class="chk_inp_box">
+                <span class="chk_inp">
+                  <input type="radio" name="army" id="army4" class="chk_inp">
+                  <label for="army4"><span class="blind">비대상(여성,외국인) 선택</span></label>
+                </span>
+                <span class="txt_label">비대상(여성,외국인)</span>
+              </span>
+            </div>
+          </div>
+          <div class="inp_item_wrap">
+            <div class="inp_item">
+              <span class="inp_item_title">군별</span>
+              <select class="select_medium">
+                <option value="">선택</option>
+                <option value="">육군</option>
+                <option value="">해군</option>
+                <option value="">공군</option>
+              </select>
+            </div>
+            <div class="inp_item">
+              <span class="inp_item_title">복무기간</span>
+              <span class="inp_date_box">
+                <input type="text" class="input_date" title="시작일 입력">
+                <span class="hypon">-</span>
+                <input type="text" class="input_date" title="종료일 입력">
+              </span>
+            </div>
+            <div class="inp_item">
+              <span class="inp_item_title">계급</span>
+              <select class="select_medium">
+                <option value="">선택</option>
+                <option value="">병장</option>
+                <option value="">상병</option>
+                <option value="">일병</option>
+                <option value="">이병</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="section_item">
+          <h3 class="sub_title">병역사항</h3>
+          <div class="inp_item_wrap">
+            <div class="inp_item">
+              <span class="inp_item_title">보훈</span>
+              <span class="chk_inp_box">
+                <span class="chk_inp js-inp-hide">
+                  <input type="radio" name="county" id="county1" class="chk_inp">
+                  <label for="county1"><span class="blind">보훈 비대상 선택</span></label>
+                </span>
+                <span class="txt_label">비대상</span>
+              </span>
+              <span class="chk_inp_box">
+                <span class="chk_inp js-inp-show">
+                  <input type="radio" name="county" id="county2" class="chk_inp">
+                  <label for="county2"><span class="blind">보훈 대상 선택</span></label>
+                </span>
+                <span class="txt_label">대상</span>
+              </span>
+              <span class="inp_set js-inp-target">
+                <input type="text" title="보훈관계 입력" placeholder="보훈관계" disabled>
+                <input type="text" title="보훈번호 입력" placeholder="보훈번호" disabled>
+              </span>
+            </div>
+          </div>
+          <div class="inp_item_wrap">
+            <div class="inp_item">
+              <span class="inp_item_title">장애</span>
+              <span class="chk_inp_box">
+                <span class="chk_inp js-inp-hide">
+                  <input type="radio" name="obstacle" id="obstacle1" class="chk_inp">
+                  <label for="obstacle1"><span class="blind">장애 비대상 선택</span></label>
+                </span>
+                <span class="txt_label">비대상</span>
+              </span>
+              <span class="chk_inp_box">
+                <span class="chk_inp js-inp-show">
+                  <input type="radio" name="obstacle" id="obstacle2" class="chk_inp">
+                  <label for="obstacle2"><span class="blind">장애 대상 선택</span></label>
+                </span>
+                <span class="txt_label">대상</span>
+              </span>
+              <span class="inp_set js-inp-target">
+                <input type="text" title="장애내용 및 급수 입력" placeholder="장애내용 및 급수" disabled>
+                <input type="text" title="장애등록번호 입력" placeholder="장애등록번호" disabled>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section_item">
+          <h3 class="sub_title">자기소개서</h3>
+          <div class="textarea_box">
+            <textarea name="" id="" class="js-byte"></textarea>
+            <p class="txt_byte"><span class="txt_point1">총 <span class="js-byte-show">0</span> byte</span> / 1000 byte</p>
+          </div>
+        </div>
+
+        <div class="section_item_bottom">
+          <p class="text_center"><span class="txt_alert">입사지원서는 ‘커리어 인증’으로 자동 설정되며 수정을 원하시면 ‘커리어 인증’에서 변경 가능합니다.</span></p>
+          <div class="btn_wrap center col2">
+            <button type="button" class="btn point_type1">저장하기</button>
+            <button type="button" class="btn point_type2">인쇄하기</button>
+          </div>
         </div>
       </div>
     </div>
