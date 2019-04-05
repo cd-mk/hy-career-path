@@ -51,6 +51,7 @@
   float: left;
   width: calc(100% / 3); height: 54px;
   line-height: 54px;
+  cursor: pointer;
 }
 .key_visual .login_box .login_tab > li > a {
   font-size: 16px; font-weight: 500;
@@ -75,49 +76,62 @@
 .key_visual .login_box .login_con {
   padding: 37px 60px;
 }
-.login_box .login_con .login_con_top {
+.key_visual .login_box .login_con .login_con_top {
   overflow: hidden;
 }
-.login_box .login_con .login_con_top .left_con {
+.key_visual .login_box .login_con .login_con_top .left_con {
   float: left;
   width: 288px;
 }
-.login_box .login_con .login_con_top .left_con .inp_box:last-child input {
+.key_visual .login_box .login_con .login_con_top .left_con .inp_box:last-child input {
   border-top: 0;
 }
-.login_box .login_con .login_con_top .right_con {
+.key_visual .login_box .login_con .login_con_top .right_con {
   float: left;
   width: 140px;
 }
-.login_box .login_con .login_con_top .right_con .btn_login {
+.key_visual .login_box .login_con .login_con_top .right_con .btn_login {
   width: 100%; height: 87px;
   line-height: 87px;
 }
-.login_box .login_con .login_con_btm {
-  overflow: hidden;
+.key_visual .login_box .login_con .login_con_btm {
   margin-top: 22px;
   text-align: left;
 }
-.login_box .login_con .login_con_btm .chk_inp_box {
+.key_visual .login_box .login_con .login_con_btm::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.key_visual .login_box .login_con .login_con_btm .chk_inp_box {
   float: left;
 }
-.login_box .login_con .login_con_btm .chk_inp_box:last-of-type {
+.key_visual .login_box .login_con .login_con_btm .chk_inp_box:last-of-type {
   margin-left: 26px;
 }
-.login_box .login_con .login_con_btm .forgot_list {
+.key_visual .login_box .login_con .login_con_btm .forgot_list {
   overflow: hidden;
   float: left;
   margin: 2px 0 0 68px;
 }
-.login_box .login_con .login_con_btm .forgot_list > li {
+.key_visual .login_box .login_con .login_con_btm .forgot_list > li {
   float: left;
   height: 13px;
   margin-left: 12px; padding-left: 12px;
   border-left: 1px solid #e8e8e8;
 }
-.login_box .login_con .login_con_btm .forgot_list > li:first-child {
+.key_visual .login_box .login_con .login_con_btm .forgot_list > li:first-child {
   margin-left: 0; padding-left: 0;
   border-left: 0;
+}
+.key_visual .login_box .tooltip_box {
+  float: right;
+  margin: 0; padding: 0;
+  border: 0;
+  line-height: 18px;
+}
+.key_visual .login_box .tooltip_box .layer_tooltip {
+  left: -84px; bottom: -70px;
 }
 
 .company_box {
