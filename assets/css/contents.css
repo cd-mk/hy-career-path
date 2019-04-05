@@ -40,6 +40,7 @@
   width: calc(100% / 3);
   padding-bottom: 16px;
   text-align: center;
+  cursor: pointer;
 }
 .login_wrap .login_con .login_box .login_tab > li.active > a {
   color: #ff7a00;

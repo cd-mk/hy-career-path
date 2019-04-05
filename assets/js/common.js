@@ -109,17 +109,32 @@ var selectRadio = function() {
   });
 };
 
-$(document).ready(function() {
+var setKvImgReplace = function() {
+  $('.js-tab-list > li').on('click', function() {
+    var idx = $(this).index();
+    $('.key_visual').attr('class', 'key_visual');
+
+    if (idx === 0) {
+      $('.key_visual').addClass('person');
+    } else if (idx === 1) {
+      $('.key_visual').addClass('company');
+    } else if (idx === 2) {
+      $('.key_visual').addClass('admin');
+    }
+  });
+};
+
+var init = function() {
   setGnb();
-  if ($('.input_date').length) {
-    setDatePicker();
-  }
-  if ($('.layer_popup').length) {
-    setLayerPopup();
-  }
-  setTab();
-  setTooltip();
-  setInputFile();
-  setCustomList();
-  selectRadio();
-});
+
+  if ($('.input_date').length) setDatePicker();
+  if ($('.layer_popup').length) setLayerPopup();
+  if ($('.js-tab-list').length) setTab();
+  if ($('.js-tooltip').length) setTooltip();
+  if ($('.file_inp').length) setInputFile();
+  if ($('.js-list-add').length) setCustomList();
+  if ($('.js-inp-show').length) selectRadio();
+  if ($('.key_visual').length) setKvImgReplace();
+};
+
+$(document).ready(init);
