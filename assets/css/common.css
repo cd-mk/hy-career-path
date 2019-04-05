@@ -403,6 +403,75 @@ h1,h2,h3,h4,h5,h6,strong {
   width: 40px;
 }
 
+.tbl_thead_wrap table {
+  width: 100%;
+  border-bottom: 1px solid #e8e8e8;
+}
+.tbl_thead_wrap table tr {
+  border-top: 1px solid #e8e8e8;
+}
+.tbl_thead_wrap table tr th {
+  width: 200px;
+  font-weight: 500;
+  background: #f8f8f8;
+  line-height: 1;
+  vertical-align: middle;
+}
+.tbl_thead_wrap table tr td {
+  padding: 18px 0 18px 30px;
+  line-height: 1;
+  vertical-align: middle;
+}
+.tbl_thead_wrap .date_list {
+  overflow: hidden;
+  display: inline-block;
+  margin-top: 1px;
+}
+.tbl_thead_wrap .date_list > li {
+  float: left;
+  margin-left: 12px; padding-left: 12px;
+  border-left: 1px solid #e8e8e8;
+}
+.tbl_thead_wrap .date_list > li > span {
+  position: relative;
+  top: 1px;
+}
+.tbl_thead_wrap .date_list > li:first-child {
+  margin-left: 0; padding-left: 0;
+  border-left: 0;
+}
+.tbl_thead_wrap .date_list > li:last-child span {
+  display: inline-block;
+  width: 40px;
+}
+.tbl_thead_wrap .require_list > li {
+  margin-top: 14px;
+}
+.tbl_thead_wrap .require_list > li:first-child {
+  margin-top: 0;
+}
+.tbl_thead_wrap .require_list .require_name {
+  float: left;
+  width: 82px;
+  color: #666;
+}
+.tbl_thead_wrap .default_list > li {
+  margin-top: 10px;
+}
+.tbl_thead_wrap .default_list > li:first-child {
+  margin-top: 0;
+}
+.tbl_thead_wrap .default_list > li::before {
+  content: '- ';
+}
+.tbl_thead_wrap .question_list > li {
+  margin-top: 10px;
+}
+.tbl_thead_wrap .question_list > li:first-child {
+  margin-top: 0;
+}
+.tbl
+
 /* pass icon */
 .ico_pass {
   position: relative;
