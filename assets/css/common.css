@@ -788,3 +788,26 @@ button {
   margin-left: 6px;
   background: url(../images/common/ico-question.png) no-repeat 0 0;
 }
+
+/* 상단 리스트 검색 영역 */
+.top_search_box {
+  margin-top: 50px;
+}
+.top_search_box .search_inp_box {
+  overflow: hidden;
+  margin-top: 30px;
+}
+.top_search_box .search_inp_box select {
+  float: left;
+  width: 300px;
+  border-right: 0;
+}
+.top_search_box .search_inp_box .inp_not_full {
+  float: left;
+  width: 497px;
+}
+.top_search_box .search_inp_box .inp_next_btn {
+  width: 103px;
+  margin-left: 0;
+  font-size: 14px;
+}
