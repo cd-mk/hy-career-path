@@ -650,3 +650,100 @@
 .section_job_detail .company_flag.end {
   background-position: -90px 0;
 }
+
+/* 공지사항 상세 */
+.notice_detail_wrap {
+  margin-top: 50px;
+}
+.notice_detail_wrap .detail_title {
+  margin-top: 30px; padding-bottom: 30px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.notice_detail_wrap .detail_title strong {
+  display: block;
+  font-size: 28px;
+}
+.notice_detail_wrap .detail_title .detail_title_info {
+  overflow: hidden;
+  margin-top: 10px;
+}
+.notice_detail_wrap .detail_title .detail_title_info > li {
+  float: left;
+  margin-left: 30px;
+  color: #999;
+}
+.notice_detail_wrap .detail_title .detail_title_info > li:first-child {
+  margin-left: 0;
+}
+.notice_detail_wrap .detail_info {
+  min-height: 480px;
+  padding: 30px 60px;
+}
+.notice_detail_wrap .detail_info > p {
+  margin-top: 40px;
+  line-height: 1.5;
+}
+.notice_detail_wrap .detail_info > p:first-of-type {
+  margin-top: 0;
+}
+.notice_detail_wrap .detail_attach {
+  display: table;
+  width: 100%;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+}
+.notice_detail_wrap .detail_attach .attach_title {
+  display: table-cell;
+  width: 200px; height: 53px;
+  background: #f8f8f8;
+  text-align: center;
+  vertical-align: middle;
+}
+.notice_detail_wrap .detail_attach .attach_file {
+  display: table-cell;
+  height: 53px;
+  padding-left: 30px;
+  vertical-align: middle;
+}
+.notice_detail_wrap .detail_attach .attach_file a {
+  color: #4876ef;
+  text-decoration: underline;
+}
+.notice_detail_wrap .btn_wrap {
+  text-align: right;
+}
+.notice_detail_wrap .btn_wrap .btn {
+  width: 120px;
+}
+.notice_detail_wrap .notice_nav {
+  overflow: hidden;
+  margin-top: 70px;
+}
+.notice_detail_wrap .notice_nav .notice_nav_btn {
+  float: left;
+  width: 50%;
+  padding: 26px 70px;
+  border: 1px solid #e8e8e8;
+  box-sizing: border-box;
+}
+.notice_detail_wrap .notice_nav .notice_nav_btn .nav_title {
+  display: block;
+  font-size: 14px; font-weight: 400;
+}
+.notice_detail_wrap .notice_nav .notice_nav_btn .nav_date {
+  display: block;
+  margin-top: 4px;
+  font-size: 13px; font-weight: 400;
+  color: #999;
+}
+.notice_detail_wrap .notice_nav .notice_nav_btn.prev {
+  background: url(../images/common/navi-notice-left.png) no-repeat;
+  background-position: left 35px center;
+  text-align: left
+}
+.notice_detail_wrap .notice_nav .notice_nav_btn.next {
+  background: url(../images/common/navi-notice-right.png) no-repeat;
+  background-position: right 35px center;
+  text-align: right;
+  border-left: 0;
+}
