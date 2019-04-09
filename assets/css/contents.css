@@ -709,9 +709,6 @@
   color: #4876ef;
   text-decoration: underline;
 }
-.notice_detail_wrap .btn_wrap {
-  text-align: right;
-}
 .notice_detail_wrap .btn_wrap .btn {
   width: 120px;
 }
