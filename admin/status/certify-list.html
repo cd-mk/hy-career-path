@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>인증현황</title>
+  <link rel="stylesheet" href="../../assets/css/app.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <div class="header">
+      <ul class="header_top">
+        <li><a href="#url"><strong class="txt_point1">희망나눔</strong>님</a></li>
+        <li><a href="#url">로그아웃</a></li>
+      </ul>
+      <div class="header_middle">
+        <a href="main.html" class="logo"><img src="../../assets/images/common/img-logo.png" alt="SK Hynix 청년희망나눔"></a>
+        <ul class="gnb">
+          <li>
+            <a href="#url">사이트관리</a>
+            <ul class="sub_gnb active">
+              <li><a href="#url">공지사항 관리</a></li>
+              <li><a href="#url">기업 관리</a></li>
+              <li><a href="#url">SMS 발송</a></li>
+              <li><a href="#url">이메일 발송</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#url">계정 관리</a>
+            <ul class="sub_gnb">
+              <li><a href="#url">임시메뉴1</a></li>
+              <li><a href="#url">임시메뉴2</a></li>
+              <li><a href="#url">임시메뉴3</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#url">인증 관리</a>
+            <ul class="sub_gnb">
+              <li><a href="#url">임시메뉴1</a></li>
+              <li><a href="#url">임시메뉴2</a></li>
+              <li><a href="#url">임시메뉴3</a></li>
+              <li><a href="#url">임시메뉴4</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- admin header일 경우 추가됨 -->
+      <div class="header_bottom"></div>
+    </div>
+
+    <!-- Content Area -->
+    <div class="container">
+      <h2 class="page_title">인증 현황</h2>
+      <div class="certify_wrap">
+        <div class="certify_date">
+          <span class="date_name">기간 설정</span>
+          <div class="inp_date_box">
+            <input type="text" class="input_date" title="조회 시작일 입력">
+            <span class="hypon">-</span>
+            <input type="text" class="input_date" title="조회 종료일 입력">
+          </div>
+          <button type="button" class="btn point_type1">검색</button>
+        </div>
+
+        <div class="certify_info">
+          <h3 class="title">인증 현황</h3>
+          <ul class="certify_tab js-tab-list">
+            <li class="active"><a href="#url">전체 (120)</a></li>
+            <li><a href="#url">인증 완료(100)</a></li>
+            <li><a href="#url">인증대기 (10)</a></li>
+            <li><a href="#url">인증실패 (10)</a></li>
+          </ul>
+          <ul class="certify_con js-tab-con">
+            <li class="active">
+              <div class="con_top">
+                <span class="txt">채용대상자로 등록하면 해당 이메일 주소로  본인인증 가입 페이지가 발송됩니다.</span>
+                <select>
+                  <option value="">전체</option>
+                  <option value="">학력인증만 보기</option>
+                  <option value="">외국어인증만 보기</option>
+                  <option value="">자격증인증만 보기</option>
+                  <option value="">경력인증만 보기</option>
+                </select>
+              </div>
+              <div class="tbl_wrap">
+                <table>
+                  <caption>인증현황 리스트</caption>
+                  <thead>
+                    <tr>
+                      <th scope="row" class="size_small">No.</th>
+                      <th scope="row" class="size_small">이름</th>
+                      <th scope="row" class="size_xlarge">이메일 주소</th>
+                      <th scope="row" class="size_small">인증번호</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>10</td>
+                      <td>김이력</td>
+                      <td><a href="mailto:qwert@naver.com">qwert@naver.com</a></td>
+                      <td>Asdf10@#</td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td>김이력</td>
+                      <td><a href="mailto:qwert@naver.com">qwert@naver.com</a></td>
+                      <td>Asdf10@#</td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>김이력</td>
+                      <td><a href="mailto:qwert@naver.com">qwert@naver.com</a></td>
+                      <td>Asdf10@#</td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>김이력</td>
+                      <td><a href="mailto:qwert@naver.com">qwert@naver.com</a></td>
+                      <td>Asdf10@#</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>김이력</td>
+                      <td><a href="mailto:qwert@naver.com">qwert@naver.com</a></td>
+                      <td>Asdf10@#</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>김이력</td>
+                      <td><a href="mailto:qwert@naver.com">qwert@naver.com</a></td>
+                      <td>Asdf10@#</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>김이력</td>
+                      <td><a href="mailto:qwert@naver.com">qwert@naver.com</a></td>
+                      <td>Asdf10@#</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+            <li>
+              <div class="con_top">
+                <span class="txt">채용대상자로 등록하면 해당 이메일 주소로  본인인증 가입 페이지가 발송됩니다.</span>
+                <select>
+                  <option value="">전체</option>
+                  <option value="">학력인증만 보기</option>
+                  <option value="">외국어인증만 보기</option>
+                  <option value="">자격증인증만 보기</option>
+                  <option value="">경력인증만 보기</option>
+                </select>
+              </div>
+              <div class="tbl_wrap">
+                <table>
+                  <caption>인증현황 리스트</caption>
+                  <thead>
+                    <tr>
+                      <th scope="row" class="size_small">No.</th>
+                      <th scope="row" class="size_small">이름</th>
+                      <th scope="row" class="size_xlarge">이메일 주소</th>
+                      <th scope="row" class="size_small">인증번호</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>10</td>
+                      <td>김이력</td>
+                      <td><a href="mailto:qwert@naver.com">qwert@naver.com</a></td>
+                      <td>Asdf10@#</td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td>김이력</td>
+                      <td><a href="mailto:qwert@naver.com">qwert@naver.com</a></td>
+                      <td>Asdf10@#</td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>김이력</td>
+                      <td><a href="mailto:qwert@naver.com">qwert@naver.com</a></td>
+                      <td>Asdf10@#</td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>김이력</td>
+                      <td><a href="mailto:qwert@naver.com">qwert@naver.com</a></td>
+                      <td>Asdf10@#</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>김이력</td>
+                      <td><a href="mailto:qwert@naver.com">qwert@naver.com</a></td>
+                      <td>Asdf10@#</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+            <li>
+              <div class="con_top">
+                <span class="txt">채용대상자로 등록하면 해당 이메일 주소로  본인인증 가입 페이지가 발송됩니다.</span>
+                <select>
+                  <option value="">전체</option>
+                  <option value="">학력인증만 보기</option>
+                  <option value="">외국어인증만 보기</option>
+                  <option value="">자격증인증만 보기</option>
+                  <option value="">경력인증만 보기</option>
+                </select>
+              </div>
+              <div class="tbl_wrap">
+                <table>
+                  <caption>인증현황 리스트</caption>
+                  <thead>
+                    <tr>
+                      <th scope="row" class="size_small">No.</th>
+                      <th scope="row" class="size_small">이름</th>
+                      <th scope="row" class="size_xlarge">이메일 주소</th>
+                      <th scope="row" class="size_small">인증번호</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>10</td>
+                      <td>김이력</td>
+                      <td><a href="mailto:qwert@naver.com">qwert@naver.com</a></td>
+                      <td>Asdf10@#</td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td>김이력</td>
+                      <td><a href="mailto:qwert@naver.com">qwert@naver.com</a></td>
+                      <td>Asdf10@#</td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>김이력</td>
+                      <td><a href="mailto:qwert@naver.com">qwert@naver.com</a></td>
+                      <td>Asdf10@#</td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>김이력</td>
+                      <td><a href="mailto:qwert@naver.com">qwert@naver.com</a></td>
+                      <td>Asdf10@#</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>김이력</td>
+                      <td><a href="mailto:qwert@naver.com">qwert@naver.com</a></td>
+                      <td>Asdf10@#</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>김이력</td>
+                      <td><a href="mailto:qwert@naver.com">qwert@naver.com</a></td>
+                      <td>Asdf10@#</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>김이력</td>
+                      <td><a href="mailto:qwert@naver.com">qwert@naver.com</a></td>
+                      <td>Asdf10@#</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+            <li>
+              <div class="con_top">
+                <span class="txt">채용대상자로 등록하면 해당 이메일 주소로  본인인증 가입 페이지가 발송됩니다.</span>
+                <select>
+                  <option value="">전체</option>
+                  <option value="">학력인증만 보기</option>
+                  <option value="">외국어인증만 보기</option>
+                  <option value="">자격증인증만 보기</option>
+                  <option value="">경력인증만 보기</option>
+                </select>
+              </div>
+              <div class="tbl_wrap">
+                <table>
+                  <caption>인증현황 리스트</caption>
+                  <thead>
+                    <tr>
+                      <th scope="row" class="size_small">No.</th>
+                      <th scope="row" class="size_small">이름</th>
+                      <th scope="row" class="size_xlarge">이메일 주소</th>
+                      <th scope="row" class="size_small">인증번호</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>10</td>
+                      <td>김이력</td>
+                      <td><a href="mailto:qwert@naver.com">qwert@naver.com</a></td>
+                      <td>Asdf10@#</td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td>김이력</td>
+                      <td><a href="mailto:qwert@naver.com">qwert@naver.com</a></td>
+                      <td>Asdf10@#</td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>김이력</td>
+                      <td><a href="mailto:qwert@naver.com">qwert@naver.com</a></td>
+                      <td>Asdf10@#</td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>김이력</td>
+                      <td><a href="mailto:qwert@naver.com">qwert@naver.com</a></td>
+                      <td>Asdf10@#</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>김이력</td>
+                      <td><a href="mailto:qwert@naver.com">qwert@naver.com</a></td>
+                      <td>Asdf10@#</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>김이력</td>
+                      <td><a href="mailto:qwert@naver.com">qwert@naver.com</a></td>
+                      <td>Asdf10@#</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- //Content Area -->
+
+    <div class="footer">
+      <div class="footer_inner">
+        <ul class="privacy_list">
+          <li><a href="#url" class="txt_point2">이용약관</a></li>
+          <li><a href="#url" class="txt_point2"><strong>개인정보 처리방침</strong></a></li>
+        </ul>
+        <p class="cpr txt_point3">Copyright&copy; 2019 All Right Reserved</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- import js -->
+  <script src="../../assets/js/plugins/jquery-3.2.1.min.js"></script>
+  <script src="../../assets/js/plugins/jquery-ui.min.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+</html>

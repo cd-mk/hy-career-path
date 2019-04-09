@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+/* 인증 현황 */
+.certify_wrap {
+  margin-top: 50px;
+}
+.certify_wrap .certify_date {
+  overflow: hidden;
+  padding: 30px 173px;
+  border-top: 2px solid #333;
+  border-bottom: 1px solid #e8e8e8;
+}
+.certify_wrap .certify_date .date_name {
+  float: left;
+  font-size: 22px;
+  line-height: 44px;
+}
+.certify_wrap .certify_date .inp_date_box {
+  float: left;
+  margin-left: 30px;
+}
+.certify_wrap .certify_date .inp_date_box input {
+  width: 300px;
+}
+.certify_wrap .certify_date .inp_date_box .hypon {
+  width: 8px;
+  margin: 0 8px;
+}
+.certify_wrap .certify_date .btn {
+  float: left;
+  width: 103px; height: 44px;
+  margin-left: 10px;
+  font-size: 14px; font-weight: 500;
+  line-height: 44px;
+}
+.certify_wrap .certify_info {
+  margin-top: 50px;
+}
+.certify_wrap .certify_info .title {
+  font-size: 18px;
+}
+.certify_wrap .certify_info .certify_tab {
+  overflow: hidden;
+  margin-top: 11px;
+}
+.certify_wrap .certify_info .certify_tab > li {
+  float: left;
+  width: 25%; height: 59px;
+  box-sizing: border-box;
+  background: #f8f8f8;
+  border-top: 1px solid #e8e8e8;
+  border-left: 1px solid #e8e8e8;
+  border-bottom: 1px solid #000;
+  line-height: 59px;
+  text-align: center;
+}
+.certify_wrap .certify_info .certify_tab > li:last-child {
+  border-right: 1px solid #e8e8e8;
+}
+.certify_wrap .certify_info .certify_tab > li > a {
+  display: block;
+  color: #666;
+}
+.certify_wrap .certify_info .certify_tab > li.active {
+  background: #fff;
+  border-bottom: 1px solid #fff;
+}
+.certify_wrap .certify_info .certify_tab > li.active {
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+.certify_wrap .certify_info .certify_tab > li.active > a {
+  color: #333;
+}
+.certify_wrap .certify_info .certify_tab > li.active + li {
+  border-left: 0;
+}
+.certify_wrap .certify_info .certify_con {
+  margin-top: 40px;
+}
+.certify_wrap .certify_info .certify_con .con_top {
+  position: relative;
+  overflow: hidden;
+}
+.certify_wrap .certify_info .certify_con .con_top .txt {
+  position: absolute;
+  left: 0; bottom: 0;
+}
+.certify_wrap .certify_info .certify_con .con_top select {
+  float: right;
+  width: 220px;
+}
+.certify_wrap .certify_info .certify_con .tbl_wrap {
+  margin-top: 20px;
+}
+.certify_wrap .certify_info .certify_con > li {
+  display: none;
+}
+.certify_wrap .certify_info .certify_con > li.active {
+  display: block;
+}
