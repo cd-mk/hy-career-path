@@ -129,6 +129,17 @@ var checkAll = function() {
     $(this).closest('.agree_box').find('.chk_inp').prop('checked', this.checked);
   });
 };
+var checkboxContent = function() {
+  $(".js-chk-show").change(function(){
+    if($(".js-chk-show").is(":checked")){
+      $(this).parent().nextAll('.chk_con').addClass('on');
+      $(this).parents('li').addClass('on');
+    }else{
+      $(this).parent().nextAll('.chk_con').removeClass('on');
+      $(this).parents('li').removeClass('on');
+    }
+  });
+};
 
 var init = function() {
   setGnb();
@@ -142,6 +153,7 @@ var init = function() {
   if ($('.js-inp-show').length) selectRadio();
   if ($('.key_visual').length) setKvImgReplace();
   if ($('.js-chk-all').length) checkAll(); 
+  if ($('.js-chk-show').length) checkboxContent();
 };
 
 $(document).ready(init);
