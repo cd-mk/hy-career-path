@@ -745,7 +745,6 @@
   border-left: 0;
 }
 
-<<<<<<< HEAD
 /* 회원가입 */
 .join_sp1_wrap .confirm_box {
   margin-top: 50px; padding-bottom: 80px;
@@ -1234,7 +1233,6 @@
 .idpw_tab_list li ul li .chk_con > div > span.con02 .point_type1 {
   display:none;
 }
-=======
 /* 이용약관,개인정보 처리방침 */
 .terms_wrap {
   color: #666;
@@ -1273,4 +1271,3 @@
 .terms_wrap .btn_wrap {
   margin-top: 60px;
 }
->>>>>>> 이용약관,개인정보 처리방침 추가
