@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>회원가입</title>
+  <link rel="stylesheet" href="../../assets/css/app.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <div class="header">
+      <ul class="header_top">
+        <li><a href="#url">공지사항</a></li>
+        <li><a href="#url"><strong class="txt_point1">희망나눔</strong>님</a></li>
+        <li><a href="#url">로그아웃</a></li>
+      </ul>
+      <div class="header_middle">
+        <a href="main.html" class="logo"><img src="../../assets/images/common/img-logo.png" alt="SK Hynix 청년희망나눔"></a>
+        <ul class="gnb">
+          <li>
+            <a href="#url">커리어패스</a>
+          </li>
+          <li>
+            <a href="#url">입사지원서</a>
+          </li>
+          <li>
+            <a href="#url">기업소개</a>
+          </li>
+          <li>
+            <a href="#url">채용정보</a>
+          </li>
+          <li>
+            <a href="#url">커리어패스란?</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Content Area -->
+    <div class="container">
+      <h2 class="page_title">회원가입</h2>
+      <div class="join_sp1_wrap">
+        <div class="confirm_box">
+          <div class="confirm_txt">
+            <strong>지원자 확인</strong>
+            <p><span class="txt_alert">청년희망나눔 지원시 작성한 이메일 주소로 본인인증을 진행합니다. 아래 정보를 정확히 입력해 주세요.</span></p>
+          </div>
+          <div class="confirm_form">
+            <div class="confirm_form_item">
+              <span class="form_name"><sup class="require">*</sup> 이름(실명)</span>
+              <span class="inp_box"><input type="text" title="이름(실명) 입력"></span>
+            </div>
+            <div class="confirm_form_item">
+              <span class="form_name"><sup class="require">*</sup> 이메일</span>
+              <span class="inp_box">
+                <input type="email" title="이메일 입력" class="inp_not_full">
+                <button type="button" class="inp_next_btn point_type3 js-popup-open">인증번호 전송</button>
+                <div class="layer_popup">
+                  <div class="popup_box">
+                    <strong class="popup_title">이메일 인증</strong>
+                    <div class="popup_con">
+                      <p class="txt_desc">
+                        <span class="txt_point1">asdfg@naver.com</span>으로 인증번호를 발송하였습니다.<br>
+                        메일을 확인해 주세요.
+                      </p>
+                      <div class="btn_wrap col2 center">
+                        <button type="button" class="btn point_type1">확인</button>
+                        <button type="button" class="btn point_type2 js-popup-close">취소</button>
+                      </div>
+                    </div>
+                    <button type="button" class="btn_pop_close js-popup-close"><span class="blind">팝업 닫기</span></button>
+                  </div>
+                  <div class="dim"></div>
+                </div>
+                <!-- 인증 번호 전송 후 -->
+                <!-- <button type="button" class="inp_next_btn point_type1">재발송</button> -->
+              </span>
+            </div>
+            <div class="confirm_form_item">
+              <span class="form_name"><sup class="require">*</sup> 이메일 인증번호</span>
+              <span class="inp_box">
+                <input type="text" title="이메일 인증번호 입력" class="inp_not_full">
+                <button type="button" class="inp_next_btn point_type3 js-popup-open">인증하기</button>
+                <div class="layer_popup">
+                  <div class="popup_box">
+                    <strong class="popup_title">이메일 인증</strong>
+                    <div class="popup_con">
+                      <p class="txt_desc">이메일 인증을 완료하였습니다.</p>
+                      <div class="btn_wrap col2 center">
+                        <button type="button" class="btn point_type1">확인</button>
+                        <button type="button" class="btn point_type2 js-popup-close">취소</button>
+                      </div>
+                    </div>
+                    <button type="button" class="btn_pop_close js-popup-close"><span class="blind">팝업 닫기</span></button>
+                  </div>
+                  <div class="dim"></div>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="agree_box">
+          <strong class="agree_title">이용약관, 개인정보 수집 및 이용동의</strong>
+          <div class="agree_all">
+            <div class="chk_inp_box">
+              <span class="chk_inp">
+                <input type="checkbox" id="chkall" name="chkall" class="chk_inp js-chk-all">
+                <label for="chkall"><span class="blind">약관 전체동의</span></label>
+              </span>
+              <span class="txt_label">전체동의</span>
+            </div>
+          </div>
+          <div class="terms_item">
+            <div class="chk_inp_box">
+              <span class="chk_inp">
+                <input type="checkbox" id="termsUse" name="termsUse" class="chk_inp">
+                <label for="termsUse"><span class="blind">이용 약관 동의</span></label>
+              </span>
+              <span class="txt_label">이용약관 동의 <span class="txt_point1">(필수)</span></span>
+            </div>
+            <p class="terms_txt">
+              제 1 조 (목적)<br>
+              본 약관은 커리어패스(이하 회사)가 제공하는 서비스 이용(이하 서비스)과 관련, 회원과 회사와의 중요 사항을 정하는 것을 목적으로 한다.<br>
+              제 2 조 (정의)<br>
+              (1) 회원이란 회사와 서비스 이용계약을 체결(회원 가입)한 자를 뜻한다.<br>
+              (2) 회원 ID란 회원 식별 및 서비스 이용 등을 위해 이용자가 직접 설정, 입력하며 문자와 숫자로 이뤄진 조합을 뜻한다.<br>
+              (3) 패스워드란 회원 정보 보호 및 회원 별 정보 제공 서비스 등을 위해 이용자가 직접 설정, 입입입입입입입입입입입입
+            </p>
+          </div>
+          <div class="terms_item">
+            <div class="chk_inp_box">
+              <span class="chk_inp">
+                <input type="checkbox" id="termsPerson" name="termsPerson" class="chk_inp">
+                <label for="termsPerson"><span class="blind">개인정보 수집 및 이용 동의</span></label>
+              </span>
+              <span class="txt_label">개인정보 수집 및 이용 동의 <span class="txt_point1">(필수)</span></span>
+            </div>
+            <p class="terms_txt">
+                개인정보의 수집범위 및 이용목적<br>
+                귀하는 별도의 회원가입 절차 없이 대부분의 컨텐츠에 자유롭게 접근할 수 있습니다.<br>
+                ‘회사’의 입사지원 서비스를 이용하시고자 할 경우 다음의 정보를 입력해주셔야 하며, 선택항목을 입력하시지 않았다 하여 서비스 이용에 제한은 없습니다.<br>
+                1) 회원가입 서비스 이용시 수집하는 개인정보의 수집범위<br>
+                  - 성명, 지원자의 ID(e-Mail), 비밀번호<br>
+                2) 회원가입 서비스 이용시 수집하는 개인정보의 수집범위<br>
+                  - 성명, 지원자의 ID(e-Mail), 비밀번호<br>
+                3) 회원가입 서비스 이용시 수집하는 개인정보의 수집범위<br>
+                - 성명, 지원자의 ID(e-Mail), 비밀번호<br>
+                4) 회원가입 서비스 이용시 수집하는 개인정보의 수집범위<br>
+                  - 성명, 지원자의 ID(e-Mail), 비밀번호
+            </p>
+          </div>
+          <div class="choice_chk">
+            <div class="chk_inp_box">
+              <span class="chk_inp">
+                <input type="checkbox" id="agreeEmail" name="agreeEmail" class="chk_inp">
+                <label for="agreeEmail"><span class="blind">마케팅 정보 이메일 수신동의</span></label>
+              </span>
+              <span class="txt_label">마케팅 정보 이메일 수신동의 (선택)</span>
+            </div>
+            <div class="chk_inp_box">
+              <span class="chk_inp">
+                <input type="checkbox" id="agreeSms" name="agreeSms" class="chk_inp">
+                <label for="agreeSms"><span class="blind">마케팅 정보 SMS 수신동의</span></label>
+              </span>
+              <span class="txt_label">마케팅 정보 SMS 수신동의 (선택)</span>
+            </div>
+          </div>
+          <div class="btn_wrap col2 center">
+            <button type="button" class="btn point_type1">다음</button>
+            <button type="button" class="btn point_type2">취소</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //Content Area -->
+
+    <div class="footer">
+      <div class="footer_inner">
+        <ul class="privacy_list">
+          <li><a href="#url" class="txt_point2">이용약관</a></li>
+          <li><a href="#url" class="txt_point2"><strong>개인정보 처리방침</strong></a></li>
+        </ul>
+        <p class="cpr txt_point3">Copyright&copy; 2019 All Right Reserved</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- import js -->
+  <script src="../../assets/js/plugins/jquery-3.2.1.min.js"></script>
+  <script src="../../assets/js/plugins/jquery-ui.min.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+</html>
