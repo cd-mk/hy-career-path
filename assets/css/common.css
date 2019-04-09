@@ -370,6 +370,9 @@ h1,h2,h3,h4,h5,h6,strong {
 .tbl_wrap .size_medium {
   width: 30%;
 }
+.tbl_wrap .size_small {
+  width: 15%;
+}
 
 /* table data align */
 .tbl_wrap .align_left {
@@ -874,6 +877,9 @@ button {
 .top_search_box .search_inp_box .inp_not_full {
   float: left;
   width: 497px;
+}
+.top_search_box .search_inp_box .inp_not_full.type2 {
+  width: 797px;
 }
 .top_search_box .search_inp_box .inp_next_btn {
   width: 103px;
