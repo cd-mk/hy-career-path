@@ -1157,3 +1157,79 @@
   height:320px;
   background:url('../images/contents/company/img_map.png') no-repeat;
 }
+
+/* 아이디 비밀번호 찾기 */
+.idpw_wrap .idpw_con {
+  margin:0 auto;
+  width:590px;
+}
+.idpw_wrap .tab {
+  margin-top:80px;
+}
+.idpw_tab_list {
+  margin-top:50px;
+}
+.idpw_tab_list .txt_notice {
+  position:relative;
+  left:50%;
+  display:inline-block;
+  padding-left:26px;
+  color:#333;
+  background:url('../images/contents/member/ico_notice.png')no-repeat left;
+  background-size:16px;
+  transform: translateX(-50%);
+}
+.idpw_tab_list li ul {
+  margin-top:20px;
+  border-top:1px solid #e8e8e8;
+  border-bottom:1px solid #e8e8e8;
+}
+.idpw_tab_list li ul li:first-child {
+  border-top:none;
+}
+.idpw_tab_list li ul li {
+  padding:27px 40px;
+  box-sizing:border-box;
+  border-top:1px solid #e8e8e8;
+  background:#fff;
+}
+.idpw_tab_list li ul li.on {
+  background:#f8f8f8;
+}
+.idpw_tab_list li ul li .chk_con {
+  display:none;
+  clear:both;
+  margin-top:27px;
+}
+.idpw_tab_list li ul li .on.chk_con { 
+  display:block;
+}
+.idpw_tab_list li ul li .chk_con > div:after {
+  content:'';
+  display:block;
+  clear:both;
+}
+.idpw_tab_list li ul li .chk_con > div:last-child {
+  margin-top:16px;
+}
+.idpw_tab_list li ul li .chk_con > div > label {
+  float:left;
+  margin-top:12px;
+  width:108px;
+  color:#666;
+}
+.idpw_tab_list li ul li .chk_con > div > span {
+  float:left;
+  width:calc(100% - 108px);
+}
+.idpw_tab_list li ul li .chk_con > div > span.con02:last-child {
+  float:right;
+  margin-top:10px;
+}
+.idpw_tab_list li ul li .chk_con > div > span.con02 input {
+  float:left;
+  width:calc(100% - 136px);
+}
+.idpw_tab_list li ul li .chk_con > div > span.con02 .point_type1 {
+  display:none;
+}
