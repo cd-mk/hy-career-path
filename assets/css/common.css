@@ -772,6 +772,9 @@ button {
   overflow: hidden;
   margin-top: 40px;
 }
+.btn_wrap.right {
+  text-align: right;
+}
 .btn_wrap.center {
   display: inline-block;
   position: relative;
@@ -792,7 +795,7 @@ button {
   width: 170px;
   margin-left: 10px;
 }
-.btn_wrap .btn:first-of-type {
+.btn_wrap .btn:first-child {
   margin-left: 0;
 }
 
