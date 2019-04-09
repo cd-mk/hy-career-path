@@ -124,6 +124,12 @@ var setKvImgReplace = function() {
   });
 };
 
+var checkAll = function() {
+  $('.js-chk-all').on('click', function() {
+    $(this).closest('.agree_box').find('.chk_inp').prop('checked', this.checked);
+  });
+};
+
 var init = function() {
   setGnb();
 
@@ -135,6 +141,7 @@ var init = function() {
   if ($('.js-list-add').length) setCustomList();
   if ($('.js-inp-show').length) selectRadio();
   if ($('.key_visual').length) setKvImgReplace();
+  if ($('.js-chk-all').length) checkAll(); 
 };
 
 $(document).ready(init);

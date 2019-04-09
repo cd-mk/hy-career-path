@@ -146,6 +146,9 @@ h1,h2,h3,h4,h5,h6,strong {
   background: url(../images/common/ico-alert.png) no-repeat 0 0;
   color: #666;
 }
+sup.require {
+  color: #ff7a00;
+}
 
 /* button color */
 .point_type1 {
@@ -888,4 +891,29 @@ button {
   width: 103px;
   margin-left: 0;
   font-size: 14px;
+}
+
+/* 주소검색 팝업 */
+#layer_address_wrap {
+  display: none;
+  position: fixed;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  line-height: normal;
+  z-index: 99;
+  -webkit-overflow-scrolling: touch;
+}
+#layer_address_wrap #layer_address {
+  position: absolute;
+  left: 50%; top: 50%;
+  width: 500px; height: 500px;
+  transform: translate(-50%, -50%);
+  border: 1px solid #000;
+}
+#layer_address_wrap.open {
+  display: block;
+}
+#layer_address_wrap .dim {
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, .7);
 }

@@ -744,3 +744,180 @@
   text-align: right;
   border-left: 0;
 }
+
+/* 회원가입 */
+.join_sp1_wrap .confirm_box {
+  margin-top: 50px; padding-bottom: 80px;
+  border-bottom: 2px solid #333;
+}
+.join_sp1_wrap .confirm_box .confirm_txt {
+  text-align: center;
+}
+.join_sp1_wrap .confirm_box .confirm_txt strong {
+  font-size: 28px;
+}
+.join_sp1_wrap .confirm_box .confirm_txt > p {
+  margin-top: 10px;
+}
+.join_sp1_wrap .confirm_box .confirm_form {
+  width: 590px;
+  margin: 40px auto 0;
+}
+.join_sp1_wrap .confirm_box .confirm_form .confirm_form_item {
+  display: table;
+  width: 100%;
+  margin-top: 16px;
+}
+.join_sp1_wrap .confirm_box .confirm_form .confirm_form_item:first-child {
+  margin-top: 0;
+}
+.join_sp1_wrap .confirm_box .confirm_form .confirm_form_item .form_name {
+  display: table-cell;
+  width: 134px;
+  color: #666;
+  vertical-align: middle;
+}
+.join_sp1_wrap .confirm_box .confirm_form .confirm_form_item .inp_box {
+  display: table-cell;
+  vertical-align: middle;
+}
+.join_sp1_wrap .confirm_box .confirm_form .confirm_form_item .inp_next_btn {
+  font-size: 14px; font-weight: 500;
+}
+.join_sp1_wrap .agree_box {
+  width: 590px;
+  margin: 50px auto 0;
+}
+.join_sp1_wrap .agree_box .agree_title {
+  display: block;
+  font-size: 28px;
+  text-align: center;
+}
+.join_sp1_wrap .agree_box .chk_inp {
+  line-height: 23px;
+}
+.join_sp1_wrap .agree_box .txt_label {
+  margin-left: 13px;
+  font-size: 18px; font-weight: 500;
+  color: #333;
+}
+.join_sp1_wrap .agree_box .agree_all {
+  margin-top: 50px; padding-bottom: 20px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.join_sp1_wrap .agree_box .terms_item {
+  margin-top: 50px;
+}
+.join_sp1_wrap .agree_box .agree_all + .terms_item {
+  margin-top: 30px;
+}
+.join_sp1_wrap .agree_box .terms_item .terms_txt {
+  height: 228px;
+  margin-top: 8px; padding: 30px 33px;
+  overflow-y: auto;
+  background: #f8f8f8;
+  border: 1px solid #e8e8e8;
+  box-sizing: border-box;
+  color: #666;
+  line-height: 1.71;
+}
+.join_sp1_wrap .agree_box .choice_chk {
+  margin-top: 30px;
+}
+.join_sp1_wrap .agree_box .choice_chk .chk_inp_box {
+  display: block;
+  margin-top: 14px;
+}
+.join_sp1_wrap .agree_box .choice_chk .chk_inp_box:first-child {
+  margin-top: 0;
+}
+.join_sp1_wrap .agree_box .choice_chk .chk_inp_box .chk_inp {
+  line-height: 18px;
+}
+.join_sp1_wrap .agree_box .choice_chk .chk_inp_box .txt_label {
+  font-size: 14px;
+}
+
+.join_sp2_wrap {
+  width: 590px;
+  margin: 50px auto 0;
+}
+.join_sp2_wrap .title {
+  font-size: 28px;
+  text-align: center;
+}
+.join_sp2_wrap .join_form .join_form_item {
+  display: table;
+  width: 100%;
+  margin-top: 16px;
+}
+.join_sp2_wrap .join_form .join_form_item:first-of-type {
+  margin-top: 30px;
+}
+.join_sp2_wrap .join_form .join_form_item .form_name {
+  display: table-cell;
+  width: 134px;
+  vertical-align: middle;
+  color: #666;
+}
+.join_sp2_wrap .join_form .join_form_item .inp_box {
+  display: table-cell;
+  vertical-align: middle;
+}
+.join_sp2_wrap .join_form .join_form_item .inp_birth_first {
+  float: left;
+  width: 218px;
+}
+.join_sp2_wrap .join_form .join_form_item .hypon {
+  float: left;
+  width: 21px;
+  line-height: 44px;
+  text-align: center;
+}
+.join_sp2_wrap .join_form .join_form_item .inp_birth_last {
+  float: left;
+  width: 34px;
+  padding: 0 10px;
+}
+.join_sp2_wrap .join_form .join_form_item .hide_number {
+  float: left;
+  margin-left: 8px;
+  line-height: 44px;
+}
+.join_sp2_wrap .join_form .join_form_item .inp_next_btn {
+  font-size: 14px; font-weight: 500;
+}
+.join_sp2_wrap .join_form .join_form_item .addr_search {
+  position: relative;
+}
+.join_sp2_wrap .join_form .join_form_item .addr_search .btn_search {
+  position: absolute;
+  right: 0; top: 0;
+  width: 44px; height: 44px;
+  background: url(../images/common/ico-search.png) no-repeat center;
+}
+
+.join_sp3_wrap {
+  width: 500px;
+  margin: 100px auto 0;
+  text-align: center;
+}
+.join_sp3_wrap .logo {
+  display: block;
+}
+.join_sp3_wrap > strong {
+  display: block;
+  margin-top: 7px;
+  font-size: 28px;
+}
+.join_sp3_wrap > p {
+  margin-top: 30px;
+  line-height: 1.71;
+}
+.join_sp3_wrap .btn_wrap {
+  display: inline-block;
+  margin-top: 90px;
+}
+.join_sp3_wrap .btn_wrap .btn {
+  width: 182px;
+}

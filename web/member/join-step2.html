@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>회원가입</title>
+  <link rel="stylesheet" href="../../assets/css/app.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <div class="header">
+      <ul class="header_top">
+        <li><a href="#url">공지사항</a></li>
+        <li><a href="#url"><strong class="txt_point1">희망나눔</strong>님</a></li>
+        <li><a href="#url">로그아웃</a></li>
+      </ul>
+      <div class="header_middle">
+        <a href="main.html" class="logo"><img src="../../assets/images/common/img-logo.png" alt="SK Hynix 청년희망나눔"></a>
+        <ul class="gnb">
+          <li>
+            <a href="#url">커리어패스</a>
+          </li>
+          <li>
+            <a href="#url">입사지원서</a>
+          </li>
+          <li>
+            <a href="#url">기업소개</a>
+          </li>
+          <li>
+            <a href="#url">채용정보</a>
+          </li>
+          <li>
+            <a href="#url">커리어패스란?</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Content Area -->
+    <div class="container">
+      <h2 class="page_title">회원가입</h2>
+      <div class="join_sp2_wrap">
+        <h3 class="title">기본 정보</h3>
+        <div class="join_form">
+          <form action="" method="post">
+            <fieldset>
+              <legend>회원 가입 입력 양식</legend>
+              <div class="join_form_item">
+                <span class="form_name">이름(실명)</span>
+                <span class="inp_box"><input type="text" title="이름(실명) 입력"></span>
+              </div>
+              <div class="join_form_item">
+                <span class="form_name">아이디(이메일)</span>
+                <span class="inp_box"><input type="email" title="아이디(이메일) 입력"></span>
+              </div>
+              <div class="join_form_item">
+                <span class="form_name"><sup class="require">*</sup> 비밀번호</span>
+                <span class="inp_box"><input type="password" title="비밀번호 입력" placeholder="6 - 16자의 영문, 숫자, 특수기호"></span>
+              </div>
+              <div class="join_form_item">
+                <span class="form_name"><sup class="require">*</sup> 비밀번호 확인</span>
+                <span class="inp_box"><input type="password" title="비밀번호 확인 입력"></span>
+              </div>
+              <div class="join_form_item">
+                <span class="form_name"><sup class="require">*</sup> 생년월일</span>
+                <span class="inp_box">
+                  <input type="text" title="주민번호 앞자리 입력" placeholder="주빈번호 앞 6자리" class="inp_birth_first" maxlength="6">
+                  <span class="hypon">-</span>
+                  <input type="text" title="주민번호 뒷 첫자리 입력" class="inp_birth_last" maxlength="1">
+                  <span class="hide_number">******</span>
+                </span>
+              </div>
+              <div class="join_form_item">
+                <span class="form_name"><sup class="require">*</sup> 휴대폰 번호</span>
+                <span class="inp_box">
+                  <input type="tel" title="휴대폰 번호 입력" class="inp_not_full">
+                  <button type="button" class="inp_next_btn point_type3">실명 인증 전송</button>
+                  <!-- 인증번호 발송 시 -->
+                  <!-- <button type="button" class="inp_next_btn point_type1">재전송</button> -->
+                </span>
+              </div>
+              <div class="join_form_item">
+                <span class="form_name"><span class="blind">인증번호 입력</span></span>
+                <span class="inp_box">
+                  <input type="text" title="인증번호 입력" placeholder="인증번호입력" class="inp_not_full">
+                  <button type="button" class="inp_next_btn point_type3">인증하기</button>
+                  <!-- 인증 완료 시 -->
+                  <!-- <button type="button" class="inp_next_btn point_type1" disabled>인증하기</button> -->
+                </span>
+              </div>
+              <div class="join_form_item">
+                <span class="form_name"><sup class="require">*</sup> 주소</span>
+                <span class="inp_box addr_search">
+                  <input type="text" title="우편 번호 입력" name="personZipcode" id="personZipcode">
+                  <button type="button" class="btn_search js-address"><span class="blind">주소 검색</span></button>
+                </span>
+              </div>
+              <div class="join_form_item">
+                <span class="form_name"><span class="blind">기본 주소 입력</span></span>
+                <span class="inp_box"><input type="text" name="personAddr" id="personAddr" title="기본 주소 입력" placeholder="기본 주소"></span>
+              </div>
+              <div class="join_form_item">
+                <span class="form_name"><span class="blind">상세 주소 입력</span></span>
+                <span class="inp_box"><input type="text" name="personAddrDetail" id="personAddrDetail" title="상세 주소 입력" placeholder="상세 주소"></span>
+              </div>
+              <div class="btn_wrap col2 center">
+                <button type="button" class="btn point_type1">가입</button>
+                <button type="button" class="btn point_type2">취소</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      <!-- 주소 검색 팝업 -->
+      <div id="layer_address_wrap">
+        <div id="layer_address"></div>
+        <div class="dim"></div>
+      </div>
+    </div>
+    <!-- //Content Area -->
+
+    <div class="footer">
+      <div class="footer_inner">
+        <ul class="privacy_list">
+          <li><a href="#url" class="txt_point2">이용약관</a></li>
+          <li><a href="#url" class="txt_point2"><strong>개인정보 처리방침</strong></a></li>
+        </ul>
+        <p class="cpr txt_point3">Copyright&copy; 2019 All Right Reserved</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- import js -->
+  <!-- import Daum 주소 api -->
+  <script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js?autoload=false"></script>
+  <!-- //import Daum 주소 api -->
+  <script src="../../assets/js/plugins/jquery-3.2.1.min.js"></script>
+  <script src="../../assets/js/plugins/jquery-ui.min.js"></script>
+  <script src="../../assets/js/common.js"></script>
+  <script src="../../assets/js/postcode.js"></script>
+</body>
+</html>
