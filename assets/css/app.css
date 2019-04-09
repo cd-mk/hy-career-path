@@ -8,6 +8,4 @@
 /* page.css */
 @import url(main.css);
 @import url(contents.css);
-
-/* admin css */
-@import url(admin.css);
+@import url(sbpark.css);
