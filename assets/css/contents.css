@@ -745,6 +745,7 @@
   border-left: 0;
 }
 
+<<<<<<< HEAD
 /* 회원가입 */
 .join_sp1_wrap .confirm_box {
   margin-top: 50px; padding-bottom: 80px;
@@ -1233,3 +1234,43 @@
 .idpw_tab_list li ul li .chk_con > div > span.con02 .point_type1 {
   display:none;
 }
+=======
+/* 이용약관,개인정보 처리방침 */
+.terms_wrap {
+  color: #666;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.terms_wrap h3, 
+.terms_wrap h4 {
+ color:#333;
+}
+.terms_wrap h3 {
+  margin-top: 60px;
+  font-size: 18px;
+}
+.terms_wrap h4,
+.terms_wrap dl {
+  padding: 30px 0 5px 0;
+}
+.terms_wrap h4:first-child {
+  padding-top: 0;
+}
+.terms_wrap .desc {
+  padding-bottom: 30px;
+}
+.terms_wrap .text_box {
+  margin-top: 30px; 
+  padding: 40px;
+  border: 1px solid #e8e8e8;
+  background-color: #f8f8f8;
+}
+.terms_wrap dl dd {
+  padding-left: 15px;
+  text-indent: -8px;
+}
+.terms_wrap .btn_wrap {
+  margin-top: 60px;
+}
+>>>>>>> 이용약관,개인정보 처리방침 추가
