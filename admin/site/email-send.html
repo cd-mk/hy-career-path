@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>SMS 발송</title>
+  <title>이메일 발송</title>
   <link rel="stylesheet" href="../../assets/css/app.css">
 </head>
 <body>
@@ -52,22 +52,28 @@
 
     <!-- Content Area -->
     <div class="container">
-      <h2 class="page_title">SMS 발송</h2>
+      <h2 class="page_title">이메일 발송</h2>
       <div class="send_wrap">
         <div class="send_box">
           <a href="#url" class="send_title js-send-accr">
-            <strong class="title">SMS 발송</strong>
-            <span class="send_desc">SMS를 발송할 휴대폰 번호를 입력해 주세요.</span>
-            <span class="send_sub_title">SMS <span class="js-send-text">열기</span></span>
+            <strong class="title">이메일 발송</strong>
+            <span class="send_desc">이메일을 발송할 메일주소를 입력해 주세요.</span>
+            <span class="send_sub_title">이메일 <span class="js-send-text">열기</span></span>
           </a>
           <div class="send_editor_form">
             <form action="" method="post">
               <fieldset>
-                <legend>SMS 발송 작성 양식</legend>
+                <legend>이메일 발송 작성 양식</legend>
                 <div class="editor_form_item">
-                  <span class="form_name">휴대폰 번호</span>
+                  <span class="form_name">받는 사람</span>
                   <span class="inp_box">
-                    <input type="text" title="휴대폰 번호 입력" class="inp_not_full">
+                    <input type="email" title="이메일 주소 입력">
+                  </span>
+                </div>
+                <div class="editor_form_item">
+                  <span class="form_name">제목</span>
+                  <span class="inp_box">
+                    <input type="text" title="제목 입력" class="inp_not_full">
                     <button type="button" class="inp_next_btn point_type3">템플릿</button>
                   </span>
                 </div>
@@ -91,7 +97,7 @@
           </div>
         </div>
         <div class="top_search_box">
-          <h3 class="sub_title">SMS 발송 리스트</h3>
+          <h3 class="sub_title">이메일 발송 리스트</h3>
           <div class="search_inp_box">
             <select>
               <option value="">전체</option>
