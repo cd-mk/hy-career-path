@@ -60,9 +60,7 @@ var setTooltip = function() {
 var setInputFile = function() {
   $('.file_inp').each(function() {
     $(this).on('change', function() {
-      var filename;
-
-      window.FileReader ? filename = $(this)[0].files[0].name : filename = $(this).val().split('/').pop().split('\\').pop();
+      var filename = window.FileReader ? $(this)[0].files[0].name : $(this).val().split('/').pop().split('\\').pop();
 
       $(this).siblings('.js-file-name').val(filename).attr('disabled', true);
       $(this).siblings('.js-file-label').addClass('hide');
@@ -155,6 +153,8 @@ var checkboxContent = function() {
 var setSendAccordian = function() {
   $('.js-send-accr').on('click', function() {
     $(this).siblings('.send_editor_form').toggleClass('active');
+    var text = $(this).siblings('.send_editor_form').hasClass('active') ? text = '닫기' : text = '열기';
+    $(this).find('.js-send-text').text(text);
   });
 };
 

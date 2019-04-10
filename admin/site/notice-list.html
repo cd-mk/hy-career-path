@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>공지사항 관리</title>
+  <link rel="stylesheet" href="../../assets/css/app.css">
+</head>
+<body>
+  <div class="wrap">
+
+      <div class="header">
+        <ul class="header_top">
+          <li><a href="#url"><strong class="txt_point1">희망나눔</strong>님</a></li>
+          <li><a href="#url">로그아웃</a></li>
+        </ul>
+        <div class="header_middle">
+          <a href="main.html" class="logo"><img src="../../assets/images/common/img-logo.png" alt="SK Hynix 청년희망나눔"></a>
+          <ul class="gnb">
+            <li>
+              <a href="#url">사이트관리</a>
+              <ul class="sub_gnb active">
+                <li><a href="#url">공지사항 관리</a></li>
+                <li><a href="#url">기업 관리</a></li>
+                <li><a href="#url">SMS 발송</a></li>
+                <li><a href="#url">이메일 발송</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#url">계정 관리</a>
+              <ul class="sub_gnb">
+                <li><a href="#url">임시메뉴1</a></li>
+                <li><a href="#url">임시메뉴2</a></li>
+                <li><a href="#url">임시메뉴3</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#url">인증 관리</a>
+              <ul class="sub_gnb">
+                <li><a href="#url">임시메뉴1</a></li>
+                <li><a href="#url">임시메뉴2</a></li>
+                <li><a href="#url">임시메뉴3</a></li>
+                <li><a href="#url">임시메뉴4</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- admin header일 경우 추가됨 -->
+        <div class="header_bottom"></div>
+      </div>
+
+    <!-- Content Area -->
+    <div class="container">
+      <h2 class="page_title">공지사항 관리</h2>
+      <div class="admin_notice_wrap">
+        <div class="top_search_box">
+          <h3 class="sub_title">공지사항 관리 <span class="sub_title_desc txt_point1">총 25건</span></h3>
+          <div class="search_inp_box">
+            <select>
+              <option value="">전체</option>
+              <option value="">SK하이닉스</option>
+              <option value="">기업</option>
+              <option value="">지원자</option>
+            </select>
+            <select>
+              <option value="">전체</option>
+              <option value="">공지</option>
+              <option value="">이벤트</option>
+              <option value="">오픈</option>
+              <option value="">기타</option>
+            </select>
+            <input type="search" class="inp_not_full" title="검색 키워드 입력" placeholder="키워드를 입력해주세요.">
+            <button type="submit" class="inp_next_btn point_type1">검색</button>
+          </div>
+        </div>
+        
+        <div class="chk_tbl_wrap">
+          <table>
+            <caption>공지사항 목록</caption>
+            <thead>
+              <tr>
+                <th scope="col">
+                  <span class="chk_inp_box">
+                    <span class="chk_inp">
+                      <input type="checkbox" id="chkAll" class="chk_inp js-tbl-chkall">
+                      <label for="chkAll"><span class="blind">전체 선택</span></label>
+                    </span>
+                  </span>
+                </th>
+                <th scope="col">구분</th>
+                <th scope="col">항목</th>
+                <th scope="col">제목</th>
+                <th scope="col">등록일</th>
+                <th scope="col">조회</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <span class="chk_inp_box">
+                    <span class="chk_inp">
+                      <input type="checkbox" id="chk1" class="chk_inp">
+                      <label for="chk1"><span class="blind">리스트 선택</span></label>
+                    </span>
+                  </span>
+                </td>
+                <td>전체</td>
+                <td>공지</td>
+                <td class="align_left"><a href="#url">서비스 개선을 위한 시스템 점검 안내(12/10,22:00~23:00)</a></td>
+                <td class="txt_point3">등록일</td>
+                <td class="txt_point3">184</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="chk_inp_box">
+                    <span class="chk_inp">
+                      <input type="checkbox" id="chk2" class="chk_inp">
+                      <label for="chk2"><span class="blind">리스트 선택</span></label>
+                    </span>
+                  </span>
+                </td>
+                <td>기업</td>
+                <td>공지</td>
+                <td class="align_left"><a href="#url">서비스 개선을 위한 시스템 점검 안내(12/10,22:00~23:00)</a></td>
+                <td class="txt_point3">등록일</td>
+                <td class="txt_point3">184</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="chk_inp_box">
+                    <span class="chk_inp">
+                      <input type="checkbox" id="chk3" class="chk_inp">
+                      <label for="chk3"><span class="blind">리스트 선택</span></label>
+                    </span>
+                  </span>
+                </td>
+                <td>지원자</td>
+                <td>공지</td>
+                <td class="align_left"><a href="#url">서비스 개선을 위한 시스템 점검 안내(12/10,22:00~23:00)</a></td>
+                <td class="txt_point3">등록일</td>
+                <td class="txt_point3">184</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="chk_inp_box">
+                    <span class="chk_inp">
+                      <input type="checkbox" id="chk4" class="chk_inp">
+                      <label for="chk4"><span class="blind">리스트 선택</span></label>
+                    </span>
+                  </span>
+                </td>
+                <td>지원자</td>
+                <td>이벤트</td>
+                <td class="align_left"><a href="#url">서비스 개선을 위한 시스템 점검 안내(12/10,22:00~23:00)</a></td>
+                <td class="txt_point3">등록일</td>
+                <td class="txt_point3">184</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="chk_inp_box">
+                    <span class="chk_inp">
+                      <input type="checkbox" id="chk5" class="chk_inp">
+                      <label for="chk5"><span class="blind">리스트 선택</span></label>
+                    </span>
+                  </span>
+                </td>
+                <td>전체</td>
+                <td>기타</td>
+                <td class="align_left"><a href="#url">서비스 개선을 위한 시스템 점검 안내(12/10,22:00~23:00)</a></td>
+                <td class="txt_point3">등록일</td>
+                <td class="txt_point3">184</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="chk_inp_box">
+                    <span class="chk_inp">
+                      <input type="checkbox" id="chk6" class="chk_inp">
+                      <label for="chk6"><span class="blind">리스트 선택</span></label>
+                    </span>
+                  </span>
+                </td>
+                <td>전체</td>
+                <td>오픈</td>
+                <td class="align_left"><a href="#url">서비스 개선을 위한 시스템 점검 안내(12/10,22:00~23:00)</a></td>
+                <td class="txt_point3">등록일</td>
+                <td class="txt_point3">184</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="chk_inp_box">
+                    <span class="chk_inp">
+                      <input type="checkbox" id="chk7" class="chk_inp">
+                      <label for="chk7"><span class="blind">리스트 선택</span></label>
+                    </span>
+                  </span>
+                </td>
+                <td>전체</td>
+                <td>공지</td>
+                <td class="align_left"><a href="#url">서비스 개선을 위한 시스템 점검 안내(12/10,22:00~23:00)</a></td>
+                <td class="txt_point3">등록일</td>
+                <td class="txt_point3">184</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="chk_inp_box">
+                    <span class="chk_inp">
+                      <input type="checkbox" id="chk8" class="chk_inp">
+                      <label for="chk8"><span class="blind">리스트 선택</span></label>
+                    </span>
+                  </span>
+                </td>
+                <td>전체</td>
+                <td>공지</td>
+                <td class="align_left"><a href="#url">서비스 개선을 위한 시스템 점검 안내(12/10,22:00~23:00)</a></td>
+                <td class="txt_point3">등록일</td>
+                <td class="txt_point3">184</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="chk_inp_box">
+                    <span class="chk_inp">
+                      <input type="checkbox" id="chk9" class="chk_inp">
+                      <label for="chk9"><span class="blind">리스트 선택</span></label>
+                    </span>
+                  </span>
+                </td>
+                <td>전체</td>
+                <td>공지</td>
+                <td class="align_left"><a href="#url">서비스 개선을 위한 시스템 점검 안내(12/10,22:00~23:00)</a></td>
+                <td class="txt_point3">등록일</td>
+                <td class="txt_point3">184</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="chk_inp_box">
+                    <span class="chk_inp">
+                      <input type="checkbox" id="chk10" class="chk_inp">
+                      <label for="chk10"><span class="blind">리스트 선택</span></label>
+                    </span>
+                  </span>
+                </td>
+                <td>전체</td>
+                <td>공지</td>
+                <td class="align_left"><a href="#url">서비스 개선을 위한 시스템 점검 안내(12/10,22:00~23:00)</a></td>
+                <td class="txt_point3">등록일</td>
+                <td class="txt_point3">184</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="page_navi">
+            <a href="#url" class="btn_navi first"><span class="blind">처음 리스트로 이동</span></a>
+            <a href="#url" class="btn_navi prev"><span class="blind">이전 리스트로 이동</span></a>
+            <ul class="navi_list">
+              <li class="active"><a href="#url">1</a></li>
+              <li><a href="#url">2</a></li>
+              <li><a href="#url">3</a></li>
+              <li><a href="#url">4</a></li>
+              <li><a href="#url">5</a></li>
+              <li><a href="#url">6</a></li>
+              <li><a href="#url">7</a></li>
+              <li><a href="#url">8</a></li>
+              <li><a href="#url">9</a></li>
+              <li><a href="#url">10</a></li>
+            </ul>
+            <a href="#url" class="btn_navi next"><span class="blind">다음 리스트로 이동</span></a>
+            <a href="#url" class="btn_navi last"><span class="blind">마지막 리스트로 이동</span></a>
+          </div>
+        </div>
+        <div class="btn_wrap col2 center">
+          <button type="button" class="btn point_type2">삭제</button>
+          <button type="button" class="btn point_type1">글쓰기</button>
+        </div>
+      </div>
+    </div>
+    <!-- //Content Area -->
+
+    <div class="footer">
+      <div class="footer_inner">
+        <ul class="privacy_list">
+          <li><a href="#url" class="txt_point2">이용약관</a></li>
+          <li><a href="#url" class="txt_point2"><strong>개인정보 처리방침</strong></a></li>
+        </ul>
+        <p class="cpr txt_point3">Copyright&copy; 2019 All Right Reserved</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- import js -->
+  <script src="../../assets/js/plugins/jquery-3.2.1.min.js"></script>
+  <script src="../../assets/js/plugins/jquery-ui.min.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+</html>
