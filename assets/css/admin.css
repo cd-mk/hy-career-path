@@ -100,3 +100,84 @@
 .certify_wrap .certify_info .certify_con > li.active {
   display: block;
 }
+
+/* SMS 발송 */
+.send_wrap .send_box {
+  margin-top: 50px;
+}
+.send_wrap .send_box .send_title {
+  overflow: hidden;
+  display: block;
+  height: 64px;
+  padding: 0 20px;
+  line-height: 64px;
+  background: url(../images/common/arr-bottom-bold.png) no-repeat;
+  background-position: right 25px center;
+  border: 1px solid #e8e8e8;
+  box-sizing: border-box;
+}
+.send_wrap .send_box .send_title .title {
+  float: left;
+  font-size: 16px;
+}
+.send_wrap .send_box .send_title .send_desc {
+  float: left;
+  margin-left: 15px;
+  color: #666;
+}
+.send_wrap .send_box .send_title .send_sub_title {
+  float: right;
+  margin-right: 37px;
+}
+.send_wrap .send_box .send_editor_form {
+  display: none;
+  padding: 40px 100px;
+  background: #f8f8f8;
+}
+.send_wrap .send_box .send_editor_form.active {
+  display: block;
+}
+.send_wrap .send_box .send_editor_form .editor_form_item {
+  display: table;
+  width: 100%;
+  margin-top: 16px;
+}
+.send_wrap .send_box .send_editor_form .editor_form_item:first-child {
+  margin-top: 0;
+}
+.send_wrap .send_box .send_editor_form .editor_form_item .inp_next_btn {
+  font-size: 14px; font-weight: 500;
+}
+.send_wrap .send_box .send_editor_form .editor_form_item .form_name {
+  display: table-cell;
+  width: 108px;
+  padding-top: 15px;
+  color: #666;
+  vertical-align: top;
+}
+.send_wrap .send_box .send_editor_form .editor_form_item textarea {
+  resize: none;
+}
+.send_wrap .send_box .send_editor_form .editor_form_item .chk_inp_box {
+  margin-top: 10px;
+}
+.send_wrap .send_box .send_editor_form .editor_form_item .txt_label {
+  font-weight: 500;
+  color: #333;
+}
+.send_wrap .send_box .send_editor_form .editor_form_item .chk_inp input[type="checkbox"] + label:before {
+  background: #fff;
+}
+.send_wrap .send_box .send_editor_form .editor_form_item .chk_inp input[type="checkbox"]:checked + label:before {
+  background: #ff7a00 url(../images/common/ico-check.png) no-repeat center;
+  background-size: 11.4px 7.5px;
+  border-color: transparent;
+}
+.send_wrap .send_box .send_editor_form .btn_wrap {
+  margin-top: 30px;
+}
+
+/* 채용대상자 목록 */
+.recruit_list_wrap {
+  margin-top: 50px;
+}
