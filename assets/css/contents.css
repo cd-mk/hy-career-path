@@ -1250,3 +1250,21 @@
 .idpw_popup li span {
   display:table-cell;
 }
+
+.idpw_wrap .txt_id {
+  text-align:center;
+}
+.idpw_wrap .id_box {
+  margin-top:20px;
+  height:133px;
+  background:#f8f8f8;
+  border:1px solid #e8e8e8;
+  text-align:center;
+}
+.idpw_wrap .id_box span {
+  position: relative;
+  display:block;
+  top:50%;  
+  transform: translateY(-50%); 
+  font-size:22px;
+}
