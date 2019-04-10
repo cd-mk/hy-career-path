@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>인증현황</title>
+  <link rel="stylesheet" href="../../assets/css/app.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <div class="header">
+      <ul class="header_top">
+        <li><a href="#url"><strong class="txt_point1">희망나눔</strong>님</a></li>
+        <li><a href="#url">로그아웃</a></li>
+      </ul>
+      <div class="header_middle">
+        <a href="main.html" class="logo"><img src="../../assets/images/common/img-logo.png" alt="SK Hynix 청년희망나눔"></a>
+        <ul class="gnb">
+          <li>
+            <a href="#url">사이트관리</a>
+            <ul class="sub_gnb active">
+              <li><a href="#url">공지사항 관리</a></li>
+              <li><a href="#url">기업 관리</a></li>
+              <li><a href="#url">SMS 발송</a></li>
+              <li><a href="#url">이메일 발송</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#url">계정 관리</a>
+            <ul class="sub_gnb">
+              <li><a href="#url">임시메뉴1</a></li>
+              <li><a href="#url">임시메뉴2</a></li>
+              <li><a href="#url">임시메뉴3</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#url">인증 관리</a>
+            <ul class="sub_gnb">
+              <li><a href="#url">임시메뉴1</a></li>
+              <li><a href="#url">임시메뉴2</a></li>
+              <li><a href="#url">임시메뉴3</a></li>
+              <li><a href="#url">임시메뉴4</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- admin header일 경우 추가됨 -->
+      <div class="header_bottom"></div>
+    </div>
+
+    <!-- Content Area -->
+    <div class="container">
+      <h2 class="page_title">SMS 발송</h2>
+      <div class="send_wrap">
+        <div class="send_box">
+          <a href="#url" class="send_title js-send-accr">
+            <strong class="title">SMS 발송</strong>
+            <span class="send_desc">SMS를 발송할 휴대폰 번호를 입력해 주세요.</span>
+            <span class="send_sub_title">SMS 열기</span>
+          </a>
+          <div class="send_editor_form">
+            <form action="" method="post">
+              <fieldset>
+                <legend>SMS 발송 작성 양식</legend>
+                <div class="editor_form_item">
+                  <span class="form_name">휴대폰 번호</span>
+                  <span class="inp_box">
+                    <input type="text" title="휴대폰 번호 입력" class="inp_not_full">
+                    <button type="button" class="inp_next_btn point_type3">템플릿</button>
+                  </span>
+                </div>
+                <div class="editor_form_item">
+                  <span class="form_name">보낼 메세지</span>
+                  <div class="inp_box"><textarea name="" id="" placeholder="0/500byte"></textarea></div>
+                  <div class="chk_inp_box">
+                    <span class="chk_inp">
+                      <input type="checkbox" id="chk1" class="chk_inp">
+                      <label for="chk1"><span class="blind">템플릿 메세지로 저장 여부</span></label>
+                    </span>
+                    <span class="txt_label">템플릿 메세지로 저장</span>
+                  </div>
+                </div>
+                <div class="btn_wrap col2 center">
+                  <button type="button" class="btn point_type1">다음</button>
+                  <button type="button" class="btn point_type2">취소</button>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <div class="top_search_box">
+          <h3 class="sub_title">SMS 발송 리스트</h3>
+          <div class="search_inp_box">
+            <select>
+              <option value="">전체</option>
+              <option value="">서류합격</option>
+              <option value="">전형일자통보</option>
+            </select>
+            <input type="search" class="inp_not_full type2" title="검색 키워드 입력" placeholder="키워드를 입력해주세요.">
+            <button type="submit" class="inp_next_btn point_type1">검색</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //Content Area -->
+
+    <div class="footer">
+      <div class="footer_inner">
+        <ul class="privacy_list">
+          <li><a href="#url" class="txt_point2">이용약관</a></li>
+          <li><a href="#url" class="txt_point2"><strong>개인정보 처리방침</strong></a></li>
+        </ul>
+        <p class="cpr txt_point3">Copyright&copy; 2019 All Right Reserved</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- import js -->
+  <script src="../../assets/js/plugins/jquery-3.2.1.min.js"></script>
+  <script src="../../assets/js/plugins/jquery-ui.min.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+</html>

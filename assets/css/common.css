@@ -316,6 +316,9 @@ sup.require {
   font-size: 22px; font-weight: 400;
   border-bottom: 2px solid #333;
 }
+.sub_title .sub_title_desc {
+  font-size: 14px;
+}
 .sub_title_desc {
   display: inline-block;
   margin-left: 10px;
@@ -366,6 +369,9 @@ sup.require {
 }
 /* table col width */
 .tbl_wrap .size_xlarge {
+  width: 60%;
+}
+.tbl_wrap .size_xlarge {
   width: 50%;
 }
 .tbl_wrap .size_large {
@@ -379,10 +385,12 @@ sup.require {
 }
 
 /* table data align */
-.tbl_wrap .align_left {
+.tbl_wrap .align_left,
+.chk_tbl_wrap .align_left {
   text-align: left;
 }
-.tbl_wrap tr td:first-child.align_left {
+.tbl_wrap tr td:first-child.align_left,
+.chk_tbl_wrap tr td:first-child.align_left {
   padding-left: 60px;
   text-align: left;
 }
@@ -477,7 +485,32 @@ sup.require {
 .tbl_thead_wrap .question_list > li:first-child {
   margin-top: 0;
 }
-.tbl
+
+/* checkbox in table */
+.chk_tbl_wrap {
+  margin-top: 30px;
+}
+.chk_tbl_wrap table {
+  width: 100%;
+}
+.chk_tbl_wrap table thead th {
+  height: 46px;
+  background: #f8f8f8;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  text-align: center;
+  font-weight: 500;
+  vertical-align: middle;
+}
+.chk_tbl_wrap table tbody tr {
+  border-bottom: 1px solid #e8e8e8;
+}
+.chk_tbl_wrap table tbody tr td {
+  height: 52px;
+  text-align: center;
+  vertical-align: middle;
+}
+
 
 /* pass icon */
 .ico_pass {

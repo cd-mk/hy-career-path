@@ -129,15 +129,32 @@ var checkAll = function() {
     $(this).closest('.agree_box').find('.chk_inp').prop('checked', this.checked);
   });
 };
+
+var tblChkAll = function() {
+  $('.js-tbl-chkall').on('click', function() {
+    $(this).closest('table').find('.chk_inp').prop('checked', this.checked);
+  });
+};
+
 var checkboxContent = function() {
-  $(".js-chk-show").change(function(){
-    if($(".js-chk-show").is(":checked")){
-      $(this).parent().nextAll('.chk_con').addClass('on');
-      $(this).parents('li').addClass('on');
-    }else{
-      $(this).parent().nextAll('.chk_con').removeClass('on');
-      $(this).parents('li').removeClass('on');
+  $('.js-chk-show').on('change', function() {
+    var isChk = $(this).prop('checked');
+
+    $(this).closest('ul').find('.js-chk-show').prop('checked', false);
+    $(this).closest('ul').find('li').removeClass('on');
+    $(this).closest('ul').find('.chk_con').removeClass('on');
+    
+    if (isChk) {
+      $(this).prop('checked', true);
+      $(this).closest('li').addClass('on');
+      $(this).closest('li').find('.chk_con').addClass('on');
     }
+  });
+};
+
+var setSendAccordian = function() {
+  $('.js-send-accr').on('click', function() {
+    $(this).siblings('.send_editor_form').toggleClass('active');
   });
 };
 
@@ -154,6 +171,8 @@ var init = function() {
   if ($('.key_visual').length) setKvImgReplace();
   if ($('.js-chk-all').length) checkAll(); 
   if ($('.js-chk-show').length) checkboxContent();
+  if ($('.js-send-accr').length) setSendAccordian();
+  if ($('.js-tbl-chkall').length) tblChkAll();
 };
 
 $(document).ready(init);
