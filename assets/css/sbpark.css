@@ -1,3 +1,4 @@
+/* 관리자 */
 /* 이용약관,개인정보 처리방침 */
 .terms_wrap {
   color: #666;
@@ -38,6 +39,7 @@
   width: 183px;
 }
 
+/* 구직자 */
 /* 커리어패스란? */
 .what_career_wrap .top_txt_box {
   margin: 40px 0 48px 0;
@@ -111,17 +113,37 @@
 .what_career_wrap .career_list ul li.item03::after {background: url(../images/contents/static/ico_career03.png) no-repeat center;}
 .what_career_wrap .career_list ul li.item04::after {background: url(../images/contents/static/ico_career04.png) no-repeat center;}
 
-
 .what_career_wrap .career_list ul li span {
   display: inline-block;
+  content: '';
   position: absolute;
   top: 95px;
   left: 0;
   vertical-align: middle;
-  width: 100%;
-  height: 38px;
+  width: 100%; height: 38px;
 }
-
 .what_career_wrap .btn_wrap .btn {
   width: 210px;
+}
+
+/* 관리자 */
+/* 계정관리 목록 */
+
+.acc_list_wrap .admin_list {
+  margin-top: 50px;
+}
+.acc_list_wrap .super_list {
+  position: relative;
+  z-index: 1;
+}
+.acc_list_wrap .super_list .info {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  top: 11px;
+  right: 0;
+  padding-left: 26px;
+  background: url(../images/contents/acc/ico_info.png) no-repeat left top;
+  background-size: 16px; 
+  line-height: 16px;
 }
