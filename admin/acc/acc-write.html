@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>계정 관리</title>
+  <link rel="stylesheet" href="../../assets/css/app.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <div class="header">
+      <ul class="header_top">
+        <li><a href="#url"><strong class="txt_point1">희망나눔</strong>님</a></li>
+        <li><a href="#url">로그아웃</a></li>
+      </ul>
+      <div class="header_middle">
+        <a href="main.html" class="logo"><img src="../../assets/images/common/img-logo.png" alt="SK Hynix 청년희망나눔"></a>
+        <ul class="gnb">
+          <li>
+            <a href="#url">사이트관리</a>
+            <ul class="sub_gnb active">
+              <li><a href="#url">공지사항 관리</a></li>
+              <li><a href="#url">기업 관리</a></li>
+              <li><a href="#url">SMS 발송</a></li>
+              <li><a href="#url">이메일 발송</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#url">계정 관리</a>
+            <ul class="sub_gnb">
+              <li><a href="#url">임시메뉴1</a></li>
+              <li><a href="#url">임시메뉴2</a></li>
+              <li><a href="#url">임시메뉴3</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#url">인증 관리</a>
+            <ul class="sub_gnb">
+              <li><a href="#url">임시메뉴1</a></li>
+              <li><a href="#url">임시메뉴2</a></li>
+              <li><a href="#url">임시메뉴3</a></li>
+              <li><a href="#url">임시메뉴4</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- admin header일 경우 추가됨 -->
+      <div class="header_bottom"></div>
+    </div>
+
+    <!-- Content Area -->
+    <div class="container">
+      <h2 class="page_title">계정 관리</h2>
+      <div class="group_form_wrap">
+        <h3 class="title">신규 등록</h3>
+        <div class="group_form">
+          <form action="" method="post">
+            <fieldset>
+              <legend>계정 신규 등록 양식</legend>
+              <div class="group_form_item">
+                <span class="form_name">기업명</span>
+                <span class="inp_box"><input type="text" title="기업명 입력" placeholder="기업명을 입력해 주세요."></span>
+              </div>
+              <div class="group_form_item">
+                <span class="form_name">권한</span>
+                <span class="inp_box">
+                  <span class="chk_inp_box">
+                    <span class="chk_inp">
+                      <input type="radio" name="admin" id="chk1" class="chk_inp">
+                      <label for="chk1"><span class="blind">관리자 설정</span></label>
+                    </span>
+                    <span class="txt_label">관리자</span>
+                  </span>
+                  <span class="chk_inp_box">
+                    <span class="chk_inp">
+                      <input type="radio" name="admin" id="chk2" class="chk_inp">
+                      <label for="chk2"><span class="blind">슈퍼 관리자 설정</span></label>
+                    </span>
+                    <span class="txt_label">슈퍼 관리자</span>
+                  </span>
+                </span>
+              </div>
+              <div class="group_form_item">
+                <span class="form_name">아이디</span>
+                <span class="inp_box">
+                  <input type="text" title="아이디 입력" class="inp_not_full">
+                  <button type="button" class="inp_next_btn point_type3">중복 확인</button>
+                </span>
+              </div>
+              <div class="group_form_item">
+                <span class="form_name">비밀번호</span>
+                <span class="inp_box"><input type="password" title="비밀번호 입력"></span>
+              </div>
+              <div class="group_form_item">
+                <span class="form_name">비밀번호 확인</span>
+                <span class="inp_box"><input type="password" title="비밀번호 확인 입력"></span>
+              </div>
+              <div class="group_form_item">
+                <span class="form_name">이메일</span>
+                <span class="inp_box"><input type="email" title="이메일 입력"></span>
+              </div>
+              <div class="btn_wrap col2 center">
+                <button type="button" class="btn point_type1">등록</button>
+                <button type="button" class="btn point_type2">취소</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- //Content Area -->
+
+    <div class="footer">
+      <div class="footer_inner">
+        <ul class="privacy_list">
+          <li><a href="#url" class="txt_point2">이용약관</a></li>
+          <li><a href="#url" class="txt_point2"><strong>개인정보 처리방침</strong></a></li>
+        </ul>
+        <p class="cpr txt_point3">Copyright&copy; 2019 All Right Reserved</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- import js -->
+  <script src="../../assets/js/plugins/jquery-3.2.1.min.js"></script>
+  <script src="../../assets/js/plugins/jquery-ui.min.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+</html>

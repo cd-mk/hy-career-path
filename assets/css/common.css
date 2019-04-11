@@ -1019,3 +1019,72 @@ button {
 .tab_list > li.active {
   display: block;
 }
+
+/* form */
+
+.group_form_wrap {
+  width: 590px;
+  margin: 50px auto 0;
+}
+.group_form_wrap .title {
+  font-size: 28px;
+  text-align: center;
+}
+.group_form_wrap .group_form .group_form_item {
+  display: table;
+  width: 100%;
+  margin-top: 16px;
+}
+.group_form_wrap .group_form .group_form_item:first-of-type {
+  margin-top: 30px;
+}
+.group_form_wrap .group_form .group_form_item .form_name {
+  display: table-cell;
+  width: 134px;
+  vertical-align: middle;
+  color: #666;
+}
+.group_form_wrap .group_form .group_form_item .inp_box {
+  display: table-cell;
+  vertical-align: middle;
+}
+.group_form_wrap .group_form .group_form_item .inp_box .chk_inp_box {
+  height: 44px;
+  margin-left: 40px;
+  line-height: 44px;
+}
+.group_form_wrap .group_form .group_form_item .inp_box .chk_inp_box:first-child {
+  margin-left: 0;
+}
+.group_form_wrap .group_form .group_form_item .inp_birth_first {
+  float: left;
+  width: 218px;
+}
+.group_form_wrap .group_form .group_form_item .hypon {
+  float: left;
+  width: 21px;
+  line-height: 44px;
+  text-align: center;
+}
+.group_form_wrap .group_form .group_form_item .inp_birth_last {
+  float: left;
+  width: 34px;
+  padding: 0 10px;
+}
+.group_form_wrap .group_form .group_form_item .hide_number {
+  float: left;
+  margin-left: 8px;
+  line-height: 44px;
+}
+.group_form_wrap .group_form .group_form_item .inp_next_btn {
+  font-size: 14px; font-weight: 500;
+}
+.group_form_wrap .group_form .group_form_item .addr_search {
+  position: relative;
+}
+.group_form_wrap .group_form .group_form_item .addr_search .btn_search {
+  position: absolute;
+  right: 0; top: 0;
+  width: 44px; height: 44px;
+  background: url(../images/common/ico-search.png) no-repeat center;
+}
