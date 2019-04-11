@@ -998,38 +998,52 @@
 
 /* Company detail */
 .company_detail .box_info {
-  margin-top:50px;
-  padding:30px 0 0;
+  margin-top:50px;  
   border:1px solid #e8e8e8;
 }
-.company_detail .box_info img {
-  display:block;
+.company_detail .box_info > div {
+  padding:30px 0 30px 20px;
+}
+.company_detail .box_info .company_img {
   display:inline-block;
-  margin:31px 94px 0 69px;
+  margin-top:20px;
+  width:240px;
+  height:80px;
   vertical-align: top;
+  text-align:center;
+}
+.company_detail .box_info .company_img img {
+  position:relative;
+  top:50%;
+  display:inline-block;
+  transform: translateY(-50%);
   width:142px;
 }
-.company_detail .box_info div {
+.company_detail .box_info .company_txt_box {
   display:inline-block;
 }
-.company_detail .box_info div p {
+.company_detail .box_info .company_txt_box strong {
+  display:block;
   font-size:16px;
 }
-.company_detail .box_info div span {
+.company_detail .box_info .company_txt_box p {
   margin-top:5px;
   line-height:22px;
   font-size:14px;
   font-weight:400;
 }
-.company_detail .box_info ul li:first-child {
+.company_detail .box_info .list_info {
   margin-top:17px;
+}
+.company_detail .list_info li:first-child {
+  margin-top:0;
 }
 .company_detail .list_info li {
   margin-top:10px;
   font-weight:400;
   font-size:14px;
 }
-.company_detail .list_info strong {
+.company_detail .list_info span {
   display:inline-block;
   width:82px;
   color:#666;
@@ -1037,7 +1051,6 @@
 }
 .company_detail .box_info dl {
   clear:both;
-  margin-top:29px;
   width:100%; height:60px;
   border-top:1px solid #e8e8e8;
 }
@@ -1239,10 +1252,10 @@
   font-size:22px;
 }
 
-/* 파트너 채용정보_일반기업 */
+/* 파트너 채용정보 */
 .pathner_job .company_info_box {
   margin-top:50px;
-  padding:32px 50px 32px 94px;
+  padding:32px 50px;
   border:1px solid #e8e8e8;
 }
 .pathner_job .company_info_box:after {
@@ -1250,14 +1263,26 @@
   display:block;
   clear:both;
 }
-.pathner_job .company_info_box img {
-  float:left;
-  position:relative;
-  margin:17px 94px 0 0;
-  width:153px;
-}
 .pathner_job .company_info_box div {
   float:left;
+}
+.pathner_job .company_info_box .company_img {
+  margin-right:50px;
+  width:240px;
+  height:80px;
+  text-align:center;
+}
+.pathner_job .company_info_box .company_img img {
+  position:relative;
+  top:50%;
+  transform: translateY(-50%);
+  display:inline-block;  
+}
+.pathner_job .company_info_box .company_img img.img_hynix {
+  width:167px;
+}
+.pathner_job .company_info_box .company_img img.img_drimsys {
+  width:153px;
 }
 .pathner_job .company_info_box div strong {
   font-size:16px;
@@ -1273,5 +1298,42 @@
   margin-top:17px;
   float:right;
 }
+.pathner_job .top_search_box:after {
+  content:'';
+  display:block;
+  clear:both;
+}
+.pathner_job .search_inp_box {
+  float:right;
+  margin-top:20px;
+}
+.pathner_job .top_search_box .search_inp_box select {
+  width:220px;
+  margin-right:10px;
+  border-right:1px solid #e8e8e8;
+}
+.pathner_job .search_inp {
+  position: relative;
+  float: left;  
+  width:220px;
+}
+.pathner_job .search_inp .btn_search {
+  position: absolute;
+  right: 0; top: 0;
+  width: 44px; height: 44px;
+  background: url(../images/common/ico-search.png) no-repeat center;
+}
+.pathner_job .data_info_list {
+  margin-top:20px;
+}
+.pathner_job .tbl_wrap {
+  margin-top:0;
+}
+.pathner_job .tbl_wrap p {
+  margin-top:3px;
+  color:#999;
+  font-size:13px;
+}
+
 
 
