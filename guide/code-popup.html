@@ -45,8 +45,8 @@
       <!-- source code -->
       <div class="g_code_temp">
         <!-- S : layerpopup -->
-        <a href="#url" class="js-popup-open">팝업 호출 Click Me!</a>
-        <div class="layer_popup">
+        <a href="#url" class="js-layer-open" data-popup="layer-sample">팝업 호출 Click Me!</a>
+        <div class="layer_popup" data-popup="layer-sample">
           <div class="popup_box">
             <strong class="popup_title">사진 삭제</strong>
             <div class="popup_con">
@@ -68,7 +68,9 @@
     </div>
     <div class="g_code_description">
       <div>
-        <h4>Description</h4>
+        <h4>팝업 호출 버튼의 클래스는 "js-layer-open"</h4>
+        <h4>팝업 호출 버튼과 호출될 레이어 팝업의 연결은 data-popup="layer-naming" 으로 연결(naming 부분을 팝업에 맞게 변경)</h4>
+        <h4>레이어 팝업의 위치는 .container 최하단에 위치(버튼 다음에 위치 x)</h4>
       </div>
     </div>
   </div>

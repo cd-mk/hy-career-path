@@ -441,23 +441,7 @@
       <div class="code_wrap">
         <h2 class="heading">Layer Popup</h2>
         <div class="code_inner">
-          <a href="#url" class="js-popup-open">팝업 호출 Click Me!</a>
-          <div class="layer_popup">
-            <div class="popup_box">
-              <strong class="popup_title">사진 삭제</strong>
-              <div class="popup_con">
-                <p class="txt_desc">
-                  <span class="txt_point1">사진을 삭제하면 입사 지원서에서도 삭제됩니다.</span><br>등록된 사진을 삭제하시겠습니까?
-                </p>
-                <div class="btn_wrap col2 center">
-                  <button type="button" class="btn point_type1">확인</button>
-                  <button type="button" class="btn point_type2 js-popup-close">취소</button>
-                </div>
-              </div>
-              <button type="button" class="btn_pop_close js-popup-close"><span class="blind">팝업 닫기</span></button>
-            </div>
-            <div class="dim"></div>
-          </div>
+          <a href="#url" class="js-layer-open" data-popup="layer-sample">팝업 호출 Click Me!</a>
         </div>
       </div>
 
@@ -482,6 +466,24 @@
               <input type="file" class="file_inp">
             </div>
         </div>
+      </div>
+
+      <!-- layer popup -->
+      <div class="layer_popup" data-popup="layer-sample">
+        <div class="popup_box">
+          <strong class="popup_title">사진 삭제</strong>
+          <div class="popup_con">
+            <p class="txt_desc">
+              <span class="txt_point1">사진을 삭제하면 입사 지원서에서도 삭제됩니다.</span><br>등록된 사진을 삭제하시겠습니까?
+            </p>
+            <div class="btn_wrap col2 center">
+              <button type="button" class="btn point_type1">확인</button>
+              <button type="button" class="btn point_type2 js-popup-close">취소</button>
+            </div>
+          </div>
+          <button type="button" class="btn_pop_close js-popup-close"><span class="blind">팝업 닫기</span></button>
+        </div>
+        <div class="dim"></div>
       </div>
     </div>
     <!-- //Content Area -->
