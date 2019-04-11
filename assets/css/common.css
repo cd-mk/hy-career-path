@@ -915,6 +915,25 @@ button {
 .layer_popup.open {
   display: block;
 }
+.layer_popup .popup_form .popup_form_item {
+  display: table;
+  width: 100%;
+  margin-top: 16px;
+}
+.layer_popup .popup_form .popup_form_item:first-child {
+  margin-top: 0;
+}
+.layer_popup .popup_form .popup_form_item .form_name {
+  display: table-cell;
+  width: 66px;
+  color: #666;
+  vertical-align: middle;
+}
+.layer_popup .popup_form .popup_form_item .inp_box {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 
 /* icon */
 .ico_question {
