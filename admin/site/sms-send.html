@@ -77,7 +77,7 @@
                   <div class="chk_inp_box">
                     <span class="chk_inp">
                       <input type="checkbox" id="chk1" class="chk_inp">
-                      <label for="chk1"><span class="blind">템플릿 메세지로 저장 여부</span></label>
+                      <label for="chk1" class="js-layer-open" data-popup="layer-templete"><span class="blind">템플릿 메세지로 저장 여부</span></label>
                     </span>
                     <span class="txt_label">템플릿 메세지로 저장</span>
                   </div>
@@ -297,6 +297,31 @@
         <div class="btn_wrap">
           <button type="button" class="btn point_type1">삭제</button>
         </div>
+      </div>
+
+      <!-- layer popup -->
+      <div class="layer_popup" data-popup="layer-templete">
+        <div class="popup_box">
+          <strong class="popup_title">템플릿 저장하기</strong>
+          <div class="popup_con">
+            <div class="popup_form">
+              <div class="popup_form_item">
+                <span class="form_name">제목</span>
+                <span class="inp_box"><input type="text" title="제목 입력"></span>
+              </div>
+            </div>
+            <p class="popup_desc">
+              메일 쓰기에 입력한 내용을 그대로 템플릿으로 저장합니다.<br>
+              기존 템플릿 제목과 동일하면 덮어쓰기 됩니다. 
+            </p>
+            <div class="btn_wrap col2 center">
+              <button type="button" class="btn point_type1">저장</button>
+              <button type="button" class="btn point_type2 js-popup-close">취소</button>
+            </div>
+          </div>
+          <button type="button" class="btn_pop_close js-popup-close"><span class="blind">팝업 닫기</span></button>
+        </div>
+        <div class="dim"></div>
       </div>
     </div>
     <!-- //Content Area -->

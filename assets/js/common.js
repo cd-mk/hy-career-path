@@ -27,17 +27,6 @@ var setDatePicker = function() {
   $('.input_date').datepicker();
 };
 
-var setLayerPopup = function() {
-  $('.js-popup-open').on('click', function() {
-    $(this).next('.layer_popup').addClass('open');
-    $('body').addClass('popup_open');
-  });
-  $('.js-popup-close').on('click', function() {
-    $(this).closest('.layer_popup').removeClass('open');
-    $('body').removeClass('popup_open');
-  });
-};
-
 var setTab = function() {
   $('.js-tab-list > li').each(function() {
     $(this).on('click', function() {
@@ -162,6 +151,12 @@ var setDataLayerPopup = function() {
   $('.js-layer-open').on('click', function() {
     var dataPopup = $(this).attr('data-popup');
     $("[data-popup= " + dataPopup + "]").addClass('open');
+
+    $('body').addClass('popup_open');
+  });
+  $('.js-popup-close').on('click', function() {
+    $(this).closest('.layer_popup').removeClass('open');
+    $('body').removeClass('popup_open');
   });
 };
 
@@ -169,7 +164,6 @@ var init = function() {
   setGnb();
 
   if ($('.input_date').length) setDatePicker();
-  if ($('.layer_popup').length) setLayerPopup();
   if ($('.js-tab-list').length) setTab();
   if ($('.js-tooltip').length) setTooltip();
   if ($('.file_inp').length) setInputFile();

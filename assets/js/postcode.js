@@ -14,9 +14,9 @@ daum.postcode.load(function() {
         fullAddr = data.jibunAddress;
       }
 
-      $('#personZipcode').val(zipcode);
-      $('#personAddr').val(fullAddr);
-      $('#personAddrDetail').focus();
+      $('.js-addr-zipcode').val(zipcode);
+      $('.js-addr-default').attr('disabled', true).val(fullAddr);
+      $('.js-addr-detail').focus();
 
       $('#layer_address_wrap').removeClass('open');
       $('body').removeClass('open');
