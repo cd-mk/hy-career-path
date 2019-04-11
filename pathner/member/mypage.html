@@ -44,30 +44,7 @@
               <div class="profile_box">
                 <div class="left_profile">
                   <!-- case : 등록된 사진이 없을 경우 -->
-                  <a href="#url" class="btn_photo js-popup-open">로고 등록</a>
-                  <!-- 사진 등록 팝업 -->
-                  <div class="layer_popup profile_layer">
-                    <div class="popup_box">
-                      <strong class="popup_title">사진 등록</strong>
-                      <div class="popup_con">
-                        <div class="file_inp_box type_btn2">
-                          <input type="text" class="file_inp_name js-file-name" readonly>
-                          <label for="file1" class="file_label btn point_type3">파일 선택</label>
-                          <input type="file" id="file1" class="file_inp">
-                        </div>
-                        <ul class="file_notice_list">
-                          <li class="txt_point2">- 권장 사진 사이즈는 100 * 130 픽셀</li>
-                          <li class="txt_point2">- gif, jpg, jpge 파일만 등록 가능</li>
-                        </ul>
-                        <div class="btn_wrap col2 center">
-                          <button type="button" class="btn point_type1">등록</button>
-                          <button type="button" class="btn point_type2 js-popup-close">취소</button>
-                        </div>
-                      </div>
-                      <button type="button" class="btn_pop_close js-popup-close"><span class="blind">팝업 닫기</span></button>
-                    </div>
-                    <div class="dim"></div>
-                  </div>
+                  <a href="#url" class="btn_photo js-layer-open" data-popup="layer-register">로고 등록</a>
                   <!-- //case : 등록된 사진이 없을 경우 -->
                 </div>
                 <div class="right_profile">
@@ -171,7 +148,7 @@
         </div>
 
         <div class="section_item">
-          <h3 class="sub_title">공지사항 <a href="#url" class="sub_title_more">더보기</a></h3>
+          <h3 class="sub_title">공지사항 <a href="../notice-list.html" class="sub_title_more">더보기</a></h3>
           <ul class="notice_list">
             <li>
               <span class="notice_cat">공지</span>
@@ -190,6 +167,31 @@
             </li>
           </ul>
         </div>
+      </div>
+
+      <!-- layer popup -->
+      <!-- 사진 등록 팝업 -->
+      <div class="layer_popup profile_layer" data-popup="layer-register">
+        <div class="popup_box">
+          <strong class="popup_title">사진 등록</strong>
+          <div class="popup_con">
+            <div class="file_inp_box type_btn2">
+              <input type="text" class="file_inp_name js-file-name" readonly>
+              <label for="file1" class="file_label btn point_type3">파일 선택</label>
+              <input type="file" id="file1" class="file_inp">
+            </div>
+            <ul class="file_notice_list">
+              <li class="txt_point2">- 권장 사진 사이즈는 100 * 130 픽셀</li>
+              <li class="txt_point2">- gif, jpg, jpge 파일만 등록 가능</li>
+            </ul>
+            <div class="btn_wrap col2 center">
+              <button type="button" class="btn point_type1">등록</button>
+              <button type="button" class="btn point_type2 js-popup-close">취소</button>
+            </div>
+          </div>
+          <button type="button" class="btn_pop_close js-popup-close"><span class="blind">팝업 닫기</span></button>
+        </div>
+        <div class="dim"></div>
       </div>
     </div>
     <!-- //Content Area -->

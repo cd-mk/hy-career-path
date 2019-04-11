@@ -51,7 +51,7 @@
             <strong class="detail_title">[경력] 경영지원팀_재무, 회계, 기획 부분 모집</strong>
           </div>
           <div class="detail_right">
-            <button type="button" class="btn_apply">입사지원하기</button>
+            <button type="button" class="btn_apply js-layer-open" data-popup="layer-apply">입사지원하기</button>
           </div>
         </div>
 
@@ -64,7 +64,7 @@
             <div class="company_detail">
               <div class="company_detail_top">
                 <strong>드림시스(주)</strong>
-                <a href="#url" class="link_company">기업소개</a>
+                <a href="../company/company-detail.html" class="link_company">기업소개</a>
               </div>
               <ul class="detail_list">
                 <li>
@@ -189,10 +189,27 @@
         </div>
         
         <div class="btn_wrap center col2">
-          <button type="button" class="btn point_type1">입사지원하기</button>
-          <button type="button" class="btn point_type2">목록</button>
+          <button type="button" class="btn point_type1 js-layer-open" data-popup="layer-apply">입사지원하기</button>
+          <a href="./job-list.html" class="btn point_type2">목록</a>
         </div>
         
+        <!-- layer popup -->
+        <div class="layer_popup" data-popup="layer-apply">
+          <div class="popup_box">
+            <strong class="popup_title">지원하기</strong>
+            <div class="popup_con">
+              <p class="txt_desc">
+                정상적으로 지원 완료되었습니다.<br>
+                <span class="txt_alert txt_small">지원 확인은 <span class="txt_point1">마이페이지&gt;지원현황</span>에서 확인가능합니다.</span>
+              </p>
+              <div class="btn_wrap col2 center">
+                <button type="button" class="btn point_type1 js-popup-close">닫기</button>
+              </div>
+            </div>
+            <button type="button" class="btn_pop_close js-popup-close"><span class="blind">팝업 닫기</span></button>
+          </div>
+          <div class="dim"></div>
+        </div>
       </div>
     </div>
     <!-- //Content Area -->

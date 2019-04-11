@@ -56,24 +56,7 @@
               <span class="form_name"><sup class="require">*</sup> 이메일</span>
               <span class="inp_box">
                 <input type="email" title="이메일 입력" class="inp_not_full">
-                <button type="button" class="inp_next_btn point_type3 js-popup-open">인증번호 전송</button>
-                <div class="layer_popup">
-                  <div class="popup_box">
-                    <strong class="popup_title">이메일 인증</strong>
-                    <div class="popup_con">
-                      <p class="txt_desc">
-                        <span class="txt_point1">asdfg@naver.com</span>으로 인증번호를 발송하였습니다.<br>
-                        메일을 확인해 주세요.
-                      </p>
-                      <div class="btn_wrap col2 center">
-                        <button type="button" class="btn point_type1">확인</button>
-                        <button type="button" class="btn point_type2 js-popup-close">취소</button>
-                      </div>
-                    </div>
-                    <button type="button" class="btn_pop_close js-popup-close"><span class="blind">팝업 닫기</span></button>
-                  </div>
-                  <div class="dim"></div>
-                </div>
+                <button type="button" class="inp_next_btn point_type3 js-layer-open" data-popup="layer-cerify">인증번호 전송</button>
                 <!-- 인증 번호 전송 후 -->
                 <!-- <button type="button" class="inp_next_btn point_type1">재발송</button> -->
               </span>
@@ -82,21 +65,7 @@
               <span class="form_name"><sup class="require">*</sup> 이메일 인증번호</span>
               <span class="inp_box">
                 <input type="text" title="이메일 인증번호 입력" class="inp_not_full">
-                <button type="button" class="inp_next_btn point_type3 js-popup-open">인증하기</button>
-                <div class="layer_popup">
-                  <div class="popup_box">
-                    <strong class="popup_title">이메일 인증</strong>
-                    <div class="popup_con">
-                      <p class="txt_desc">이메일 인증을 완료하였습니다.</p>
-                      <div class="btn_wrap col2 center">
-                        <button type="button" class="btn point_type1">확인</button>
-                        <button type="button" class="btn point_type2 js-popup-close">취소</button>
-                      </div>
-                    </div>
-                    <button type="button" class="btn_pop_close js-popup-close"><span class="blind">팝업 닫기</span></button>
-                  </div>
-                  <div class="dim"></div>
-                </div>
+                <button type="button" class="inp_next_btn point_type3 js-layer-open" data-popup="layer-cerify-cfrm">인증하기</button>
               </span>
             </div>
           </div>
@@ -173,6 +142,42 @@
             <button type="button" class="btn point_type2">취소</button>
           </div>
         </div>
+      </div>
+
+      <!-- layer popup -->
+      <!-- 이메일 인증 팝업 -->
+      <div class="layer_popup" data-popup="layer-cerify">
+        <div class="popup_box">
+          <strong class="popup_title">이메일 인증</strong>
+          <div class="popup_con">
+            <p class="txt_desc">
+              <span class="txt_point1">asdfg@naver.com</span>으로 인증번호를 발송하였습니다.<br>
+              메일을 확인해 주세요.
+            </p>
+            <div class="btn_wrap col2 center">
+              <button type="button" class="btn point_type1">확인</button>
+              <button type="button" class="btn point_type2 js-popup-close">취소</button>
+            </div>
+          </div>
+          <button type="button" class="btn_pop_close js-popup-close"><span class="blind">팝업 닫기</span></button>
+        </div>
+        <div class="dim"></div>
+      </div>
+
+      <!-- 이메일 인증 확인 팝업 -->
+      <div class="layer_popup" data-popup="layer-cerify-cfrm">
+        <div class="popup_box">
+          <strong class="popup_title">이메일 인증</strong>
+          <div class="popup_con">
+            <p class="txt_desc">이메일 인증을 완료하였습니다.</p>
+            <div class="btn_wrap col2 center">
+              <button type="button" class="btn point_type1">확인</button>
+              <button type="button" class="btn point_type2 js-popup-close">취소</button>
+            </div>
+          </div>
+          <button type="button" class="btn_pop_close js-popup-close"><span class="blind">팝업 닫기</span></button>
+        </div>
+        <div class="dim"></div>
       </div>
     </div>
     <!-- //Content Area -->
