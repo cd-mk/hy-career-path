@@ -316,13 +316,13 @@ sup.require {
   font-size: 22px; font-weight: 400;
   border-bottom: 2px solid #333;
 }
-.sub_title .sub_title_desc {
-  font-size: 14px;
-}
 .sub_title_desc {
   display: inline-block;
   margin-left: 10px;
   font-size: 18px; font-weight: 400;
+}
+.sub_title_desc.txt_small {
+  font-size: 14px;
 }
 .sub_title_more {
   float: right;
@@ -341,6 +341,7 @@ sup.require {
 
 /* table */
 .tbl_wrap {
+  position: relative;
   margin-top: 30px;
 }
 .tbl_wrap table {
@@ -366,6 +367,9 @@ sup.require {
 .tbl_wrap table tbody tr .has_pass {
   padding-left: 60px;
   text-align: left;
+}
+.tbl_wrap.has_search {
+  margin-top: 20px; padding-top: 64px;
 }
 /* table col width */
 .tbl_wrap .size_xlarge {
@@ -416,6 +420,12 @@ sup.require {
 .tbl_wrap .date_list > li:last-child span {
   display: inline-block;
   width: 40px;
+}
+.tbl_wrap .sub_list > li {
+  margin-top: 5px;
+}
+.tbl_wrap .sub_list > li:first-child {
+  margin-top: 0;
 }
 
 .tbl_thead_wrap table {
@@ -484,6 +494,26 @@ sup.require {
 }
 .tbl_thead_wrap .question_list > li:first-child {
   margin-top: 0;
+}
+
+.tbl_search_box {
+  position: absolute;
+  right: 0; top: 0;
+}
+.tbl_search_box .tbl_search_item {
+  position: relative;
+  float: left;
+  width: 220px;
+  margin-left: 10px;
+}
+.tbl_search_box .tbl_search_item:first-child {
+  margin-left: 0;
+}
+.tbl_search_box .tbl_search_item .tbl_search_btn {
+  position: absolute;
+  right: 0; top: 0;
+  width: 44px; height: 44px;
+  background: url(../images/common/ico-search.png) no-repeat center;
 }
 
 /* checkbox in table */
