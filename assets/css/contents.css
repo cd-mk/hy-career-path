@@ -304,6 +304,7 @@
 .mypage_wrap .notice_list > li {
   display: table;
   width: 100%; height: 53px;
+  border-bottom: 1px solid #e8e8e8;
   line-height: 53px;
 }
 .mypage_wrap .notice_list > li:nth-child(odd) {
@@ -336,6 +337,34 @@
   padding: 0 60px;
   vertical-align: middle;
 }
+
+/* 마이페이지 (협력사) */
+.mypage_wrap.type_pathner .profile_box .left_profile {
+  width: 228px; height: 164px;
+}
+.mypage_wrap.type_pathner .profile_box .right_profile {
+  width: calc(100% - 278px);
+}
+.mypage_wrap.type_pathner .profile_box .right_profile .profile_list > li:nth-child(3) {
+  width: 100%;
+}
+.mypage_wrap.type_pathner .profile_box .right_profile .profile_list > li:nth-child(3) input {
+  width: 245px;
+}
+.mypage_wrap.type_pathner .profile_box .right_profile .profile_list > li.address {
+  width: 100%;
+  margin-left: 0;
+}
+.mypage_wrap.type_pathner .profile_box .right_profile .profile_list .inp_addr1 {
+  width: 140px;
+}
+.mypage_wrap.type_pathner .profile_box .right_profile .profile_list .inp_addr2 {
+  width: 332px;
+}
+.mypage_wrap.type_pathner .profile_box .right_profile .profile_list .inp_addr3 {
+  width: 319px;
+}
+
 
 /* 커리어패스 */
 .career_wrap .profile_box {
