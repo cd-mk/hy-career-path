@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>계정 관리</title>
+  <title>인증 파트너 목록</title>
   <link rel="stylesheet" href="../../assets/css/app.css">
 </head>
 <body>
@@ -52,153 +52,150 @@
 
     <!-- Content Area -->
     <div class="container">
-      <h2 class="page_title">계정 관리</h2>
+      <h2 class="page_title">인증 파트너 목록</h2>
+
       <div class="acc_list_wrap">
-        <div class="super_list">
-          <h3 class="sub_title">슈퍼 관리자<span class="sub_title_desc txt_small">관리자 계정 생성/권한 설정 및  모든 메뉴의 생성/수정/삭제  등의 설정이 가능합니다.</span></h3>
-          <span class="info"><a href="">관리자 안내</a></span>
-          <div class="chk_tbl_wrap">
-            <table>
-              <caption>슈퍼 관리자 계정 목록</caption>
-              <thead>
-                <tr>
-                  <th scope="col">
-                    <span class="chk_inp_box">
-                      <span class="chk_inp">
-                        <input type="checkbox" id="chkAll" class="chk_inp js-tbl-chkall">
-                        <label for="chkAll"><span class="blind">전체 선택</span></label>
-                      </span>
+        <h3 class="sub_title">인증파트너 <span class="sub_title_desc txt_small">2019년 1월 13일 현재</span></h3>
+        <div class="chk_tbl_wrap">
+          <table>
+            <caption>채용 대상자 목록</caption>
+            <thead>
+              <tr>
+                <th scope="col">
+                  <span class="chk_inp_box">
+                    <span class="chk_inp">
+                      <input type="checkbox" id="chkAll" class="chk_inp js-tbl-chkall">
+                      <label for="chkAll"><span class="blind">전체 선택</span></label>
                     </span>
-                  </th>
-                  <th scope="col">NO</th>
-                  <th scope="col">기업명</th>
-                  <th scope="col">관리자 ID</th>
-                  <th scope="col">권한</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <span class="chk_inp_box">
-                      <span class="chk_inp">
-                        <input type="checkbox" id="chk1" class="chk_inp">
-                        <label for="chk1"><span class="blind">리스트 선택</span></label>
-                      </span>
+                  </span>
+                </th>
+                <th scope="col">인증 항목</th>
+                <th scope="col">인증 파트너 사</th>
+                <th scope="col">전체</th>
+                <th scope="col">인증 완료</th>
+                <th scope="col">인증 대기</th>
+                <th scope="col">인증 불가</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <span class="chk_inp_box">
+                    <span class="chk_inp">
+                      <input type="checkbox" id="chk1" class="chk_inp">
+                      <label for="chk1"><span class="blind">리스트 선택</span></label>
                     </span>
-                  </td>
-                  <td>1</td>
-                  <td>SK하이닉스</td>
-                  <td class="align_left">Skhynix_admin</td>
-                  <td class="txt_point3">슈퍼 관리자</td>
-                </tr>
-                <tr>
-                  <td>
-                    <span class="chk_inp_box">
-                      <span class="chk_inp">
-                        <input type="checkbox" id="chk2" class="chk_inp">
-                        <label for="chk2"><span class="blind">리스트 선택</span></label>
-                      </span>
+                  </span>
+                </td>
+                <td>학력 인증</td>
+                <td><a href="#url">정부24</a></td>
+                <td>55건</td>
+                <td>55건</td>
+                <td>55건</td>
+                <td>55건</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="chk_inp_box">
+                    <span class="chk_inp">
+                      <input type="checkbox" id="chk2" class="chk_inp">
+                      <label for="chk2"><span class="blind">리스트 선택</span></label>
                     </span>
-                  </td>
-                  <td>2</td>
-                  <td>SK하이닉스</td>
-                  <td class="align_left">Skhynix_admin</td>
-                  <td class="txt_point3">슈퍼 관리자</td>
-                </tr>
-                <tr>
-                  <td>
-                    <span class="chk_inp_box">
-                      <span class="chk_inp">
-                        <input type="checkbox" id="chk3" class="chk_inp">
-                        <label for="chk3"><span class="blind">리스트 선택</span></label>
-                      </span>
+                  </span>
+                </td>
+                <td>학력 인증</td>
+                <td><a href="#url">정부24</a></td>
+                <td>55건</td>
+                <td>55건</td>
+                <td>55건</td>
+                <td>55건</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="chk_inp_box">
+                    <span class="chk_inp">
+                      <input type="checkbox" id="chk3" class="chk_inp">
+                      <label for="chk3"><span class="blind">리스트 선택</span></label>
                     </span>
-                  </td>
-                  <td>3</td>
-                  <td>SK하이닉스</td>
-                  <td class="align_left">Skhynix_admin</td>
-                  <td class="txt_point3">슈퍼 관리자</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="btn_wrap col3 center">
-            <button type="button" class="btn point_type1">신규 등록</button>
-            <button type="button" class="btn point_type2">선택 삭제</button>
-          </div>
+                  </span>
+                </td>
+                <td>학력 인증</td>
+                <td><a href="#url">정부24</a></td>
+                <td>55건</td>
+                <td>55건</td>
+                <td>55건</td>
+                <td>55건</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="chk_inp_box">
+                    <span class="chk_inp">
+                      <input type="checkbox" id="chk4" class="chk_inp">
+                      <label for="chk4"><span class="blind">리스트 선택</span></label>
+                    </span>
+                  </span>
+                </td>
+                <td>학력 인증</td>
+                <td><a href="#url">정부24</a></td>
+                <td>55건</td>
+                <td>55건</td>
+                <td>55건</td>
+                <td>55건</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="chk_inp_box">
+                    <span class="chk_inp">
+                      <input type="checkbox" id="chk5" class="chk_inp">
+                      <label for="chk5"><span class="blind">리스트 선택</span></label>
+                    </span>
+                  </span>
+                </td>
+                <td>학력 인증</td>
+                <td><a href="#url">정부24</a></td>
+                <td>55건</td>
+                <td>55건</td>
+                <td>55건</td>
+                <td>55건</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="chk_inp_box">
+                    <span class="chk_inp">
+                      <input type="checkbox" id="chk6" class="chk_inp">
+                      <label for="chk6"><span class="blind">리스트 선택</span></label>
+                    </span>
+                  </span>
+                </td>
+                <td>학력 인증</td>
+                <td><a href="#url">정부24</a></td>
+                <td>55건</td>
+                <td>55건</td>
+                <td>55건</td>
+                <td>55건</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="chk_inp_box">
+                    <span class="chk_inp">
+                      <input type="checkbox" id="chk7" class="chk_inp">
+                      <label for="chk7"><span class="blind">리스트 선택</span></label>
+                    </span>
+                  </span>
+                </td>
+                <td>학력 인증</td>
+                <td><a href="#url">정부24</a></td>
+                <td>55건</td>
+                <td>55건</td>
+                <td>55건</td>
+                <td>55건</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        
-        <div class="admin_list">
-          <h3 class="sub_title">관리자 <span class="sub_title_desc txt_small">서비스 메뉴에 대한 생성/수정/삭제 등의 설정이 가능합니다.</span></h3>
-          <div class="chk_tbl_wrap">
-            <table>
-              <caption>관리자 계정 목록</caption>
-              <thead>
-                <tr>
-                  <th scope="col">
-                    <span class="chk_inp_box">
-                      <span class="chk_inp">
-                        <input type="checkbox" id="chkAll2" class="chk_inp js-tbl-chkall">
-                        <label for="chkAll2"><span class="blind">전체 선택</span></label>
-                      </span>
-                    </span>
-                  </th>
-                  <th scope="col">NO</th>
-                  <th scope="col">기업명</th>
-                  <th scope="col">관리자 ID</th>
-                  <th scope="col">권한</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <span class="chk_inp_box">
-                      <span class="chk_inp">
-                        <input type="checkbox" id="chk4" class="chk_inp">
-                        <label for="chk4"><span class="blind">리스트 선택</span></label>
-                      </span>
-                    </span>
-                  </td>
-                  <td>1</td>
-                  <td>SK하이닉스</td>
-                  <td class="align_left">Skhynix_admin</td>
-                  <td class="txt_point3">관리자</td>
-                </tr>
-                <tr>
-                  <td>
-                    <span class="chk_inp_box">
-                      <span class="chk_inp">
-                        <input type="checkbox" id="chk5" class="chk_inp">
-                        <label for="chk5"><span class="blind">리스트 선택</span></label>
-                      </span>
-                    </span>
-                  </td>
-                  <td>2</td>
-                  <td>SK하이닉스</td>
-                  <td class="align_left">Skhynix_admin</td>
-                  <td class="txt_point3">관리자</td>
-                </tr>
-                <tr>
-                  <td>
-                    <span class="chk_inp_box">
-                      <span class="chk_inp">
-                        <input type="checkbox" id="chk6" class="chk_inp">
-                        <label for="chk6"><span class="blind">리스트 선택</span></label>
-                      </span>
-                    </span>
-                  </td>
-                  <td>3</td>
-                  <td>SK하이닉스</td>
-                  <td class="align_left">Skhynix_admin</td>
-                  <td class="txt_point3">관리자</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="btn_wrap col3 center">
-            <button type="button" class="btn point_type1">신규 등록</button>
-            <button type="button" class="btn point_type2">선택 삭제</button>
-          </div>
+        <div class="btn_wrap col3 center">
+          <button type="button" class="btn point_type1">신규 등록</button>
+          <button type="button" class="btn point_type2">선택 삭제</button>
         </div>
       </div>
     </div>
