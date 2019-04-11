@@ -41,7 +41,7 @@
     <!-- Content Area -->
     <div class="container">
         <h2 class="page_title">개인정보 처리방침</h2>
-        <div class="terms_wrap privacy_wrap">
+        <div class="terms_wrap">
             <h3>개인정보 처리방침 (2016. 08. 01)</h3>
             <h4>제 1조 총칙</h4>
             <ol>
@@ -81,9 +81,27 @@
                 <dd>- 장애 정보 : 채용 우대조건 및 신체조건을 고려한 적합 직무부여와 안정적인 근무환경 배치를 위한 자료로 활용</dd>
                 <dd>- 보훈 정보 : 국가유공자 예우 및 지원에 관한 법률 이행을 위한 확인에 이용</dd>
             </dl>
-            <div class="btn_wrap center">
+            <!-- <div class="btn_wrap center">
                 <button type="button" class="btn point_type1">회원 탈퇴하기</button>
+            </div> -->
+            
+          <!-- S : layerpopup -->
+          <a href="#url" class="js-popup-open btn point_type1 btn_wrap centerg">회원 탈퇴하기</a>
+          <div class="layer_popup">
+            <div class="popup_box">
+              <strong class="popup_title">회원 탈퇴 확인</strong>
+              <div class="popup_con">
+                <p class="txt_desc">회원 탈퇴를 하시면 인증 받은 정보와<br/>서비스 내역은 모두 사라집니다.<br/><span class="txt_point1">회원 탈퇴 하시겠습니까?</span></p>
+                <div class="btn_wrap col2 center">
+                  <button type="button" class="btn point_type1">확인</button>
+                  <button type="button" class="btn point_type2 js-popup-close">취소</button>
+                </div>
             </div>
+            <button type="button" class="btn_pop_close js-popup-close"><span class="blind">팝업 닫기</span></button>
+            </div>
+            <div class="dim"></div>
+          </div>
+          <!-- E : layerpopup -->
 
         </div>
     </div>
