@@ -158,6 +158,13 @@ var setSendAccordian = function() {
   });
 };
 
+var setDataLayerPopup = function() {
+  $('.js-layer-open').on('click', function() {
+    var dataPopup = $(this).attr('data-popup');
+    $("[data-popup= " + dataPopup + "]").addClass('open');
+  });
+};
+
 var init = function() {
   setGnb();
 
@@ -173,6 +180,7 @@ var init = function() {
   if ($('.js-chk-show').length) checkboxContent();
   if ($('.js-send-accr').length) setSendAccordian();
   if ($('.js-tbl-chkall').length) tblChkAll();
+  if ($('.js-layer-open').length)  setDataLayerPopup();
 };
 
 $(document).ready(init);

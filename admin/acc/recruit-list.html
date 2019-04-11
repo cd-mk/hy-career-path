@@ -206,9 +206,48 @@
           </table>
         </div>
         <div class="btn_wrap col3 center">
-          <button type="button" class="btn point_type1">채용대상자 신규 등록</button>
+          <button type="button" class="btn point_type1 js-layer-open" data-popup="layer-apply">채용대상자 신규 등록</button>
           <button type="button" class="btn point_type2">선택 삭제</button>
           <button type="button" class="btn point_type2">엑셀 다운로드</button>
+        </div>
+
+        <div class="layer_popup" data-popup="layer-apply">
+          <div class="popup_box">
+            <strong class="popup_title">채용대상자 등록</strong>
+            <div class="popup_con">
+              <div class="popup_form">
+                <form action="" method="post">
+                  <fieldset>
+                    <legend>채용대상자 등록 양식</legend>
+                    <div class="popup_form_item">
+                      <span class="form_name">소속</span>
+                      <span class="inp_box">
+                        <input type="text" title="소속 입력" placeholder="SK 하이닉스 청년희망나눔">
+                      </span>
+                    </div>
+                    <div class="popup_form_item">
+                      <span class="form_name">이름</span>
+                      <span class="inp_box">
+                        <input type="text" title="이름 입력">
+                      </span>
+                    </div>
+                    <div class="popup_form_item">
+                      <span class="form_name">이메일</span>
+                      <span class="inp_box">
+                        <input type="email" title="이메일 입력">
+                      </span>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+              <div class="btn_wrap col2 center">
+                <button type="button" class="btn point_type1">등록</button>
+                <button type="button" class="btn point_type2 js-popup-close">취소</button>
+              </div>
+            </div>
+            <button type="button" class="btn_pop_close js-popup-close"><span class="blind">팝업 닫기</span></button>
+          </div>
+          <div class="dim"></div>
         </div>
       </div>
     </div>
