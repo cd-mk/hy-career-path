@@ -552,3 +552,9 @@
 .notice_write_wrap .btn_wrap .btn {
   width: 120px;
 }
+.notice_write_wrap .notice_write_item.editor {
+  display: block;
+}
+.notice_write_wrap .notice_write_item.editor textarea {
+  height: 560px;
+}
