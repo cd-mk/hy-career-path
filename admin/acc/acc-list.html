@@ -56,7 +56,7 @@
       <div class="acc_list_wrap">
         <div class="super_list">
           <h3 class="sub_title">슈퍼 관리자<span class="sub_title_desc txt_small">관리자 계정 생성/권한 설정 및  모든 메뉴의 생성/수정/삭제  등의 설정이 가능합니다.</span></h3>
-          <span class="info"><a href="">관리자 안내</a></span>
+          <span class="info"><a href="#url" class="js-layer-open" data-popup="layer-acc">관리자 안내</a></span>
           <div class="chk_tbl_wrap">
             <table>
               <caption>슈퍼 관리자 계정 목록</caption>
@@ -201,6 +201,82 @@
           </div>
         </div>
       </div>
+
+      <!-- S : layerpopup -->
+      <div class="layer_popup" data-popup="layer-acc">
+        <div class="popup_box type2">
+          <strong class="popup_title">관리자별 권한 안내</strong>
+          <div class="popup_con">
+            <div class="pop_table">
+                <table>
+                  <caption>관리자별 권한 안내 목록</caption>
+                  <colgroup>
+                    <col width="60%;">
+                    <col width="20%;">
+                    <col width="20%;">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">권한</th>
+                      <th scope="col">슈퍼 관리자</th>
+                      <th scope="col">관리자</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="align_left">공지사항 생성/관리</td>
+                      <td>O</td>
+                      <td>O</td>
+                    </tr>
+                    <tr>
+                      <td class="align_left">협력사 목록 생성/관리</td>
+                      <td>O</td>
+                      <td>O</td>
+                    </tr>
+                    <tr>
+                      <td class="align_left">SMS 발송</td>
+                      <td>O</td>
+                      <td>O</td>
+                    </tr>
+                    <tr>
+                      <td class="align_left">이메일 발송</td>
+                      <td>O</td>
+                      <td>O</td>
+                    </tr>
+                    <tr>
+                      <td class="align_left">계정 생성/관리</td>
+                      <td>O</td>
+                      <td>X</td>
+                    </tr>
+                    <tr>
+                      <td class="align_left">인증파트너 생성/ 관리</td>
+                      <td>O</td>
+                      <td>X</td>
+                    </tr>
+                    <tr>
+                      <td class="align_left">인증 현황 관리</td>
+                      <td>O</td>
+                      <td>O</td>
+                    </tr>
+                    <tr>
+                      <td class="align_left">통계 현황 관리</td>
+                      <td>O</td>
+                      <td>O</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+            <div class="btn_wrap col2 center">
+              <button type="button" class="btn point_type1">확인</button>
+              <button type="button" class="btn point_type2 js-popup-close">취소</button>
+            </div>
+          </div>
+          <button type="button" class="btn_pop_close js-popup-close"><span class="blind">팝업 닫기</span></button>
+        </div>
+        <div class="dim"></div>
+      </div>
+      <!-- E : layerpopup -->
+
     </div>
     <!-- //Content Area -->
 
