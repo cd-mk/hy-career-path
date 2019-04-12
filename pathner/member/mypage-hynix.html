@@ -74,11 +74,11 @@
                       <span class="profile_name">주소</span>
                       <span class="profile_inp">
                         <span class="search_addr">
-                          <input type="text" title="우편번호 입력" class="inp_addr1">
-                          <button type="button" class="btn_address"><span class="blind">주소 검색</span></button>
+                          <input type="text" title="우편번호 입력" class="inp_addr1 js-addr-zipcode">
+                          <button type="button" class="btn_address js-address"><span class="blind">주소 검색</span></button>
                         </span>
-                        <input type="text" title="도로명 주소 입력" class="inp_addr2">
-                        <input type="text" title="상세 주소 입력" class="inp_addr3">
+                        <input type="text" title="도로명 주소 입력" class="inp_addr2 js-addr-default">
+                        <input type="text" title="상세 주소 입력" class="inp_addr3 js-addr-detail">
                       </span>
                     </li>
                   </ul>
@@ -229,6 +229,12 @@
         </div>
         <div class="dim"></div>
       </div>
+
+      <!-- 주소 검색 팝업 -->
+      <div id="layer_address_wrap">
+        <div id="layer_address"></div>
+        <div class="dim"></div>
+      </div>
     </div>
     <!-- //Content Area -->
 
@@ -245,8 +251,13 @@
   </div>
 
   <!-- import js -->
+  <!-- import Daum 주소 api -->
+  <script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js?autoload=false"></script>
+  <!-- //import Daum 주소 api -->
   <script src="../../assets/js/plugins/jquery-3.2.1.min.js"></script>
   <script src="../../assets/js/plugins/jquery-ui.min.js"></script>
   <script src="../../assets/js/common.js"></script>
+  <!-- 주소 api 호출 script -->
+  <script src="../../assets/js/postcode.js"></script>
 </body>
 </html>

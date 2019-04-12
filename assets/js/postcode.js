@@ -18,7 +18,7 @@ daum.postcode.load(function() {
       $('.js-addr-detail').focus();
 
       $('#layer_address_wrap').removeClass('open');
-      $('body').removeClass('open');
+      $('body').removeClass('popup_open');
     },
     width: '100%',
     heigth: '100%'
