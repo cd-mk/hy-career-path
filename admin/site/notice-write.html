@@ -61,15 +61,15 @@
           <span class="form_box">
             <select>
               <option value="">전체</option>
-              <option value="">전체</option>
-              <option value="">전체</option>
-              <option value="">전체</option>
+              <option value="">SK하이닉스</option>
+              <option value="">기업</option>
+              <option value="">지원자</option>
             </select>
             <select>
               <option value="">공지</option>
-              <option value="">공지</option>
-              <option value="">공지</option>
-              <option value="">공지</option>
+              <option value="">이벤트</option>
+              <option value="">오픈</option>
+              <option value="">기타</option>
             </select>
           </span>
           <span class="form_box"><input type="text" title="공지 제목 입력" placeholder="제목"></span>
@@ -95,7 +95,7 @@
         </div>
         <div class="notice_write_item editor">
           <!-- editor 삽입 영역 -->
-          <textarea name="" id=""></textarea>
+          <textarea name="" id="editor"></textarea>
         </div>
         <div class="btn_wrap center col2">
           <button type="button" class="btn point_type1">등록</button>
@@ -118,8 +118,20 @@
   </div>
 
   <!-- import js -->
+  <!-- import editor api -->
+  <script src="../../assets/se2/js/service/HuskyEZCreator.js"></script>
   <script src="../../assets/js/plugins/jquery-3.2.1.min.js"></script>
   <script src="../../assets/js/plugins/jquery-ui.min.js"></script>
   <script src="../../assets/js/common.js"></script>
+  <!-- 임시 에디터 호출 script -->
+  <script>
+    var oEditors = [];
+    nhn.husky.EZCreator.createInIFrame({
+      oAppRef: oEditors,
+      elPlaceHolder: "editor",
+      sSkinURI: "../../assets/se2/SmartEditor2Skin.html",
+      fCreator: "createSEditor2"
+    });
+  </script>
 </body>
 </html>
