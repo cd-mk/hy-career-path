@@ -27,10 +27,10 @@ daum.postcode.load(function() {
   $('.js-address').on('click', function() {
     var daumPostCode = new daum.Postcode(postCodeOpt).embed(layer);
     $('#layer_address_wrap').addClass('open');
-    $('body').addClass('open');
+    $('body').addClass('popup_open');
   });
   $('#layer_address_wrap .dim').click(function() {
     $('#layer_address_wrap').removeClass('open');
-    $('body').removeClass('open');
+    $('body').removeClass('popup_open');
   });
 });
