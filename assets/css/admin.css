@@ -461,3 +461,94 @@
   height:320px;
   background:url('../images/contents/company/img_map.png') no-repeat;
 }
+
+/* 템플릿 메세지 선택 layer popup */
+.layer_popup.layer_msg_temp .popup_box {
+  width: 750px;
+  padding: 40px 60px;
+}
+.layer_popup.layer_msg_temp .popup_box .popup_title {
+  margin-top: 0;
+}
+.layer_popup.layer_msg_temp .temp_desc {
+  font-size: 18px;
+  text-align: center;
+}
+.layer_popup.layer_msg_temp .temp_desc .txt_alert {
+  background: url(../images/common/ico-alert.png) no-repeat 0px 1px;
+}
+.layer_popup.layer_msg_temp .select_temp {
+  margin-top: 30px;
+}
+.layer_popup.layer_msg_temp .select_temp .select_temp_item {
+  margin-top: 40px;
+}
+.layer_popup.layer_msg_temp .select_temp .select_temp_item:first-child {
+  margin-top: 0;
+}
+.layer_popup.layer_msg_temp .select_temp .chk_inp {
+  position: relative;
+  top: 3px;
+}
+.layer_popup.layer_msg_temp .select_temp .txt_label {
+  font-size: 18px; font-weight: 500;
+  color: #333;
+}
+.layer_popup.layer_msg_temp .select_temp .textarea_box {
+  margin-top: 20px;
+}
+.layer_popup.layer_msg_temp .select_temp .textarea_box textarea {
+  height: 120px;
+  resize: none;
+  overflow-y: auto;
+}
+
+/* 공지사항 등록 */
+.notice_write_wrap {
+  margin-top: 50px;
+}
+.notice_write_wrap .notice_write_item {
+  display: table;
+  width: 100%;
+  margin-top: 16px;
+}
+.notice_write_wrap .notice_write_item:first-of-type {
+  margin-top: 20px;
+}
+.notice_write_wrap .notice_write_item .form_name {
+  display: table-cell;
+  width: 95px;
+  color: #666;
+  vertical-align: middle;
+}
+.notice_write_wrap .notice_write_item .form_box {
+  overflow: hidden;
+  display: table-cell;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+.notice_write_wrap .notice_write_item .form_name + .form_box {
+  width: 500px;
+  padding-left: 0;
+}
+.notice_write_wrap .notice_write_item .form_box select {
+  float: left;
+  width: 250px;
+}
+.notice_write_wrap .notice_write_item .form_box select:first-child {
+  border-right: 0;
+}
+.notice_write_wrap .notice_write_item .form_box .chk_inp_box {
+  position: relative;
+  top: 3px;
+}
+.notice_write_wrap .notice_write_item .form_box .file_inp_name {
+  width: 362px;
+}
+.notice_write_wrap .notice_write_item .form_box .file_label {
+  width: 126px;
+  margin-left: 10px;
+}
+.notice_write_wrap .btn_wrap .btn {
+  width: 120px;
+}
