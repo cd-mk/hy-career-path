@@ -1335,5 +1335,43 @@
   font-size:13px;
 }
 
-
-
+/* 템플릿 메세지 선택 layer popup */
+.layer_popup.layer_msg_temp .popup_box {
+  width: 750px;
+  padding: 40px 60px;
+}
+.layer_popup.layer_msg_temp .popup_box .popup_title {
+  margin-top: 0;
+}
+.layer_popup.layer_msg_temp .temp_desc {
+  font-size: 18px;
+  text-align: center;
+}
+.layer_popup.layer_msg_temp .temp_desc .txt_alert {
+  background: url(../images/common/ico-alert.png) no-repeat 0px 1px;
+}
+.layer_popup.layer_msg_temp .select_temp {
+  margin-top: 30px;
+}
+.layer_popup.layer_msg_temp .select_temp .select_temp_item {
+  margin-top: 40px;
+}
+.layer_popup.layer_msg_temp .select_temp .select_temp_item:first-child {
+  margin-top: 0;
+}
+.layer_popup.layer_msg_temp .select_temp .chk_inp {
+  position: relative;
+  top: 3px;
+}
+.layer_popup.layer_msg_temp .select_temp .txt_label {
+  font-size: 18px; font-weight: 500;
+  color: #333;
+}
+.layer_popup.layer_msg_temp .select_temp .textarea_box {
+  margin-top: 20px;
+}
+.layer_popup.layer_msg_temp .select_temp .textarea_box textarea {
+  height: 120px;
+  resize: none;
+  overflow-y: auto;
+}

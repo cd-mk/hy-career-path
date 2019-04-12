@@ -74,7 +74,7 @@
                   <span class="form_name">제목</span>
                   <span class="inp_box">
                     <input type="text" title="제목 입력" class="inp_not_full">
-                    <button type="button" class="inp_next_btn point_type3">템플릿</button>
+                    <button type="button" class="inp_next_btn point_type3 js-layer-open js-select-temp" data-popup="layer-select-temp">템플릿</button>
                   </span>
                 </div>
                 <div class="editor_form_item">
@@ -323,6 +323,50 @@
             <div class="btn_wrap col2 center">
               <button type="button" class="btn point_type1">저장</button>
               <button type="button" class="btn point_type2 js-popup-close">취소</button>
+            </div>
+          </div>
+          <button type="button" class="btn_pop_close js-popup-close"><span class="blind">팝업 닫기</span></button>
+        </div>
+        <div class="dim"></div>
+      </div>
+
+      <div class="layer_popup layer_msg_temp" data-popup="layer-select-temp">
+        <div class="popup_box">
+          <strong class="popup_title">템플릿</strong>
+          <div class="popup_con">
+            <p class="temp_desc">
+              <span class="txt_alert">원하는 메세지를 선택해 주세요</span>
+            </p>
+            <div class="select_temp">
+              <div class="select_temp_item">
+                <div class="chk_inp_box">
+                  <span class="chk_inp">
+                    <input type="radio" name="msgChk" id="msgChk1" class="chk_inp">
+                    <label for="msgChk1"><span class="blind">서류 합격 알림 선택</span></label>
+                  </span>
+                  <span class="txt_label">서류 합격 알림</span>
+                </div>
+                <div class="textarea_box">
+                  <textarea name="" id="" maxlength="500"></textarea>
+                </div>
+              </div>
+              <div class="select_temp_item">
+                <div class="chk_inp_box">
+                  <span class="chk_inp">
+                    <input type="radio" name="msgChk" id="msgChk2" class="chk_inp">
+                    <label for="msgChk2"><span class="blind">전형일자통보 선택</span></label>
+                  </span>
+                  <span class="txt_label">전형일자통보</span>
+                </div>
+                <div class="textarea_box">
+                  <textarea name="" id="" maxlength="500"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="btn_wrap col3 center">
+              <button type="button" class="btn point_type1">자동입력</button>              
+              <button type="button" class="btn point_type2">저장</button>
+              <button type="button" class="btn point_type2">삭제</button>
             </div>
           </div>
           <button type="button" class="btn_pop_close js-popup-close"><span class="blind">팝업 닫기</span></button>
