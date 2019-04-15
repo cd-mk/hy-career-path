@@ -180,3 +180,38 @@
   padding-left: 20px;
   color: #333;
 }
+
+/* 협력사 - 채용정보 상세 */
+.pathner_type .job_detail_title .detail_left .detail_title {
+  margin-top: 0;
+  margin-bottom: 10px; 
+}
+.pathner_type .job_detail_title .detail_left .recruit {
+  display: inline-block;
+  padding-right: 20px;
+}
+.pathner_type .job_detail_title .detail_left .detail_company_info li {
+  float: left;
+  padding-left: 30px;
+}
+.pathner_type .job_detail_title .detail_left .detail_company_info > li:first-child {
+  padding-left: 0;
+}
+.pathner_type .section_job_detail .company_thum {
+  width: 573px;
+  text-align: left;
+}
+.pathner_type .section_job_detail .company_detail .total_number {
+  font-size: 22px;
+}
+.pathner_type .section_job_detail .company_detail .total_number li {
+  float: left;
+  padding-left: 72px;
+  font-weight: 500;
+}
+.pathner_type .section_job_detail .company_detail .total_number li:first-child {
+  background: url(../images/contents/partner/ico_career_detail01.png) no-repeat 40px center;
+}
+.pathner_type .section_job_detail .company_detail .total_number li:last-child {
+  background: url(../images/contents/partner/ico_career_detail02.png) no-repeat 40px center;
+}
