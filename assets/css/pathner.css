@@ -83,3 +83,72 @@
   font-size:13px;
 }
 
+/* 파트너 채용공고 등록 */
+.career-write .tbl_wrap {
+  margin-top:30px;
+}
+.career-write .tbl_wrap table tbody {
+  border-top:1px solid #e8e8e8;
+}
+.career-write .tbl_wrap th {
+  vertical-align: middle;
+  box-sizing: border-box;
+  background:#f8f8f8;
+  border-bottom: 1px solid #e8e8e8;
+}
+.career-write .tbl_wrap table tbody tr td {
+  padding:20px 30px;
+  box-sizing: border-box;
+  text-align:left;  
+}
+.career-write .tbl_wrap .career_cell1:after {
+  content:'';
+  display:block;
+  clear:both;
+}
+.career-write .tbl_wrap .career_cell1 select{
+  float:left;
+  margin-right:10px;
+  width:106px;
+}
+.career-write .tbl_wrap .career_cell1 input {
+  float:left;
+  width:calc(100% - 116px);
+}
+.career-write .tbl_wrap .career_cell2 td {
+  padding:20px 30px 16px 30px;
+  border-bottom:0;
+}
+.career-write .tbl_wrap .career_cell3 td {
+  padding:0 30px 16px 30px;
+  border-bottom:0;
+}
+.career-write .tbl_wrap .career_cell4 td {
+  padding:0 30px 20px 30px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.career-write .tbl_wrap .career_cell2 td label,
+.career-write .tbl_wrap .career_cell3 td label,
+.career-write .tbl_wrap .career_cell4 td label {  
+  display:inline-block;
+  width:82px;
+  color:#666;
+}
+.career-write .tbl_wrap .career_cell2 td select,
+.career-write .tbl_wrap .career_cell3 td select {
+  width:338px;
+}
+.career-write .tbl_wrap .career_cell4 td input {
+  display: inline-block;
+  width:calc(100% - 86px);
+}
+.career-write .tbl_wrap table tbody tr td div.chk_inp_box {
+  margin-right:40px;
+}
+.career-write .tbl_wrap table tbody tr td textarea {
+  height:130px;
+}
+.career-write .career_check {
+  margin-top:20px;
+} 
