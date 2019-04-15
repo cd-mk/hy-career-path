@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>공지사항 관리</title>
+  <link rel="stylesheet" href="../../assets/css/app.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <div class="header">
+      <ul class="header_top">
+        <li><a href="#url">공지사항</a></li>
+        <li><a href="#url"><strong class="txt_point1">희망나눔</strong>님</a></li>
+        <li><a href="#url">로그아웃</a></li>
+      </ul>
+      <div class="header_middle">
+        <a href="main.html" class="logo"><img src="../assets/images/common/img-logo.png" alt="SK Hynix 청년희망나눔"></a>
+        <ul class="gnb">
+          <li>
+            <a href="#url">채용정보</a>
+          </li>
+          <li>
+            <a href="#url">기업소개</a>
+          </li>
+          <li>
+            <a href="#url">커리어패스란?</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Content Area -->
+    <div class="container">
+      <h2 class="page_title">채용정보</h2>
+      <div class="career-write">
+        <h3 class="sub_title">채용 공고 등록</h3>
+        <div class="tbl_wrap">
+          <table>
+            <caption>채용 공고 등록을 위한 표</caption>  
+            <colgroup>
+              <col width="200px">
+              <col width="*">
+              <col width="200px">
+              <col width="*">
+            </colgroup>    
+            <tbody>
+              <tr>
+                <th><label for="inp01">공고명</label></th>
+                <td colspan="3" class="inp_box"><input type="text" name="" id="inp01" title="공고명"></td>
+              </tr>
+              <tr>
+                <th>접수기간</th>
+                <td colspan="3" class="inp_date_box">
+                  <input type="text" class="input_date" title="시작일 입력">
+                  <span class="hypon">-</span>
+                  <input type="text" class="input_date" title="종료일 입력">
+                </td>
+              </tr>
+              <tr>
+                <th><label for="inp02">채용직무</label></th>
+                <td class="career_cell1">
+                  <select name="" id="inp02">
+                    <option value="">선택</option>
+                    <option value="">신입</option>
+                    <option value="">경력</option>
+                    <option value="">공채</option>
+                  </select>
+                  <input type="text" name="" title="정보입력">
+                </td>
+                <th><label for="inp20">근무지</label></th>
+                <td>
+                  <select name="" id="inp20">
+                    <option value="">서울</option>
+                    <option value="">서울</option>
+                    <option value="">서울</option>
+                    <option value="">서울</option>
+                    <option value="">서울</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th><label for="inp19">근무부서</label></th>
+                <td class="inp_box"><input type="text" name="" id="inp19" title="근무부서"></td>
+                <th><label for="inp03">채용인원</label></th>
+                <td class="inp_box"><input type="text" name="" id="inp03" title="채용인원"></td>
+              </tr>
+              <tr class="career_cell2">
+                <th rowspan="5">자격요건</th>
+                <td colspan="3" >
+                  <label for="inp04">학력</label>
+                  <select name="" id="inp04">
+                    <option value="">선택</option>
+                    <option value="">학력무관</option>
+                    <option value="">고졸</option>
+                    <option value="">학사이상</option>
+                    <option value="">석사이상</option>
+                    <option value="">박사</option>
+                  </select>
+                </td>
+              </tr>
+              <tr class="career_cell3">
+                <td colspan="3" >
+                  <label for="inp05">전공</label>
+                  <select name="" id="inp05">
+                    <option value="">선택</option>
+                    <option value="">전공무관</option>
+                    <option value="">인문사회계열</option>
+                    <option value="">자연과학계열</option>
+                    <option value="">공과계열</option>
+                  </select>
+                </td>
+              </tr>
+              <tr class="career_cell3">
+                <td colspan="3" >
+                  <label for="inp06">외국어</label>
+                  <select name="" id="inp06">
+                    <option value="">선택</option>
+                    <option value="">언어무관</option>
+                    <option value="">영어우대</option>
+                    <option value="">중국어우대</option>
+                    <option value="">일본어우대</option>
+                    <option value="">기타언어</option>
+                  </select>
+                </td>
+              </tr>
+              <tr class="career_cell3">
+                <td colspan="3" >
+                  <label for="inp07">해당경력</label>
+                  <select name="" id="inp07">
+                    <option value="">선택</option>
+                    <option value="">경력무관</option>
+                    <option value="">해당업무1년이상</option>
+                    <option value="">해당업무2년이상</option>
+                    <option value="">해당업무3년이상</option>
+                  </select>
+                </td>
+              </tr>
+              <tr class="career_cell4">
+                <td class="inp_box" colspan="3" >
+                  <label for="inp08">기타</label>
+                  <input type="text" name="" id="inp08" title="기타">
+                </td>
+              </tr>
+              <tr>
+                <th>전형절차</th>
+                <td colspan="3">
+                  <div class="chk_inp_box">
+                    <span class="txt_label">서류</span>
+                    <span class="chk_inp">
+                      <input type="checkbox" id="inp09" class="chk_inp">
+                      <label for="inp09"><span class="blind">서류</span></label>
+                    </span>                    
+                  </div>
+                  <div class="chk_inp_box">
+                    <span class="txt_label">인적성검사</span>
+                    <span class="chk_inp">
+                      <input type="checkbox" id="inp10" class="chk_inp">
+                      <label for="inp10"><span class="blind">인적성검사</span></label>
+                    </span>                    
+                  </div>
+                  <div class="chk_inp_box">
+                    <span class="txt_label">실무면접</span>
+                    <span class="chk_inp">
+                      <input type="checkbox" id="inp11" class="chk_inp">
+                      <label for="inp11"><span class="blind">실무면접</span></label>
+                    </span>                    
+                  </div>
+                  <div class="chk_inp_box">
+                    <span class="txt_label">임원면접</span>
+                    <span class="chk_inp">
+                      <input type="checkbox" id="inp12" class="chk_inp">
+                      <label for="inp12"><span class="blind">임원면접</span></label>
+                    </span>                    
+                  </div>
+                  <div class="chk_inp_box">
+                    <span class="txt_label">건강검진</span>
+                    <span class="chk_inp">
+                      <input type="checkbox" id="inp13" class="chk_inp">
+                      <label for="inp13"><span class="blind">건강검진</span></label>
+                    </span>                    
+                  </div>
+                  <div class="chk_inp_box">
+                    <span class="txt_label">처우협의</span>
+                    <span class="chk_inp">
+                      <input type="checkbox" id="inp14" class="chk_inp">
+                      <label for="inp14"><span class="blind">처우협의</span></label>
+                    </span>                    
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th><label for="inp15">주요담당업무</label></th>
+                <td colspan="3"><textarea id="inp15"></textarea></td>
+              </tr>
+              <tr>
+                <th><label for="inp16">기타</label></th>
+                <td colspan="3"><textarea id="inp16"></textarea></td>
+              </tr>
+              <tr>
+                <th><label for="inp17">문의처</label></th>
+                <td colspan="3"><textarea id="inp17"></textarea></td>
+              </tr>              
+            </tbody>
+          </table>
+          <div class="career_check">
+            <span class="chk_inp">
+              <input type="checkbox" id="inp18" class="chk_inp" checked>
+              <label for="inp18"><span class="blind">지원자의 마이페이지 > 추천 기업 채용정보로 노출합니다.</span></label>
+            </span>
+            <span class="txt_label">지원자의 마이페이지 > 추천 기업 채용정보로 노출합니다.</span>
+          </div>
+          </div> 
+          <div class="btn_wrap center col2">
+            <button type="button" class="btn point_type1">등록</button>
+            <button type="button" class="btn point_type2">취소</button>
+          </div>
+      </div>
+    </div>
+    <!-- //Content Area -->
+
+    <div class="footer">
+      <div class="footer_inner">
+        <ul class="privacy_list">
+          <li><a href="#url" class="txt_point2">이용약관</a></li>
+          <li><a href="#url" class="txt_point2"><strong>개인정보 처리방침</strong></a></li>
+        </ul>
+        <p class="cpr txt_point3">Copyright&copy; 2019 All Right Reserved</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- import js -->
+  <script src="../../assets/js/plugins/jquery-3.2.1.min.js"></script>
+  <script src="../../assets/js/plugins/jquery-ui.min.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+</html>
