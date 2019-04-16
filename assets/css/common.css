@@ -1123,3 +1123,12 @@ button {
   width: 44px; height: 44px;
   background: url(../images/common/ico-search.png) no-repeat center;
 }
+.inp_sch_box {
+  position: relative;
+}
+.inp_sch_box .btn_search {
+  position: absolute;
+  right: 0; top: 0;
+  width: 44px; height: 44px;
+  background: url(../images/common/ico-search.png) no-repeat center;
+}
