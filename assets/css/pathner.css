@@ -162,6 +162,34 @@
  font-weight:500;
  font-size:18px;
 }
+.apply_list .job_detail_title {
+  width: 100%;
+  margin-top: 50px;
+  padding:30px 0;
+  box-sizing: border-box;
+  table-layout: fixed;
+  border-top: 2px solid #333;
+  border-bottom: 1px solid #e8e8e8;
+}
+.apply_list .job_detail_title .detail_title {
+  display: block;
+  font-size: 28px;
+}
+.apply_list .job_detail_title .detail_title span {
+  margin-right:20px;
+}
+.apply_list .job_detail_title .detail_company_info {
+  margin-top:10px; 
+  overflow: hidden;
+}
+.apply_list .job_detail_title .detail_company_info > li {
+  float: left;
+  margin-left:30px;
+  font-size: 14px;
+}
+.apply_list .job_detail_title .detail_company_info > li:first-child {
+  margin-left: 0; 
+}
 .apply_list .company_apply {
   margin-top:10px;
   padding:17px 0 16px 50px;
@@ -200,6 +228,10 @@
 }
 .apply_list .company_apply ul li:first-child {
   color:#ff7a00;
+}
+.apply_list .company_apply ul li:nth-child(2) {
+  background:url('../images/contents/partner/ico_career_detail01.png') no-repeat bottom right;
+  background-size:22px 21px;
 }
 .apply_list .company_apply li:last-child:after {
   display:none;
