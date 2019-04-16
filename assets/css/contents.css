@@ -263,18 +263,8 @@
   line-height: 44px;
   font-size: 14px; font-weight: 500;
 }
-.profile_box .right_profile .profile_list .search_addr {
-  position: relative;
+.profile_box .right_profile .profile_list .inp_sch_box {
   float: left;
-}
-.profile_box .right_profile .profile_list .search_addr input {
-  padding-right: 44px;
-}
-.profile_box .right_profile .profile_list .search_addr .btn_address {
-  position: absolute;
-  right: 0; top: 0;
-  width: 44px; height: 44px;
-  background: url(../images/common/ico-search.png) no-repeat center;
 }
 .profile_box .right_profile .profile_list .inp_addr1 {
   float: left;
