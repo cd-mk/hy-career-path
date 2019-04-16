@@ -521,50 +521,135 @@
   width:100%;
 }
 
-.group_form_wrap.notice_write .group_form_item:first-of-type {
-  margin-top: 20px;
+ .group_form_wrap.notice_write .group_form_item:first-of-type {
+  margin-top: 20px !important;
 }
-.group_form_wrap.notice_write .group_form_item .form_name {
+ .group_form_wrap.notice_write .group_form_item .form_name {
   width: 95px;
 }
-.group_form_wrap.notice_write .group_form_item .form_box {
+ .group_form_wrap.notice_write .group_form_item .form_box {
   overflow: hidden;
   display: table-cell;
   padding-left: 10px;
   vertical-align: middle;
 }
-.group_form_wrap.notice_write .group_form_item .form_name + .form_box {
-  width: 500px;
+ .group_form_wrap.notice_write .group_form_item .form_name + .form_box {
   padding-left: 0;
 }
-.group_form_wrap.notice_write .group_form_item .form_box select {
+ .group_form_wrap.notice_write .group_form_item .form_box select {
   float: left;
-  width: 250px;
+  width: 150px;
 }
-.group_form_wrap.notice_write .group_form_item .form_box select.no_r_line {
+ .group_form_wrap.notice_write .group_form_item .form_box select.no_r_line {
   border-right: 0;
 }
-.group_form_wrap.notice_write .group_form_item .form_box .chk_inp_box {
+ .group_form_wrap.notice_write .group_form_item .form_box .chk_inp_box {
   position: relative;
   top: 3px;
 }
-.group_form_wrap.notice_write .group_form_item .form_box .file_inp_name {
+ .group_form_wrap.notice_write .group_form_item .form_box .file_inp_name {
   width: 362px;
 }
-.group_form_wrap.notice_write .group_form_item .form_box .file_label {
+ .group_form_wrap.notice_write .group_form_item .form_box .file_label {
   width: 126px;
   margin-left: 10px;
 }
-.group_form_wrap.notice_write .btn_wrap .btn {
+ .group_form_wrap.notice_write .btn_wrap .btn {
   width: 120px;
 }
-.group_form_wrap.notice_write .group_form_item.editor {
+ .group_form_wrap.notice_write .group_form_item.editor {
   display: block;
 }
-.group_form_wrap.notice_write .group_form_item.editor textarea {
+ .group_form_wrap.notice_write .group_form_item.editor textarea {
  width: 1198px;
   height: 560px;
 }
 
 /* 기업정보 등록 */
-.bnss_write
+.group_form_wrap.bnss_write {
+  width:100%;
+}
+
+.group_form_wrap.bnss_write .group_form .group_form_item {
+  border-top: 1px solid #e8e8e8;
+  padding-top:20px;
+  margin-top:20px;
+  padding-right:80px;
+}
+ .group_form_wrap.bnss_write .group_form_item:first-of-type {
+  margin-top: 20px !important;
+  padding-top:0;
+  border-top:0;
+}
+ .group_form_wrap.bnss_write .group_form_item .form_name {
+  padding-left:50px;
+  width: 120px;
+}
+ .group_form_wrap.bnss_write .group_form_item .form_name:first-child {
+  width: 170px;
+  padding-left:60px;
+}
+ .group_form_wrap.bnss_write .group_form_item .form_box {
+  overflow: hidden;
+  display: table-cell;
+  padding-left: 10px;
+  vertical-align: middle;
+  font-size:0;
+}
+ .group_form_wrap.bnss_write .group_form_item.col2 .form_box input {
+  width:470px;
+  display: inline-block;
+  margin-top:10px;
+}
+ .group_form_wrap.bnss_write .group_form_item.col2 .form_box input:nth-child(2),
+ .group_form_wrap.bnss_write .group_form_item.col2 .form_box input:nth-child(4),
+ .group_form_wrap.bnss_write .group_form_item.col2 .form_box input:nth-child(6) {
+  margin-left:10px;
+}
+.group_form_wrap.bnss_write .group_form_item.col2 .form_box input:nth-child(1),
+ .group_form_wrap.bnss_write .group_form_item.col2 .form_box input:nth-child(2) {
+  margin-top:0;
+}
+
+ .group_form_wrap.bnss_write .group_form_item .form_text {
+  overflow: hidden;
+  display: table-cell;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+ .group_form_wrap.bnss_write .group_form_item .form_name + .form_box {
+  padding-left: 0;
+}
+ .group_form_wrap.bnss_write .group_form_item .form_box select {
+  float: left;
+  width: 150px;
+}
+ .group_form_wrap.bnss_write .group_form_item .form_box select.no_r_line {
+  border-right: 0;
+}
+ .group_form_wrap.bnss_write .group_form_item .form_box .chk_inp_box {
+  position: relative;
+  top: 3px;
+}
+ .group_form_wrap.bnss_write .group_form_item .form_box .file_inp_name {
+  width: 270px;
+}
+ .group_form_wrap.bnss_write .group_form_item .form_box .file_label {
+  width: 126px;
+  margin-left: 10px;
+}
+ .group_form_wrap.bnss_write .btn_wrap .btn {
+  width: 153px;
+}
+ .group_form_wrap.bnss_write .group_form_item.editor {
+  display: block;
+}
+
+ .group_form_wrap.bnss_write .group_form_item.adress .inp_box {
+  display: block;
+  width:100%;
+  margin-top:10px;
+}
+ .group_form_wrap.bnss_write .group_form_item.adress .inp_box.addr_search {
+  margin-top:0;
+}

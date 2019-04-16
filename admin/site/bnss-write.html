@@ -100,23 +100,27 @@
                             </select>
                         </span>
                         <span class="form_name">매출액</span>
-                        <span class="form_box"><input type="text" title="매출액"></span><span class="form_text">명</span>
+                        <span class="form_box"><input type="text" title="매출액"></span><span class="form_text">원</span>
                             
                         <span class="form_name">직원수</span>
                         <span class="form_box"><input type="text" title="직원수"></span><span class="form_text">명</span>
                     </div>
                 
-                    <div class="group_form_item">
+                    <div class="group_form_item col2">
                         <span class="form_name">복지</span>
-                        <span class="form_box"><input type="text" title="복지 입력 1"></span>
-                        <span class="form_box"><input type="text" title="복지 입력 2"></span>
-                        <span class="form_box"><input type="text" title="복지 입력 3"></span>
-                        <span class="form_box"><input type="text" title="복지 입력 4"></span>
+                        <span class="form_box">
+                            <input type="text" title="복지 입력 1">
+                            <input type="text" title="복지 입력 2">
+                            <input type="text" title="복지 입력 3">
+                            <input type="text" title="복지 입력 4">
+                            <input type="text" title="복지 입력 5">
+                            <input type="text" title="복지 입력 6">
+                        </span>
                     </div>
                     <div class="group_form_item">
                         <span class="form_name">기업 소개</span>
                         <!-- editor 삽입 영역 -->
-                        <textarea name="" id="editor"></textarea>
+                        <textarea name="" id="editor" placeholder="(0/3000byte)"></textarea>
                     </div>
                     <div class="group_form_item">
                         <span class="form_name">회사 사진</span>
@@ -127,8 +131,6 @@
                                 <input type="file" id="company_photo" class="file_inp">
                             </span>
                         </span>
-                    </div>
-                    <div class="group_form_item">
                         <span class="form_name">지도</span>
                         <span class="form_box">
                             <span class="file_inp_box type_btn2">
@@ -138,6 +140,7 @@
                             </span>
                         </span>
                     </div>
+                    
                     <div class="group_form_item adress">
                         <span class="form_name"><sup class="require">*</sup> 주소</span>
                         <span class="inp_box addr_search">
@@ -151,16 +154,20 @@
                     <div class="group_form_item">
                         <span class="form_name">전화번호</span>
                         <span class="form_box"><input type="text" title="전화번호 입력"></span>
-                    </div>
-                    <div class="group_form_item">
+
                         <span class="form_name">홈페이지</span>
                         <span class="form_box"><input type="text" title="http://" placeholder="http://"></span>
                     </div>
                 </div>
                 <div class="btn_wrap center col2">
-                    <button type="button" class="btn point_type1"></button>
+                    <button type="button" class="btn point_type1">등록</button>
                     <button type="button" class="btn point_type2">취소</button>
                 </div>
+            </div>
+            <!-- 주소 검색 팝업 -->
+            <div id="layer_address_wrap">
+                <div id="layer_address"></div>
+                <div class="dim"></div>
             </div>
         </div>
         <!-- //Content Area -->
@@ -177,7 +184,15 @@
 
     </div>
 
-    <!-- import js -->
+  <!-- import js -->
+  <!-- import Daum 주소 api -->
+  <script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js?autoload=false"></script>
+  <!-- //import Daum 주소 api -->
+  <script src="../../assets/js/plugins/jquery-3.2.1.min.js"></script>
+  <script src="../../assets/js/plugins/jquery-ui.min.js"></script>
+  <script src="../../assets/js/common.js"></script>
+  <!-- 주소 api 호출 script -->
+  <script src="../../assets/js/postcode.js"></script>
     
 </body>
 
