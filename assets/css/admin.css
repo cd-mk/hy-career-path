@@ -646,5 +646,12 @@
 }
 
  .group_form_wrap.bnss_write .group_form_item.adress .inp_box.addr_search {
-  margin-top:0;
+  width: 200px;
+}
+ .group_form_wrap.bnss_write .group_form_item.adress .inp_box.addr_search {
+  padding-left:0;
+  
+}
+ .group_form_wrap.bnss_write .group_form_item.adress .inp_box {
+  padding-left:10px;
 }
