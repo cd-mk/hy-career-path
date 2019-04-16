@@ -84,6 +84,9 @@
 }
 
 /* 파트너 채용공고 등록 */
+.career-write {
+  margin-top:50px;
+}
 .career-write .tbl_wrap {
   margin-top:30px;
 }
@@ -152,3 +155,126 @@
 .career-write .career_check {
   margin-top:20px;
 } 
+
+/* 채용정보 지원자 보기 */
+.apply_list h4 {
+ margin-top:70px;
+ font-weight:500;
+ font-size:18px;
+}
+.apply_list .company_apply {
+  margin-top:10px;
+  padding:17px 0 16px 50px;
+  border:1px solid #e8e8e8;
+}
+.apply_list .company_apply:after {
+  content:'';
+  display:block;
+  clear:both;
+}
+.apply_list .company_apply .company_img {
+  display:inline-block;
+  width:240px;
+  height:80px;
+  vertical-align:middle;
+  text-align:center;
+}
+.apply_list .company_apply .company_img img {
+  position:relative;
+  top:50%;
+  display:inline-block;
+  transform: translateY(-50%);
+  width:142px;
+}
+.apply_list .company_apply ul {
+  float:right;
+  margin-top:10px;
+}
+.apply_list .company_apply ul li {
+  position:relative;
+  display:inline-block;
+  width:168px;
+  text-align:center;
+  color:#666;
+  font-weight:500;
+}
+.apply_list .company_apply ul li:first-child {
+  color:#ff7a00;
+}
+.apply_list .company_apply li:last-child:after {
+  display:none;
+}
+.apply_list .company_apply li:after {
+  content:'';
+  position:absolute;
+  top:0; right:0;
+  width:1px;
+  height:60px;
+  background-color:#e8e8e8;
+}
+.apply_list .company_apply li p {
+  font-size:28px;
+  font-weight:500;
+}
+.apply_list .btn_apply {
+  margin-top:50px;
+  text-align:right;
+}
+.apply_list > div.btn_apply .btn {
+  width:185px; height:44px;
+  line-height:44px;
+  font-size:14px;
+  font-weight:500;
+}
+.apply_list .tbl_wrap {
+  margin-top:11px;
+}
+.apply_list .tbl_wrap table td {
+  padding:16px 0;
+  text-align:center;
+}
+.apply_list .tbl_wrap table td .img_apply {
+  display:inline-block;
+  width:77px; height:100px;
+  border:1px solid #e8e8e8;
+  vertical-align: middle;
+
+}
+.apply_list .tbl_wrap table td .img_none {
+  display:inline-block;
+  width:77px; height:100px;
+  border:1px solid #e8e8e8;
+  background: url('../images/contents/partner/img_person.png') no-repeat center;
+  background-size:40px;
+  color:transparent;
+  vertical-align: middle;
+}
+.apply_list .tbl_wrap table td .name_apply {
+  display:inline-block;
+  margin-left:16px;
+  vertical-align: middle;
+  font-size:16px;
+}
+.apply_list .tbl_wrap table td .name_apply p {
+  margin-top:4px;
+  font-size:14px;
+}
+.apply_list .tbl_wrap table td .ico_pass {
+  display:block;
+  margin-left:50%;
+  margin-top:8px;
+  transform:translateX(-50%);
+}
+.apply_list .tbl_wrap table td select {
+  width:150px;
+}
+.apply_list .tbl_wrap table td .btn {
+  margin:5px auto 0;
+  width:150px; height:44px;
+  line-height:44px;
+  font-weight:500;
+  font-size:14px;
+}
+.apply_list > .btn_wrap .btn {
+  width:193px;
+}
