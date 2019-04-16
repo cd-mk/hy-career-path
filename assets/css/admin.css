@@ -517,7 +517,7 @@
 }
 
 /* 공지사항 등록 */
-.group_form_wrap {
+.group_form_wrap.notice_write {
   width:100%;
 }
 
@@ -565,3 +565,6 @@
  width: 1198px;
   height: 560px;
 }
+
+/* 기업정보 등록 */
+.bnss_write
