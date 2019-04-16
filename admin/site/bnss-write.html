@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>공지사항 등록</title>
+    <link rel="stylesheet" href="../../assets/css/app.css">
+</head>
+
+<body>
+    <div class="wrap">
+
+        <div class="header">
+            <ul class="header_top">
+                <li><a href="#url"><strong class="txt_point1">희망나눔</strong>님</a></li>
+                <li><a href="#url">로그아웃</a></li>
+            </ul>
+            <div class="header_middle">
+                <a href="main.html" class="logo"><img src="../../assets/images/common/img-logo.png"
+                        alt="SK Hynix 청년희망나눔"></a>
+                <ul class="gnb">
+                    <li>
+                        <a href="#url">사이트관리</a>
+                        <ul class="sub_gnb active">
+                            <li><a href="#url">공지사항 관리</a></li>
+                            <li><a href="#url">기업 관리</a></li>
+                            <li><a href="#url">SMS 발송</a></li>
+                            <li><a href="#url">이메일 발송</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#url">계정 관리</a>
+                        <ul class="sub_gnb">
+                            <li><a href="#url">임시메뉴1</a></li>
+                            <li><a href="#url">임시메뉴2</a></li>
+                            <li><a href="#url">임시메뉴3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#url">인증 관리</a>
+                        <ul class="sub_gnb">
+                            <li><a href="#url">임시메뉴1</a></li>
+                            <li><a href="#url">임시메뉴2</a></li>
+                            <li><a href="#url">임시메뉴3</a></li>
+                            <li><a href="#url">임시메뉴4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- admin header일 경우 추가됨 -->
+            <div class="header_bottom"></div>
+        </div>
+
+        <!-- Content Area -->
+        <div class="container">
+            <h2 class="page_title">공지사항 관리</h2>
+
+            <div class="write_wrap">
+                <h3 class="sub_title">공지사항 관리</h3>
+                <div class="write_item">
+                    <span class="form_name">구분</span>
+                    <span class="form_box">
+                        <select>
+                            <option value="">전체</option>
+                            <option value="">SK하이닉스</option>
+                            <option value="">기업</option>
+                            <option value="">지원자</option>
+                        </select>
+                        <select>
+                            <option value="">공지</option>
+                            <option value="">이벤트</option>
+                            <option value="">오픈</option>
+                            <option value="">기타</option>
+                        </select>
+                    </span>
+                    <span class="form_box"><input type="text" title="공지 제목 입력" placeholder="제목"></span>
+                </div>
+                <div class="write_item">
+                    <span class="form_name">파일 첨부</span>
+                    <span class="form_box">
+                        <span class="file_inp_box type_btn2">
+                            <input type="text" class="file_inp_name js-file-name" readonly="">
+                            <label for="file1" class="file_label btn point_type3">파일 선택</label>
+                            <input type="file" id="file1" class="file_inp">
+                        </span>
+                    </span>
+                    <span class="form_box">
+                        <span class="chk_inp_box">
+                            <span class="chk_inp">
+                                <input type="radio" name="radio1" id="chk4" class="chk_inp">
+                                <label for="chk4"><span class="blind">대표 공지사항 등록 여부</span></label>
+                            </span>
+                            <span class="txt_label">대표 공지사항으로 등록</span>
+                        </span>
+                    </span>
+                </div>
+                <div class="write_item editor">
+                    <!-- editor 삽입 영역 -->
+                    <textarea name="" id="editor"></textarea>
+                </div>
+                <div class="btn_wrap center col2">
+                    <button type="button" class="btn point_type1">등록</button>
+                    <button type="button" class="btn point_type2">취소</button>
+                </div>
+            </div>
+        </div>
+        <!-- //Content Area -->
+
+        <div class="footer">
+            <div class="footer_inner">
+                <ul class="privacy_list">
+                    <li><a href="#url" class="txt_point2">이용약관</a></li>
+                    <li><a href="#url" class="txt_point2"><strong>개인정보 처리방침</strong></a></li>
+                </ul>
+                <p class="cpr txt_point3">Copyright&copy; 2019 All Right Reserved</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- import js -->
+    <!-- import editor api -->
+    <script src="../../assets/se2/js/service/HuskyEZCreator.js"></script>
+    <script src="../../assets/js/plugins/jquery-3.2.1.min.js"></script>
+    <script src="../../assets/js/plugins/jquery-ui.min.js"></script>
+    <script src="../../assets/js/common.js"></script>
+    <!-- 임시 에디터 호출 script -->
+    <script>
+        var oEditors = [];
+        nhn.husky.EZCreator.createInIFrame({
+            oAppRef: oEditors,
+            elPlaceHolder: "editor",
+            sSkinURI: "../../assets/se2/SmartEditor2Skin.html",
+            fCreator: "createSEditor2"
+        });
+    </script>
+</body>
+
+</html>
