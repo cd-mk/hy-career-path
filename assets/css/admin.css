@@ -517,57 +517,51 @@
 }
 
 /* 공지사항 등록 */
-.write_wrap {
-  margin-top: 50px;
+.group_form_wrap {
+  width:100%;
 }
-.write_wrap .write_item {
-  display: table;
-  width: 100%;
-  margin-top: 16px;
-}
-.write_wrap .write_item:first-of-type {
+
+.group_form_wrap.notice_write .group_form_item:first-of-type {
   margin-top: 20px;
 }
-.write_wrap .write_item .form_name {
-  display: table-cell;
+.group_form_wrap.notice_write .group_form_item .form_name {
   width: 95px;
-  color: #666;
-  vertical-align: middle;
 }
-.write_wrap .write_item .form_box {
+.group_form_wrap.notice_write .group_form_item .form_box {
   overflow: hidden;
   display: table-cell;
   padding-left: 10px;
   vertical-align: middle;
 }
-.write_wrap .write_item .form_name + .form_box {
+.group_form_wrap.notice_write .group_form_item .form_name + .form_box {
   width: 500px;
   padding-left: 0;
 }
-.write_wrap .write_item .form_box select {
+.group_form_wrap.notice_write .group_form_item .form_box select {
   float: left;
   width: 250px;
 }
-.write_wrap .write_item .form_box select:first-child {
+.group_form_wrap.notice_write .group_form_item .form_box select.no_r_line {
   border-right: 0;
 }
-.write_wrap .write_item .form_box .chk_inp_box {
+.group_form_wrap.notice_write .group_form_item .form_box .chk_inp_box {
   position: relative;
   top: 3px;
 }
-.write_wrap .write_item .form_box .file_inp_name {
+.group_form_wrap.notice_write .group_form_item .form_box .file_inp_name {
   width: 362px;
 }
-.write_wrap .write_item .form_box .file_label {
+.group_form_wrap.notice_write .group_form_item .form_box .file_label {
   width: 126px;
   margin-left: 10px;
 }
-.write_wrap .btn_wrap .btn {
+.group_form_wrap.notice_write .btn_wrap .btn {
   width: 120px;
 }
-.write_wrap .write_item.editor {
+.group_form_wrap.notice_write .group_form_item.editor {
   display: block;
 }
-.write_wrap .write_item.editor textarea {
+.group_form_wrap.notice_write .group_form_item.editor textarea {
+ width: 1198px;
   height: 560px;
 }
