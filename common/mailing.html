@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>메일링</title>
+    <link rel="stylesheet" href="../../assets/css/app.css">
+</head>
+
+<body>
+    <div class="wrap">
+
+        <div class="header">
+            <ul class="header_top">
+                <li><a href="#url"><strong class="txt_point1">희망나눔</strong>님</a></li>
+                <li><a href="#url">로그아웃</a></li>
+            </ul>
+            <div class="header_middle">
+                <a href="main.html" class="logo"><img src="../../assets/images/common/img-logo.png"
+                        alt="SK Hynix 청년희망나눔"></a>
+                <ul class="gnb">
+                    <li>
+                        <a href="#url">사이트관리</a>
+                        <ul class="sub_gnb active">
+                            <li><a href="#url">공지사항 관리</a></li>
+                            <li><a href="#url">기업 관리</a></li>
+                            <li><a href="#url">SMS 발송</a></li>
+                            <li><a href="#url">이메일 발송</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#url">계정 관리</a>
+                        <ul class="sub_gnb">
+                            <li><a href="#url">임시메뉴1</a></li>
+                            <li><a href="#url">임시메뉴2</a></li>
+                            <li><a href="#url">임시메뉴3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#url">인증 관리</a>
+                        <ul class="sub_gnb">
+                            <li><a href="#url">임시메뉴1</a></li>
+                            <li><a href="#url">임시메뉴2</a></li>
+                            <li><a href="#url">임시메뉴3</a></li>
+                            <li><a href="#url">임시메뉴4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- admin header일 경우 추가됨 -->
+            <div class="header_bottom"></div>
+        </div>
+
+        <!-- Content Area -->
+        <div class="container">
+            <h2 class="page_title">기업 관리 </h2>
+
+            <div class="group_form_wrap bnss_write">
+                <div class="group_form">
+                    <h3 class="sub_title">기업 정보 상세 페이지</h3>
+                    <div class="group_form_item">
+                        <span class="form_name">기업명</span>
+                        <span class="form_box"><input type="text" title="회사명 입력" placeholder="회사명을 입력해 주세요."></span>
+                    </div>
+                    <div class="group_form_item">
+                        <span class="form_name">기업 1줄 소개</span>
+                        <span class="form_box"><input type="text" title="기업소개" placeholder="(0/100byte)"></span>
+                    </div>
+                    <div class="group_form_item">
+                        <span class="form_name">CI 등록</span>
+                        <span class="form_box">
+                            <span class="file_inp_box type_btn2">
+                                <input type="text" class="file_inp_name js-file-name" readonly="" placeholder="최대 50MB">
+                                <label for="file1" class="file_label btn point_type3">찾아보기</label>
+                                <input type="file" id="file1" class="file_inp">
+                            </span>
+                        </span>
+                    </div>
+                    <div class="group_form_item col4">
+                        <span class="form_name">기업규모</span>
+                        <span class="form_box">
+                            <select>
+                                <option value="">선택</option>
+                                <option value="">대기업</option>
+                                <option value="">중견기업</option>
+                                <option value="">중소기업</option>
+                            </select>
+                        </span>
+
+
+                        <span class="form_name">업종</span>
+                        <span class="form_box">
+                            <select>
+                                <option value="">선택</option>
+                                <option value="">반도체</option>
+                                <option value="">화학,에너지</option>
+                                <option value="">제조업</option>
+                            </select>
+                        </span>
+                        <span class="form_name">매출액</span>
+                        <span class="form_box"><input type="text" title="매출액"></span><span class="form_text">원</span>
+                            
+                        <span class="form_name">직원수</span>
+                        <span class="form_box"><input type="text" title="직원수"></span><span class="form_text">명</span>
+                    </div>
+                
+                    <div class="group_form_item col2">
+                        <span class="form_name">복지</span>
+                        <span class="form_box">
+                            <input type="text" title="복지 입력 1">
+                            <input type="text" title="복지 입력 2">
+                            <input type="text" title="복지 입력 3">
+                            <input type="text" title="복지 입력 4">
+                            <input type="text" title="복지 입력 5">
+                            <input type="text" title="복지 입력 6">
+                        </span>
+                    </div>
+                    <div class="group_form_item">
+                        <span class="form_name">기업 소개</span>
+                        <!-- editor 삽입 영역 -->
+                        <textarea name="" id="editor" placeholder="(0/3000byte)"></textarea>
+                    </div>
+                    <div class="group_form_item">
+                        <span class="form_name">회사 사진</span>
+                        <span class="form_box">
+                            <span class="file_inp_box type_btn2">
+                                <input type="text" class="file_inp_name js-file-name" readonly="" placeholder="최대 50MB">
+                                <label for="company_photo" class="file_label btn point_type3">찾아보기</label>
+                                <input type="file" id="company_photo" class="file_inp">
+                            </span>
+                        </span>
+                        <span class="form_name">지도</span>
+                        <span class="form_box">
+                            <span class="file_inp_box type_btn2">
+                                <input type="text" class="file_inp_name js-file-name" readonly="" placeholder="최대 50MB">
+                                <label for="map_photo" class="file_label btn point_type3">찾아보기</label>
+                                <input type="file" id="map_photo" class="file_inp">
+                            </span>
+                        </span>
+                    </div>
+                    
+                    <div class="group_form_item adress">
+                        <span class="form_name"><sup class="require">*</sup> 주소</span>
+                        <span class="inp_box addr_search">
+                            <input type="text" title="우편 번호 입력" name="personZipcode" id="personZipcode" class="js-addr-zipcode">
+                            <button type="button" class="btn_search js-address"><span class="blind">주소 검색</span></button>
+                        </span>
+                        <span class="inp_box"><input type="text" name="personAddr" id="personAddr" title="기본 주소 입력" placeholder="기본 주소" class="js-addr-default">
+                        </span>
+                        <span class="inp_box"><input type="text" name="personAddrDetail" id="personAddrDetail" title="상세 주소 입력" placeholder="상세 주소" class="js-addr-detail"></span>
+                    </div>
+                    <div class="group_form_item">
+                        <span class="form_name">전화번호</span>
+                        <span class="form_box"><input type="text" title="전화번호 입력"></span>
+
+                        <span class="form_name">홈페이지</span>
+                        <span class="form_box"><input type="text" title="http://" placeholder="http://"></span>
+                    </div>
+                </div>
+                <div class="btn_wrap center col2">
+                    <button type="button" class="btn point_type1">등록</button>
+                    <button type="button" class="btn point_type2">취소</button>
+                </div>
+            </div>
+            <!-- 주소 검색 팝업 -->
+            <div id="layer_address_wrap">
+                <div id="layer_address"></div>
+                <div class="dim"></div>
+            </div>
+        </div>
+        <!-- //Content Area -->
+
+        <div class="footer">
+            <div class="footer_inner">
+                <ul class="privacy_list">
+                    <li><a href="#url" class="txt_point2">이용약관</a></li>
+                    <li><a href="#url" class="txt_point2"><strong>개인정보 처리방침</strong></a></li>
+                </ul>
+                <p class="cpr txt_point3">Copyright&copy; 2019 All Right Reserved</p>
+            </div>
+        </div>
+
+    </div>
+
+  <!-- import js -->
+  <!-- import Daum 주소 api -->
+  <script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js?autoload=false"></script>
+  <!-- //import Daum 주소 api -->
+  <script src="../../assets/js/plugins/jquery-3.2.1.min.js"></script>
+  <script src="../../assets/js/plugins/jquery-ui.min.js"></script>
+  <script src="../../assets/js/common.js"></script>
+  <!-- 주소 api 호출 script -->
+  <script src="../../assets/js/postcode.js"></script>
+    
+</body>
+
+</html>

@@ -645,11 +645,6 @@
   display: block;
 }
 
- .group_form_wrap.bnss_write .group_form_item.adress .inp_box {
-  display: block;
-  width:100%;
-  margin-top:10px;
-}
  .group_form_wrap.bnss_write .group_form_item.adress .inp_box.addr_search {
   margin-top:0;
 }

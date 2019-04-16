@@ -370,7 +370,7 @@ sup.require {
   text-align: left;
 }
 .tbl_wrap.has_search {
-  margin-top: 20px;
+  margin-top: 20px; padding-top: 64px;
 }
 /* table col width */
 .tbl_wrap .size_xlarge {
@@ -507,8 +507,8 @@ sup.require {
 }
 
 .tbl_search_box {
-  float: right;
-  margin-bottom: 20px;
+  position: absolute;
+  right: 0; top: 0;
 }
 .tbl_search_box .tbl_search_item {
   position: relative;
@@ -518,6 +518,12 @@ sup.require {
 }
 .tbl_search_box .tbl_search_item:first-child {
   margin-left: 0;
+}
+.tbl_search_box .tbl_search_item .tbl_search_btn {
+  position: absolute;
+  right: 0; top: 0;
+  width: 44px; height: 44px;
+  background: url(../images/common/ico-search.png) no-repeat center;
 }
 
 /* checkbox in table */
@@ -1108,12 +1114,10 @@ button {
 .group_form_wrap .group_form .group_form_item .inp_next_btn {
   font-size: 14px; font-weight: 500;
 }
-
-/* search button */
-.inp_sch_box {
+.group_form_wrap .group_form .group_form_item .addr_search {
   position: relative;
 }
-.inp_sch_box .btn_search {
+.group_form_wrap .group_form .group_form_item .addr_search .btn_search {
   position: absolute;
   right: 0; top: 0;
   width: 44px; height: 44px;
