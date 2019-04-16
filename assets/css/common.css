@@ -370,7 +370,7 @@ sup.require {
   text-align: left;
 }
 .tbl_wrap.has_search {
-  margin-top: 20px; padding-top: 64px;
+  margin-top: 20px;
 }
 /* table col width */
 .tbl_wrap .size_xlarge {
@@ -507,8 +507,8 @@ sup.require {
 }
 
 .tbl_search_box {
-  position: absolute;
-  right: 0; top: 0;
+  float: right;
+  margin-bottom: 20px;
 }
 .tbl_search_box .tbl_search_item {
   position: relative;
@@ -518,12 +518,6 @@ sup.require {
 }
 .tbl_search_box .tbl_search_item:first-child {
   margin-left: 0;
-}
-.tbl_search_box .tbl_search_item .tbl_search_btn {
-  position: absolute;
-  right: 0; top: 0;
-  width: 44px; height: 44px;
-  background: url(../images/common/ico-search.png) no-repeat center;
 }
 
 /* checkbox in table */
