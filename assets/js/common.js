@@ -5,14 +5,13 @@
 
 var setGnb = function() {
   $('.gnb > li').on('mouseenter mouseover', function() {
-    $('.gnb > li').removeClass('on');
     $('.sub_gnb').removeClass('active');
     $(this).closest('.header').find('.header_bottom').addClass('active');
-    $(this).addClass('on');
     $(this).find('.sub_gnb').addClass('active');
   });
   $('.header').on('mouseleave', function() {
     $(this).find('.header_bottom').removeClass('active');
+    $(this).find('.sub_gnb').removeClass('active');
   });
 };
 

@@ -167,11 +167,15 @@ sup.require {
 
 /* header */
 .header {
-  overflow: hidden;
   position: relative;
   padding: 0 240px;
   border-bottom: 1px solid #ff7a00;
   box-sizing: border-box;
+}
+.header::after{
+  content: '';
+  display: table;
+  clear: both;
 }
 .header .header_top {
   position: absolute;
@@ -192,7 +196,7 @@ sup.require {
   color: #666;
 }
 .header .header_middle {
-  margin-top: 20px; padding-bottom: 19px;
+  padding-top: 20px; padding-bottom: 19px;
 }
 .header .header_middle::after {
   content: '';
@@ -229,6 +233,7 @@ sup.require {
   display: none;
   position: absolute;
   left: 0; top: 63px;
+  z-index: 99;
 }
 .header .header_middle .gnb .sub_gnb.active {
   display: block;
@@ -250,8 +255,9 @@ sup.require {
 }
 .header .header_bottom {
   display: none;
-  height: 50px;
-  margin: 0 -240px;
+  position: absolute;
+  left: 0; bottom: -50px;
+  width: 100%; height: 50px;
   background: #ff7a00;
 }
 .header .header_bottom.active {
@@ -298,6 +304,10 @@ sup.require {
 }
 
 /* container */
+.wrap {
+  max-width: 1920px;
+  margin: 0 auto;
+}
 .container {
   width: 1200px;
   margin: 0 auto; padding-bottom: 196px;
