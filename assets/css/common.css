@@ -207,7 +207,6 @@ sup.require {
   float: left;
 }
 .header .header_middle .gnb {
-  position: relative;
   float: right;
   margin-top: 25px;
 }
@@ -232,7 +231,7 @@ sup.require {
 .header .header_middle .gnb .sub_gnb {
   display: none;
   position: absolute;
-  left: 0; top: 63px;
+  right: 240px; top: 107px;
   z-index: 99;
 }
 .header .header_middle .gnb .sub_gnb.active {
