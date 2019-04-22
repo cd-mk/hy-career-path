@@ -268,7 +268,7 @@ sup.require {
   position: absolute;
   left: 0; bottom: 0;
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 24px 240px;
   border-top: 1px solid #e8e8e8;
   box-sizing: border-box;
@@ -295,7 +295,6 @@ sup.require {
   position: relative;
   font-size: 13px;
   display: block;
-  line-height: 1;
 }
 .footer .cpr {
   float: right;
