@@ -160,7 +160,7 @@ var setDataLayerPopup = function() {
 };
 
 var init = function() {
-  setGnb();
+  // setGnb();
 
   if ($('.input_date').length) setDatePicker();
   if ($('.js-tab-list').length) setTab();

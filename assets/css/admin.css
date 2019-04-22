@@ -534,11 +534,12 @@
   vertical-align: middle;
 }
  .group_form_wrap.notice_write .group_form_item .form_name + .form_box {
+  width: 500px;
   padding-left: 0;
 }
  .group_form_wrap.notice_write .group_form_item .form_box select {
   float: left;
-  width: 150px;
+  width: 50%;
 }
  .group_form_wrap.notice_write .group_form_item .form_box select.no_r_line {
   border-right: 0;
