@@ -162,6 +162,10 @@ var setDataLayerPopup = function() {
 var init = function() {
   // setGnb();
 
+  // footer load
+  $('.footer').load('/common/footer.html');
+  
+
   if ($('.input_date').length) setDatePicker();
   if ($('.js-tab-list').length) setTab();
   if ($('.js-tooltip').length) setTooltip();
