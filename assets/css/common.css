@@ -295,6 +295,7 @@ sup.require {
   position: relative;
   font-size: 13px;
   display: block;
+  line-height:1;
 }
 .footer .cpr {
   float: right;

@@ -163,7 +163,7 @@ var init = function() {
   // setGnb();
 
   // footer load
-  $('.footer').load('/common/footer.html');
+  $('.footer').load('../../assets/include/footer.html');
   
 
   if ($('.input_date').length) setDatePicker();
